@@ -1,0 +1,174 @@
+{
+  "https://www.deltadental.com/us/en/login.html": {
+    "websiteUrl": "deltadental.com",
+    "portalId": 42,
+    "maps": {
+      "https://ddar-auth.deltadental.com/samlp/m6MYomfWgqgWYZVRJpVjL9wwFM2pGM68": {
+        "websiteUrl": "deltadental.com",
+        "portalId": 42
+      },
+      "https://www1.deltadentalins.com/login.html": {
+        "websiteUrl": "deltadental.com",
+        "portalId": 42
+      },
+      "https://sites.deltadentalok.org/pearl/Login.aspx": {
+        "websiteUrl": "deltadental.com",
+        "portalId": 42
+      },
+      "https://portal3.nedelta.com/BenefitLookup17/Account/ProvLogin": {
+        "websiteUrl": "deltadental.com",
+        "portalId": 42
+      },
+      "https://my.deltadentalar.com/sign-in": {
+        "websiteUrl": "deltadental.com",
+        "portalId": 42
+      },
+      "https://ddwa-auth.deltadental.com/samlp/JQD9FpcPHWHU7HjoTaTcYaj2wmmUDRy5": {
+        "websiteUrl": "deltadental.com",
+        "portalId": 42
+      },
+      "https://auth.deltadental.com/login": {
+        "websiteUrl": "deltadental.com",
+        "portalId": 42
+      },
+      "https://www.deltadental.com/us/en/login.html": {
+        "websiteUrl": "deltadental.com",
+        "portalId": 42
+      },
+      "https://www.deltadentalins.com/us/en/login.html": {
+        "websiteUrl": "deltadentalins.com",
+        "portalId": 3
+      }
+    },
+    "checkUrl": true
+  },
+  "https://www.deltadentalmo.com/Providers/Login": {
+    "websiteUrl": "deltadental.com",
+    "portalId": 42
+  },
+  "https://deltadentalri.com/Home/Login": {
+    "websiteUrl": "deltadental.com",
+    "portalId": 42
+  },
+  "https://www.deltadentalnj.com/dentist": {
+    "websiteUrl": "deltadental.com",
+    "portalId": 42
+  },
+  "https://providers.deltadentalma.com/onboarding/start/": {
+    "websiteUrl": "deltadental.com",
+    "portalId": 42
+  },
+  "https://cigna.com": {
+    "websiteUrl": "cigna.com",
+    "portalId": 8,
+    "maps": {
+      "https://cigna.com": {
+        "websiteUrl": "cigna.com",
+        "portalId": 8
+      }
+    },
+    "checkUrl": true
+  },
+  "https://cignaforhcp.cigna.com/app/login": {
+    "websiteUrl": "cigna.com",
+    "portalId": 8
+  },
+  "https://deltadentalins.com": {
+    "websiteUrl": "deltadentalins.com",
+    "portalId": 3,
+    "maps": {
+      "https://deltadentalins.com": {
+        "websiteUrl": "deltadentalins.com",
+        "portalId": 3
+      }
+    },
+    "checkUrl": true
+  },
+  "https://www1.deltadentalins.com/login.html": {
+    "websiteUrl": "deltadentalins.com",
+    "portalId": 3
+  },
+  "https://www.dentalofficetoolkit.com/dot-ui/login": {
+    "websiteUrl": "dentalofficetoolkit.com",
+    "portalId": 2
+  },
+  "https://deltadentalva.com/provider/": {
+    "websiteUrl": "deltadentalva.com",
+    "portalId": 5
+  },
+  "https://www.ameritas.com/applications/group/provider": {
+    "websiteUrl": "ameritas.com",
+    "portalId": 41
+  },
+  "https://provider.carefirst.com/prv/#/login": {
+    "websiteUrl": "provider.carefirst.com",
+    "portalId": 67
+  },
+  "https://pwp.envolvedental.com/PWP/Landing": {
+    "websiteUrl": "envolvedental.com",
+    "portalId": 38
+  },
+  "https://www.dnoaconnect.com": {
+    "websiteUrl": "dnoaconnect.com",
+    "portalId": 1
+  },
+  "https://login.guardianlife.com/": {
+    "websiteUrl": "guardianlife.com",
+    "portalId": 9
+  },
+  "https://www.unitedconcordia.com/login": {
+    "websiteUrl": "unitedconcordia.com",
+    "portalId": 6
+  },
+  "https://www.unitedconcordia.com/portal/login": {
+    "websiteUrl": "unitedconcordia.com",
+    "portalId": 6
+  },
+  "https://dentalprovider.metlife.com/home": {
+    "websiteUrl": "dentalprovider.metlife.com",
+    "portalId": 10
+  },
+  "https://metdental.metlife.com/prov/execute/home": {
+    "websiteUrl": "dentalprovider.metlife.com",
+    "portalId": 10
+  },
+  "https://providers.dentaquest.com/onboarding/start/": {
+    "websiteUrl": "dentaquest.com",
+    "portalId": 35
+  },
+  "https://www.geha.com/enroll/provider": {
+    "websiteUrl": "geha.com",
+    "portalId": 39
+  },
+  "https://login.principal.com/login": {
+    "websiteUrl": "principal.com",
+    "portalId": 40
+  },
+  "https://acswww.ebixhealth.com/lin/faces/LinLogin.jsp": {
+    "websiteUrl": "availity.com",
+    "portalId": 36
+  },
+  "https://apps.availity.com/availity/web/public.elegant.login": {
+    "websiteUrl": "availity.com",
+    "portalId": 36
+  },
+  "https://www.dbp.com/": {
+    "websiteUrl": "dbp.com",
+    "portalId": 37,
+    "maps": {
+      "https://www.dbp.com/": {
+        "websiteUrl": "dbp.com",
+        "portalId": 37
+      }
+    },
+    "checkUrl": true
+  },
+  "https://secure.uhcprovider.com/": {
+    "websiteUrl": "dbp.com",
+    "portalId": 37
+  },
+  "https://identity.onehealthcareid.com/oidc/authorize": {
+    "websiteUrl": "dbp.com",
+    "portalId": 37
+  }
+}

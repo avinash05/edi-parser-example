@@ -1,0 +1,4116 @@
+{
+  "patient": {
+    "firstName": "TABITHA",
+    "middleName": null,
+    "lastName": "ALONE",
+    "dateOfBirth": "04/15/1985",
+    "memberId": "W291847314",
+    "groupNumber": "017068401200001",
+    "gender": null,
+    "relationship": "18",
+    "address": {
+      "address1": "193 N SHORTHORN PL",
+      "address2": null,
+      "city": "PALMER",
+      "state": "AK",
+      "zipCode": "996459532"
+    },
+    "notes": []
+  },
+  "subscriber": {
+    "firstName": "TABITHA",
+    "middleName": null,
+    "lastName": "ALONE",
+    "dateOfBirth": "04/15/1985",
+    "memberId": "W291847314",
+    "groupNumber": "017068401200001",
+    "gender": null,
+    "address": {
+      "address1": "193 N SHORTHORN PL",
+      "address2": null,
+      "city": "PALMER",
+      "state": "AK",
+      "zipCode": "996459532"
+    },
+    "notes": []
+  },
+  "provider": {
+    "firstName": null,
+    "lastName": null,
+    "npi": null,
+    "taxId": null,
+    "providerId": null,
+    "notes": []
+  },
+  "payer": {
+    "name": "Aetna Dental Plans",
+    "payerIdCode": "60054",
+    "phone": null,
+    "fax": null,
+    "addresses": [
+      {
+        "address1": "PO Box 14079",
+        "address2": null,
+        "city": "Lexington",
+        "state": "KY",
+        "zipCode": "40512"
+      }
+    ],
+    "notes": []
+  },
+  "plan": {
+    "planStatus": "Active",
+    "planId": null,
+    "planName": "TRINET HR III, INC",
+    "planGroupId": "017068401200001",
+    "planGroupName": null,
+    "planType": null,
+    "startDate": "01/01/2025",
+    "endDate": null,
+    "effectiveDate": "01/01/2025",
+    "renewalType": "Calendar Year",
+    "errors": null,
+    "notes": [
+      {
+        "message": "Not Covered: D0431",
+        "type": "plan_note"
+      },
+      {
+        "message": "Not Covered: D1206",
+        "type": "plan_note"
+      },
+      {
+        "message": "Not Covered: D1208",
+        "type": "plan_note"
+      },
+      {
+        "message": "Not Covered: D1330",
+        "type": "plan_note"
+      },
+      {
+        "message": "Not Covered: D1351",
+        "type": "plan_note"
+      },
+      {
+        "message": "Not Covered: D9230",
+        "type": "plan_note"
+      },
+      {
+        "message": "Not Covered: D9310",
+        "type": "plan_note"
+      }
+    ],
+    "networks": [
+      {
+        "networkId": "IN_NETWORK",
+        "networkName": "In-Network",
+        "networkType": "In-Network"
+      },
+      {
+        "networkId": "OUT_NETWORK",
+        "networkName": "Out-of-Network",
+        "networkType": "Out-of-Network"
+      }
+    ],
+    "benefits": [
+      {
+        "procedure": {
+          "code": "D1110",
+          "category": "Preventive",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 0,
+        "payerCoverage": 100,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "2",
+          "period": "1",
+          "unit": "Calendar Year",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D1120",
+          "category": "Preventive",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 0,
+        "payerCoverage": 100,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "2",
+          "period": "1",
+          "unit": "Calendar Year",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D1510",
+          "category": "Preventive",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 0,
+        "payerCoverage": 100,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D1110",
+          "category": "Preventive",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 0,
+        "payerCoverage": 100,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "2",
+          "period": "1",
+          "unit": "Calendar Year",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D1120",
+          "category": "Preventive",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 0,
+        "payerCoverage": 100,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "2",
+          "period": "1",
+          "unit": "Calendar Year",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D1510",
+          "category": "Preventive",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 0,
+        "payerCoverage": 100,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D4260",
+          "category": "Periodontics",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 10,
+        "payerCoverage": 90,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "1",
+          "period": "36",
+          "unit": "Month",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D4341",
+          "category": "Periodontics",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 10,
+        "payerCoverage": 90,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "1",
+          "period": "24",
+          "unit": "Month",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D4381",
+          "category": "Periodontics",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 10,
+        "payerCoverage": 90,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D4910",
+          "category": "Periodontics",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 10,
+        "payerCoverage": 90,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "2",
+          "period": "1",
+          "unit": "Calendar Year",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D4355",
+          "category": "Periodontics",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 35,
+        "payerCoverage": 65,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "1",
+          "period": "999",
+          "unit": "Calendar Year",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D4346",
+          "category": "Periodontics",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 0,
+        "payerCoverage": 100,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "2",
+          "period": "1",
+          "unit": "Calendar Year",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D4346",
+          "category": "Periodontics",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 0,
+        "payerCoverage": 100,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "2",
+          "period": "1",
+          "unit": "Calendar Year",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D4260",
+          "category": "Periodontics",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 20,
+        "payerCoverage": 80,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "1",
+          "period": "36",
+          "unit": "Month",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D4341",
+          "category": "Periodontics",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 20,
+        "payerCoverage": 80,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "1",
+          "period": "24",
+          "unit": "Month",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D4381",
+          "category": "Periodontics",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 20,
+        "payerCoverage": 80,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D4910",
+          "category": "Periodontics",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 20,
+        "payerCoverage": 80,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "2",
+          "period": "1",
+          "unit": "Calendar Year",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D4355",
+          "category": "Periodontics",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 50,
+        "payerCoverage": 50,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "1",
+          "period": "999",
+          "unit": "Calendar Year",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D2391",
+          "category": "Restorative",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 10,
+        "payerCoverage": 90,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D2392",
+          "category": "Restorative",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 10,
+        "payerCoverage": 90,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D2393",
+          "category": "Restorative",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 10,
+        "payerCoverage": 90,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D2930",
+          "category": "Restorative",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 10,
+        "payerCoverage": 90,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D2950",
+          "category": "Restorative",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 10,
+        "payerCoverage": 90,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D2740",
+          "category": "Restorative",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 35,
+        "payerCoverage": 65,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "1",
+          "period": "96",
+          "unit": "Month",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D2750",
+          "category": "Restorative",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 35,
+        "payerCoverage": 65,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "1",
+          "period": "96",
+          "unit": "Month",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D2391",
+          "category": "Restorative",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 20,
+        "payerCoverage": 80,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D2392",
+          "category": "Restorative",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 20,
+        "payerCoverage": 80,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D2393",
+          "category": "Restorative",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 20,
+        "payerCoverage": 80,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D2930",
+          "category": "Restorative",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 20,
+        "payerCoverage": 80,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D2950",
+          "category": "Restorative",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 20,
+        "payerCoverage": 80,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D2740",
+          "category": "Restorative",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 50,
+        "payerCoverage": 50,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "1",
+          "period": "96",
+          "unit": "Month",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D2750",
+          "category": "Restorative",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 50,
+        "payerCoverage": 50,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "1",
+          "period": "96",
+          "unit": "Month",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D0220",
+          "category": "Diagnostic",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 10,
+        "payerCoverage": 90,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D0120",
+          "category": "Diagnostic",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 0,
+        "payerCoverage": 100,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "2",
+          "period": "1",
+          "unit": "Calendar Year",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D0140",
+          "category": "Diagnostic",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 0,
+        "payerCoverage": 100,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "2",
+          "period": "1",
+          "unit": "Calendar Year",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D0150",
+          "category": "Diagnostic",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 0,
+        "payerCoverage": 100,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "2",
+          "period": "1",
+          "unit": "Calendar Year",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D0210",
+          "category": "Diagnostic",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 0,
+        "payerCoverage": 100,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "1",
+          "period": "36",
+          "unit": "Month",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D0272",
+          "category": "Diagnostic",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 0,
+        "payerCoverage": 100,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "1",
+          "period": "1",
+          "unit": "Calendar Year",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D0274",
+          "category": "Diagnostic",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 0,
+        "payerCoverage": 100,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "1",
+          "period": "1",
+          "unit": "Calendar Year",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D0330",
+          "category": "Diagnostic",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 0,
+        "payerCoverage": 100,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "1",
+          "period": "36",
+          "unit": "Month",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D0120",
+          "category": "Diagnostic",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 0,
+        "payerCoverage": 100,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "2",
+          "period": "1",
+          "unit": "Calendar Year",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D0140",
+          "category": "Diagnostic",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 0,
+        "payerCoverage": 100,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "2",
+          "period": "1",
+          "unit": "Calendar Year",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D0150",
+          "category": "Diagnostic",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 0,
+        "payerCoverage": 100,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "2",
+          "period": "1",
+          "unit": "Calendar Year",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D0210",
+          "category": "Diagnostic",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 0,
+        "payerCoverage": 100,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "1",
+          "period": "36",
+          "unit": "Month",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D0272",
+          "category": "Diagnostic",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 0,
+        "payerCoverage": 100,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "1",
+          "period": "1",
+          "unit": "Calendar Year",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D0274",
+          "category": "Diagnostic",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 0,
+        "payerCoverage": 100,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "1",
+          "period": "1",
+          "unit": "Calendar Year",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D0330",
+          "category": "Diagnostic",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 0,
+        "payerCoverage": 100,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "1",
+          "period": "36",
+          "unit": "Month",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D0220",
+          "category": "Diagnostic",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 20,
+        "payerCoverage": 80,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D6240",
+          "category": "Prosthodontics, fixed",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 35,
+        "payerCoverage": 65,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "1",
+          "period": "96",
+          "unit": "Month",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D6750",
+          "category": "Prosthodontics, fixed",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 35,
+        "payerCoverage": 65,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "1",
+          "period": "96",
+          "unit": "Month",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D6240",
+          "category": "Prosthodontics, fixed",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 50,
+        "payerCoverage": 50,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "1",
+          "period": "96",
+          "unit": "Month",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D6750",
+          "category": "Prosthodontics, fixed",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 50,
+        "payerCoverage": 50,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "1",
+          "period": "96",
+          "unit": "Month",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D7140",
+          "category": "Oral and Maxillofacial Surgery",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 10,
+        "payerCoverage": 90,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D7210",
+          "category": "Oral and Maxillofacial Surgery",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 10,
+        "payerCoverage": 90,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D7220",
+          "category": "Oral and Maxillofacial Surgery",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 10,
+        "payerCoverage": 90,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D7230",
+          "category": "Oral and Maxillofacial Surgery",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 10,
+        "payerCoverage": 90,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D7240",
+          "category": "Oral and Maxillofacial Surgery",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 10,
+        "payerCoverage": 90,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D7140",
+          "category": "Oral and Maxillofacial Surgery",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 20,
+        "payerCoverage": 80,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D7210",
+          "category": "Oral and Maxillofacial Surgery",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 20,
+        "payerCoverage": 80,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D7220",
+          "category": "Oral and Maxillofacial Surgery",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 20,
+        "payerCoverage": 80,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D7230",
+          "category": "Oral and Maxillofacial Surgery",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 20,
+        "payerCoverage": 80,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D7240",
+          "category": "Oral and Maxillofacial Surgery",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 20,
+        "payerCoverage": 80,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D8070",
+          "category": "Orthodontics",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 50,
+        "payerCoverage": 50,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D8080",
+          "category": "Orthodontics",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 50,
+        "payerCoverage": 50,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D8090",
+          "category": "Orthodontics",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 50,
+        "payerCoverage": 50,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D8070",
+          "category": "Orthodontics",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 50,
+        "payerCoverage": 50,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D8080",
+          "category": "Orthodontics",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 50,
+        "payerCoverage": 50,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D8090",
+          "category": "Orthodontics",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 50,
+        "payerCoverage": 50,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D5110",
+          "category": "Prosthodontics, removable",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 35,
+        "payerCoverage": 65,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "1",
+          "period": "96",
+          "unit": "Month",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D5120",
+          "category": "Prosthodontics, removable",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 35,
+        "payerCoverage": 65,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "1",
+          "period": "96",
+          "unit": "Month",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D5213",
+          "category": "Prosthodontics, removable",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 35,
+        "payerCoverage": 65,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "1",
+          "period": "96",
+          "unit": "Month",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D5214",
+          "category": "Prosthodontics, removable",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 35,
+        "payerCoverage": 65,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "1",
+          "period": "96",
+          "unit": "Month",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D5110",
+          "category": "Prosthodontics, removable",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 50,
+        "payerCoverage": 50,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "1",
+          "period": "96",
+          "unit": "Month",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D5120",
+          "category": "Prosthodontics, removable",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 50,
+        "payerCoverage": 50,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "1",
+          "period": "96",
+          "unit": "Month",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D5213",
+          "category": "Prosthodontics, removable",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 50,
+        "payerCoverage": 50,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "1",
+          "period": "96",
+          "unit": "Month",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D5214",
+          "category": "Prosthodontics, removable",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 50,
+        "payerCoverage": 50,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "1",
+          "period": "96",
+          "unit": "Month",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D9110",
+          "category": "Adjunctive General Services",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 10,
+        "payerCoverage": 90,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D9222",
+          "category": "Adjunctive General Services",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 10,
+        "payerCoverage": 90,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D9944",
+          "category": "Adjunctive General Services",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 35,
+        "payerCoverage": 65,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "1",
+          "period": "36",
+          "unit": "Month",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D9110",
+          "category": "Adjunctive General Services",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 20,
+        "payerCoverage": 80,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D9222",
+          "category": "Adjunctive General Services",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 20,
+        "payerCoverage": 80,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D9944",
+          "category": "Adjunctive General Services",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 50,
+        "payerCoverage": 50,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "1",
+          "period": "36",
+          "unit": "Month",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D3220",
+          "category": "Endodontics",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 10,
+        "payerCoverage": 90,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D3310",
+          "category": "Endodontics",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 10,
+        "payerCoverage": 90,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D3320",
+          "category": "Endodontics",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 10,
+        "payerCoverage": 90,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D3330",
+          "category": "Endodontics",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 10,
+        "payerCoverage": 90,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D3220",
+          "category": "Endodontics",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 20,
+        "payerCoverage": 80,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D3310",
+          "category": "Endodontics",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 20,
+        "payerCoverage": 80,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D3320",
+          "category": "Endodontics",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 20,
+        "payerCoverage": 80,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D3330",
+          "category": "Endodontics",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 20,
+        "payerCoverage": 80,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D6010",
+          "category": "Implant Services",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 35,
+        "payerCoverage": 65,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D6057",
+          "category": "Implant Services",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 35,
+        "payerCoverage": 65,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D6058",
+          "category": "Implant Services",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "coPay": null,
+        "coInsurance": 35,
+        "payerCoverage": 65,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "1",
+          "period": "96",
+          "unit": "Month",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D6010",
+          "category": "Implant Services",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 50,
+        "payerCoverage": 50,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D6057",
+          "category": "Implant Services",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 50,
+        "payerCoverage": 50,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      },
+      {
+        "procedure": {
+          "code": "D6058",
+          "category": "Implant Services",
+          "complexity": null,
+          "categoryComplexity": null,
+          "notes": []
+        },
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "coPay": null,
+        "coInsurance": 50,
+        "payerCoverage": 50,
+        "feeAllowance": null,
+        "frequency": {
+          "limit": "1",
+          "period": "96",
+          "unit": "Month",
+          "notes": []
+        },
+        "ageLimit": {
+          "min": null,
+          "max": 99,
+          "notes": []
+        },
+        "waiting": {
+          "applies": null,
+          "period": null,
+          "unit": null,
+          "notes": []
+        },
+        "deductible": {
+          "applies": false,
+          "notes": []
+        },
+        "alternate": null,
+        "notes": []
+      }
+    ],
+    "maximums": [
+      {
+        "amount": 3500,
+        "used": 0,
+        "remaining": 3500,
+        "category": "Dental",
+        "period": "Calendar Year",
+        "coverageLevel": "Individual",
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "notes": []
+      },
+      {
+        "amount": 3500,
+        "used": 0,
+        "remaining": 3500,
+        "category": "Orthodontics",
+        "period": "Lifetime",
+        "coverageLevel": "Individual",
+        "network": {
+          "networkId": "IN_NETWORK",
+          "networkName": "In-Network",
+          "networkType": "In-Network"
+        },
+        "notes": []
+      },
+      {
+        "amount": 2000,
+        "used": 0,
+        "remaining": 2000,
+        "category": "Dental",
+        "period": "Calendar Year",
+        "coverageLevel": "Individual",
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "notes": []
+      },
+      {
+        "amount": 2000,
+        "used": 0,
+        "remaining": 2000,
+        "category": "Orthodontics",
+        "period": "Lifetime",
+        "coverageLevel": "Individual",
+        "network": {
+          "networkId": "OUT_NETWORK",
+          "networkName": "Out-of-Network",
+          "networkType": "Out-of-Network"
+        },
+        "notes": []
+      }
+    ],
+    "deductibles": [],
+    "ortho": null,
+    "cob": null,
+    "missingTooth": null
+  }
+}

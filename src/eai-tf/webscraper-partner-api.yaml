@@ -1,0 +1,3365 @@
+openapi: 3.0.0
+info:
+  description: |
+    ## WebScraper Partner API
+
+    The WebScraper Partner API enables secure integration with dental insurance portals for eligibility verification and benefits data extraction. This API provides a comprehensive solution for dental providers to streamline patient insurance verification processes.
+
+    ### Key Features
+    - **Portal Integration**: Connect to multiple dental insurance portals using secure credential management
+    - **Eligibility Verification**: Verify patient insurance eligibility and benefits
+    - **Webhook Events**: Receive instant notifications when eligibility data is ready
+    - **Multi-Factor Authentication**: Support for MFA-enabled portal connections
+    - **Comprehensive Data**: Extract detailed plan information, benefits, limitations, and service history
+
+    ### API Workflow
+    1. **Create Connection** - Establish secure connection to insurance portal with provider credentials
+    2. **Subscribe to Events** - Register webhook endpoints to receive instant notifications
+    3. **Request Eligibility** - Submit patient information for insurance verification
+    4. **Receive Notifications** - Get notified via webhooks when data is available
+    5. **Retrieve Data** - Download comprehensive eligibility and benefits information
+
+    ### Webhook Event Examples
+
+    When events occur, your registered webhook endpoints will receive HTTP POST requests with JSON payloads. Below are example payloads for each event type:
+
+    **Connection Events:**
+    - `connection.connected`: [$ref](#/components/examples/WebhookEventConnected)
+    - `connection.invalid`: [$ref](#/components/examples/WebhookEventInvalid) 
+    - `connection.2fa`: [$ref](#/components/examples/WebhookEventConnection2FA)
+    - `connection.sqa`: [$ref](#/components/examples/WebhookEventConnectionSQA)
+    - `connection.error`: [$ref](#/components/examples/WebhookEventConnectionError)
+    - `connection.disconnected`: [$ref](#/components/examples/WebhookEventDisconnected)
+
+    **Eligibility Events:**
+    - `eligibility.queued`: [$ref](#/components/examples/WebhookEventEligibilityQueued)
+    - `eligibility.error`: [$ref](#/components/examples/WebhookEventEligibilityError) 
+    - `eligibility.verified`: [$ref](#/components/examples/WebhookEventEligibilityVerified)
+
+    All webhook payloads conform to the [`WebhookEvent`](#/components/schemas/WebhookEvent) schema.
+
+    ### Authentication
+    All API requests require a valid API key provided in the `x-api-key` header. Contact our support team to obtain your API credentials.
+  version: 1.1.1
+  title: WebScraper Partner API
+  contact:
+    name: API Support
+    email: connectivity@dentalxchange.com
+    url: https://www.dentalxchange.com
+  license:
+    name: DentalXchange
+    url: https://www.dentalxchange.com/user-agreement
+servers:
+  - url: https://staging-api-webscraper.dentalxchange.com
+    description: API Endpoint Staging
+  - url: https://api-webscraper.dentalxchange.com
+    description: API Endpoint Production
+security:
+  - API-Key: []
+tags:
+  - name: Connection
+    x-displayName: Connection Management
+    description: |
+      Manage secure connections to dental insurance portals. Connections store encrypted credentials 
+      and maintain session state for accessing portal data. Each connection represents a unique 
+      provider-portal relationship with specific authentication requirements.
+  - name: Portal
+    x-displayName: Portal Information
+    description: |
+      Retrieve information about available dental insurance portals. Each portal represents a 
+      different payer system with specific integration capabilities, status information, and 
+      technical requirements for data extraction.
+  - name: Eligibility
+    x-displayName: Eligibility Verification
+    description: |
+      Submit and manage patient eligibility verification requests. This service validates insurance 
+      coverage, extracts benefits information, and provides comprehensive dental plan details 
+      including limitations, maximums, and service history.
+  - name: Endpoint
+    x-displayName: Endpoint Management
+    description: |
+      Configure and manage webhook endpoints for event notifications. Webhooks provide 
+      instant updates on connection status changes, eligibility completion, and error conditions, 
+      enabling efficient asynchronous processing workflows.
+  - name: Health
+    x-displayName: Health
+    description: |
+      Monitor API system health and dependencies. Health checks provide current status information 
+      about service availability, database connectivity, and external system dependencies to ensure 
+      optimal API performance.
+  - name: PortalModel
+    x-displayName: Portal
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/Portal"/>
+  - name: ConnectionModel
+    x-displayName: Connection
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/Connection"/>
+  - name: EligibilityModel
+    x-displayName: Eligibility
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/Eligibility"/>
+  - name: PlanModel
+    x-displayName: Plan
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/Plan"/>
+  - name: ConnectionStatus
+    x-displayName: Connection Status
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/ConnectionStatus"/>
+  - name: EligibilityStatus
+    x-displayName: Eligibility Status
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/EligibilityStatus"/>
+  - name: PlanStatus
+    x-displayName: Plan Status
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/PlanStatus"/>
+  - name: ErrorCode
+    x-displayName: Error Code
+    description: |
+      | Code                             | Message                                |
+      |----------------------------------|----------------------------------------|
+      | BadRequest                       | Request was invalid                    |
+      | LoginError                       | Invalid login credentials              |
+      | 2FAError                         | Error using MFA code                   |
+      | PatientDOBError                  | Patient date of birth was invalid      |
+      | PatientNameError                 | Patient name was invalid               |
+      | PatientMemberIDError             | Patient member ID was invalid          |
+      | PatientMemberGroupNumberError    | Patient member group was invalid       |
+      | PatientNotFound                  | Patient not found                      |
+      | SubscriberDOBError               | Subscriber date of birth was invalid   |
+      | SubscriberNameError              | Subscriber name was invalid            |
+      | SubscriberMemberIDError          | Subscriber member ID was invalid       |
+      | SubscriberMemberGroupNumberError | Subscriber member group was invalid    |
+      | SubscriberNotFound               | Subscriber not found                   |
+      | ProviderNPIError                 | Provider NPI was invalid               |
+      | ProviderTaxIDError               | Provider Tax ID was invalid            |
+      | ProviderNameError                | Provider name was invalid              |
+      | ProviderNotFound                 | Provider not found                     |
+      | ProviderUnauthorized             | Provider not authorized to access portal |
+      | PayerNotSupported                | Payer is not supported                 |
+      | PayerError                       | Unknown payer error                    |
+      | PayerUnavailable                 | Payer is currently unavailable         |
+      | ServiceError                     | A service-level error occurred         |
+      | ScreenCaptureError               | Failed to capture screen               |
+      | SessionLoadError                 | Unable to load session                 |
+      | SessionStoreError                | Unable to store session                |
+      | TimeoutError                     | Operation timed out                    |
+      | ServerError                      | Internal server error occurred         |
+      | NetworkError                     | Network connection error               |
+      | ConfigurationError               | Configuration is invalid or missing   |
+      | NormalizationError               | Data normalization failed              |
+      | ScraperError                     | Scraper failed to complete task        |
+      | UnhandledError                   | An unknown/unhandled error occurred    |
+      | UserInterventionRequired         | Manual user intervention is required   |
+      | DentalPlanNotFoundError          | Dental plan could not be found         |
+      | StatusStaledError                | Eligibility status is outdated         |
+      | ConnectionError                  | Failed to connect to portal            |
+      | PayerInfoError                   | Error retrieving payer information     |
+      | PayerReferenceError              | Payer reference is invalid or missing  |
+      | CredentialProviderError          | Credential provider encountered error  |
+      | SilentAbortError                 | Request was silently aborted           |
+  - name: WebhookEvent
+    x-displayName: Webhook Events
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/WebhookEvent"/>
+paths:
+  /integrations/partner/connections:
+    post:
+      summary: Create Connection
+      description: |
+        Creates a new connection with the provided details.
+        The connection payload should be included in the request body.
+      operationId: connections-connect
+      tags:
+        - Connection
+      requestBody:
+        description: Contains the connection request
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ConnectionRequest"
+            examples:
+              ConnectionRequest:
+                $ref: "#/components/examples/ConnectionRequest"
+        required: true
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ConnectionResponse"
+              examples:
+                Response:
+                  $ref: "#/components/examples/ConnectionResponse"
+        "400":
+          $ref: "#/components/responses/BadRequestError"
+        "403":
+          $ref: "#/components/responses/UnauthorizedError"
+        "500":
+          $ref: "#/components/responses/InternalServerError"
+      security:
+        - API-Key: []
+    put:
+      summary: Update Connection
+      description: |
+        Updates an existing connection's details(Password).
+        The `connectionId` must be provided as a query parameter, and updated fields in the request body.
+      operationId: connections-update
+      tags:
+        - Connection
+      parameters:
+        - in: query
+          name: connectionId
+          description: Unique connection identifier
+          required: true
+          example: ea45db7e-ba43-49fc-a1a0-29d49a66cb8f
+          schema:
+            type: string
+            minLength: 1
+      requestBody:
+        description: Contains the connection update request
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ConnectionUpdateRequest"
+            examples:
+              Request:
+                $ref: "#/components/examples/ConnectionUpdateRequest"
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ConnectionResponse"
+              examples:
+                Response:
+                  $ref: "#/components/examples/ConnectionResponse"
+        "400":
+          $ref: "#/components/responses/BadRequestError"
+        "403":
+          $ref: "#/components/responses/UnauthorizedError"
+        "500":
+          $ref: "#/components/responses/InternalServerError"
+      security:
+        - API-Key: []
+    delete:
+      summary: Delete Connection
+      description: |
+        Delete the details of a specific connection using its unique identifier.
+      operationId: connections-remove
+      tags:
+        - Connection
+      parameters:
+        - in: query
+          name: connectionId
+          description: Unique connection identifier
+          required: true
+          example: ea45db7e-ba43-49fc-a1a0-29d49a66cb8f
+          schema:
+            type: string
+            minLength: 1
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  transactionId:
+                    type: string
+                    description: Unique transaction identifier
+                  response:
+                    type: object
+                    title: Response
+                    properties:
+                      connectionId:
+                        type: string
+                        description: Unique identifier for connection
+              examples:
+                Response:
+                  value:
+                    transactionId: 23335e12-8e8d-11ee-b9d1-0242ac120002
+                    response:
+                      connectionId: 0242ac10-8e8d-11ee-b9d1-0242ac1211ee
+        "400":
+          $ref: "#/components/responses/BadRequestError"
+        "403":
+          $ref: "#/components/responses/UnauthorizedError"
+        "500":
+          $ref: "#/components/responses/InternalServerError"
+      security:
+        - API-Key: []
+    get:
+      summary: Get Connection
+      description: |
+        Retrieves the details of a specific connection using its unique identifier.
+      operationId: connections-status
+      tags:
+        - Connection
+      parameters:
+        - in: query
+          name: connectionId
+          description: Unique connection identifier
+          required: true
+          example: ea45db7e-ba43-49fc-a1a0-29d49a66cb8f
+          schema:
+            type: string
+            minLength: 1
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ConnectionStatusResponse"
+              examples:
+                Response:
+                  $ref: "#/components/examples/ConnectionStatusResponse"
+        "400":
+          $ref: "#/components/responses/BadRequestError"
+        "403":
+          $ref: "#/components/responses/UnauthorizedError"
+        "500":
+          $ref: "#/components/responses/InternalServerError"
+      security:
+        - API-Key: []
+  /integrations/partner/connections/list:
+    get:
+      summary: List Connections
+      description: |
+        Get the list of partner connections with their current status and details.
+      operationId: connections-list
+      tags:
+        - Connection
+      parameters:
+        - in: query
+          name: locationId
+          description: unique location identifier
+          required: true
+          example: "-123218"
+          schema:
+            type: string
+            minLength: 1
+        - in: query
+          name: cursor
+          description: cursor token
+          example: "eyJHU0kxUEsiOiJjb25uZWN0aW9uI2QxZadf0ZYzI3ZDEyM2QwYjAifQ=="
+          schema:
+            type: string
+            minLength: 1
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ConnectionsResponse"
+              examples:
+                Response:
+                  $ref: "#/components/examples/ConnectionsResponse"
+        "400":
+          $ref: "#/components/responses/BadRequestError"
+        "403":
+          $ref: "#/components/responses/UnauthorizedError"
+        "500":
+          $ref: "#/components/responses/InternalServerError"
+      security:
+        - API-Key: []
+  /integrations/partner/connections/mfa/code/submit:
+    put:
+      summary: Submit MFA Code
+      description: |
+        Submit the Multi Factor Authentication (MFA) code as part of the credential login process.
+        The verification code is typically sent via Email, SMS, or Phone.
+      operationId: connections-mfa
+      tags:
+        - Connection
+      requestBody:
+        description: Contains the portal credential request.
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                connectionId:
+                  type: string
+                  description: Unique connection identifier
+                  minLength: 1
+                mfaCode:
+                  type: string
+                  description: Multi-Factor Authentication code
+                  minLength: 1
+              required:
+                - connectionId
+                - mfaCode
+            example:
+              connectionId: "ea45db7e-ba43-49fc-a1a0-29d49a66cb8f"
+              mfaCode: "123456"
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  transactionId:
+                    type: string
+                    description: Unique transaction identifier
+                  response:
+                    type: object
+                    title: Response
+                    properties:
+                      connectionId:
+                        type: string
+                        description: Unique connection identifier
+              examples:
+                Response:
+                  value:
+                    transactionId: 23335e12-8e8d-11ee-b9d1-0242ac120002
+                    response:
+                      connectionId: 0242ac10-8e8d-11ee-b9d1-0242ac1211ee
+        "400":
+          $ref: "#/components/responses/BadRequestError"
+        "403":
+          $ref: "#/components/responses/UnauthorizedError"
+        "500":
+          $ref: "#/components/responses/InternalServerError"
+      security:
+        - API-Key: []
+  /integrations/partner/connections/mfa/code/generate:
+    post:
+      summary: Generate MFA Code
+      description: |
+        Generates a Multi-Factor Authentication (MFA) code using the mfaSecretKey provided by the user.
+      operationId: generate--mfa
+      tags:
+        - Connection
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                mfaSecretKey:
+                  type: string
+                  description: Secret key used for setting up Multi Factor Authentication (MFA).
+                  minLength: 1
+              required:
+                - mfaSecretKey
+            example:
+              mfaSecretKey: "XSQ2MZSOCTUP7NSHSQYHJRQ2XUK3EHSMP"
+      responses:
+        "200":
+          description: Successfully generated the MFA code.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  transactionId:
+                    type: string
+                    description: Unique transaction identifier
+                  response:
+                    type: object
+                    properties:
+                      mfaCode:
+                        type: string
+                        description: Generated MFA code
+                example:
+                  transactionId: "23335e12-8e8d-11ee-b9d1-0242ac120002"
+                  response:
+                    mfaCode: "123456"
+        "400":
+          $ref: "#/components/responses/BadRequestError"
+        "403":
+          $ref: "#/components/responses/UnauthorizedError"
+        "500":
+          $ref: "#/components/responses/InternalServerError"
+      security:
+        - API-Key: []
+  /integrations/partner/eligibilities:
+    post:
+      summary: Submit Eligibility Verification
+      description: |
+        Initiates a comprehensive eligibility verification request for a patient's dental insurance coverage. 
+        This endpoint submits patient, subscriber, and provider information to the specified portal for 
+        benefits verification.
+
+        **Key Information Extracted:**
+        - Insurance plan details and status
+        - Coverage maximums and deductibles  
+        - Benefits by procedure category (preventive, basic, major, orthodontic)
+        - Network participation and co-payment information
+        - Service limitations and waiting periods
+        - Recent claims history and utilization
+
+        **Process Flow:**
+        1. Request is queued for processing
+        2. Portal authentication and data extraction begins  
+        3. Webhook notification sent when data is ready
+        4. Detailed eligibility data becomes available for download
+
+        **Note:** This is an asynchronous operation. Use webhooks or polling to check completion status.
+      operationId: eligibilities-request
+      tags:
+        - Eligibility
+      requestBody:
+        description: Contains the eligibility request
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/EligibilityRequest"
+            examples:
+              EligibilityRequest:
+                $ref: "#/components/examples/EligibilityRequest"
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  transactionId:
+                    type: string
+                    description: Unique transaction identifier
+                  response:
+                    type: object
+                    title: Response
+                    properties:
+                      eligibilityId:
+                        type: string
+                        description: Unique identifier for eligibility
+              examples:
+                Response:
+                  value:
+                    transactionId: 23335e12-8e8d-11ee-b9d1-0242ac120002
+                    response:
+                      eligibilityId: 01K0A9SZM0SQAADZ2J0MMDZBPE
+        "400":
+          $ref: "#/components/responses/BadRequestError"
+        "403":
+          $ref: "#/components/responses/UnauthorizedError"
+        "500":
+          $ref: "#/components/responses/InternalServerError"
+      security:
+        - API-Key: []
+    put:
+      summary: Retry Eligibility
+      description: |
+        Retries a previously submitted eligibility request to the specified portal.
+      operationId: eligibilities-retry
+      tags:
+        - Eligibility
+      parameters:
+        - in: query
+          name: eligibilityId
+          description: Unique identifier for eligibility
+          required: true
+          example: 01K0A8SZM0SQAADZ2J0MMDZBPE
+          schema:
+            type: string
+            minLength: 1
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  transactionId:
+                    type: string
+                    description: Unique transaction identifier
+                  response:
+                    type: object
+                    title: Response
+                    properties:
+                      eligibilityId:
+                        type: string
+                        description: Unique identifier for eligibility
+              examples:
+                Response:
+                  value:
+                    transactionId: 23335e12-8e8d-11ee-b9d1-0242ac120002
+                    response:
+                      eligibilityId: 01K0A8SZM0SQABDZ2J0MMDZBPE
+        "400":
+          $ref: "#/components/responses/BadRequestError"
+        "403":
+          $ref: "#/components/responses/UnauthorizedError"
+        "500":
+          $ref: "#/components/responses/InternalServerError"
+      security:
+        - API-Key: []
+    get:
+      summary: Get Eligibility
+      description: Retrieves the details of an existing eligibility request.
+      operationId: eligibilities-status
+      tags:
+        - Eligibility
+      parameters:
+        - in: query
+          name: eligibilityId
+          description: Unique identifier for eligibility
+          required: true
+          example: 01K0A8SZM0SQAADZ2J0MMDZBPE
+          schema:
+            type: string
+            minLength: 1
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/EligibilityResponse"
+              examples:
+                Response:
+                  $ref: "#/components/examples/EligibilityResponse"
+        "400":
+          $ref: "#/components/responses/BadRequestError"
+        "403":
+          $ref: "#/components/responses/UnauthorizedError"
+        "500":
+          $ref: "#/components/responses/InternalServerError"
+      security:
+        - API-Key: []
+  /integrations/partner/portals:
+    get:
+      summary: Get Portal Status
+      description: Retrieves the current status and availability of the specified portal.
+      operationId: portals-status
+      tags:
+        - Portal
+      parameters:
+        - in: query
+          name: payerIdCode
+          description: Unique payer identifier
+          required: true
+          example: 65978
+          schema:
+            type: string
+            minLength: 1
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PortalResponse"
+              examples:
+                Response:
+                  $ref: "#/components/examples/PortalResponse"
+        "400":
+          $ref: "#/components/responses/BadRequestError"
+        "403":
+          $ref: "#/components/responses/UnauthorizedError"
+        "500":
+          $ref: "#/components/responses/InternalServerError"
+      security:
+        - API-Key: []
+  /integrations/partner/portals/list:
+    get:
+      summary: List Portals
+      description: Retrieves a list of all available portals with their details.
+      operationId: portals-list
+      tags:
+        - Portal
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PortalsResponse"
+              examples:
+                Response:
+                  $ref: "#/components/examples/PortalsResponse"
+        "400":
+          $ref: "#/components/responses/BadRequestError"
+        "403":
+          $ref: "#/components/responses/UnauthorizedError"
+        "500":
+          $ref: "#/components/responses/InternalServerError"
+      security:
+        - API-Key: []
+  /integrations/partner/webhooks/endpoints:
+    post:
+      summary: Register Webhook Endpoint
+      description: |
+        Register a webhook endpoint to receive event notifications for connection status changes 
+        and eligibility completion updates. This enables asynchronous processing workflows and immediate 
+        response to data availability.
+
+        **Supported Events:**
+        - **Connection Events**: `connection.connected`, `connection.invalid`, `connection.2fa`, `connection.sqa`, `connection.error`, `connection.disconnected`
+        - **Eligibility Events**: `eligibility.queued`, `eligibility.error`, `eligibility.verified`
+
+        **Event Data Structure:**
+        All webhook events follow the `WebhookEvent` schema with an `event` type and event-specific `data` payload.
+        Connection events include `connectionId` and optional fields like `securityQuestion` or `selectedMfaContact`.
+        Eligibility events include `eligibilityId` for tracking verification requests.
+
+        **Webhook Payload Schema:**
+        When events occur, your endpoint will receive HTTP POST requests with a JSON payload conforming to the `WebhookEvent` schema.
+
+        **Webhook Security:**
+        - Verify the signature using your endpoint's secret to ensure authenticity
+        - Webhook payloads are sent as JSON with `Content-Type: application/json`
+
+        **Delivery Guarantees:**
+        - Webhooks are retried up to 3 times with exponential backoff
+        - Endpoints must respond with HTTP 200-299 status codes to acknowledge receipt
+        - Failed deliveries after retry attempts are logged for troubleshooting
+
+        **Example Webhook Events:**
+        - Connection Connected: See `WebhookEventConnected` example
+        - Connection Invalid: See `WebhookEventInvalid` example  
+        - Connection 2FA Required: See `WebhookEventConnection2FA` example
+        - Connection Security Question: See `WebhookEventConnectionSQA` example
+        - Connection Error: See `WebhookEventConnectionError` example
+        - Connection Disconnected: See `WebhookEventDisconnected` example
+        - Eligibility Queued: See `WebhookEventEligibilityQueued` example
+        - Eligibility Error: See `WebhookEventEligibilityError` example
+        - Eligibility Verified: See `WebhookEventEligibilityVerified` example
+      operationId: webhooks-endpoints-create
+      tags:
+        - Endpoint
+      requestBody:
+        description: Contains the webhook endpoint request
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/EndpointRequest"
+            examples:
+              Request:
+                $ref: "#/components/examples/EndpointRequest"
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/EndpointResponse"
+              examples:
+                Response:
+                  $ref: "#/components/examples/EndpointResponse"
+        "400":
+          $ref: "#/components/responses/BadRequestError"
+        "403":
+          $ref: "#/components/responses/UnauthorizedError"
+        "500":
+          $ref: "#/components/responses/InternalServerError"
+      security:
+        - API-Key: []
+    put:
+      summary: Update Webhook Endpoint
+      description: |
+        Updates existing webhook endpoint configuration.
+      operationId: webhooks-endpoints-update
+      tags:
+        - Endpoint
+      parameters:
+        - in: query
+          name: endpointId
+          description: Unique identifier for endpoint
+          required: true
+          example: ep_2Y98DItWD2uZHF7K5bToy9OtskX
+          schema:
+            type: string
+            minLength: 1
+      requestBody:
+        description: Contains the webhook endpoint request
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/EndpointRequest"
+            examples:
+              Request:
+                $ref: "#/components/examples/EndpointRequest"
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/EndpointResponse"
+              examples:
+                Response:
+                  $ref: "#/components/examples/EndpointResponse"
+        "400":
+          $ref: "#/components/responses/BadRequestError"
+        "403":
+          $ref: "#/components/responses/UnauthorizedError"
+        "500":
+          $ref: "#/components/responses/InternalServerError"
+      security:
+        - API-Key: []
+    delete:
+      summary: Delete Webhook Endpoint
+      description: |
+        Deletes an existing webhook endpoint, stopping all future event notifications to that URL.
+      operationId: webhooks-endpoints-remove
+      tags:
+        - Endpoint
+      parameters:
+        - in: query
+          name: endpointId
+          description: Unique identifier for endpoint
+          required: true
+          example: ep_2Y98DItWD2uZHF7K5bToy9OtskX
+          schema:
+            type: string
+            minLength: 1
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  transactionId:
+                    type: string
+                    description: Unique transaction identifier
+                  response:
+                    type: object
+                    title: Response
+                    properties:
+                      endpointId:
+                        type: string
+                        description: Unique identifier for endpoint
+              examples:
+                Response:
+                  value:
+                    transactionId: 23335e12-8e8d-11ee-b9d1-0242ac120002
+                    response:
+                      endpointId: ep_2Y98DItWD2uZHF7K5bToy9OtskX
+        "400":
+          $ref: "#/components/responses/BadRequestError"
+        "403":
+          $ref: "#/components/responses/UnauthorizedError"
+        "500":
+          $ref: "#/components/responses/InternalServerError"
+      security:
+        - API-Key: []
+    get:
+      summary: Get Webhook Endpoint
+      description: |
+        Retrieves details of a webhook endpoint.
+      operationId: webhooks-endpoints-status
+      tags:
+        - Endpoint
+      parameters:
+        - in: query
+          name: endpointId
+          description: Unique identifier for endpoint
+          required: true
+          example: ep_2Y98DItWD2uZHF7K5bToy9OtskX
+          schema:
+            type: string
+            minLength: 1
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/EndpointResponse"
+              examples:
+                Response:
+                  $ref: "#/components/examples/EndpointResponse"
+        "400":
+          $ref: "#/components/responses/BadRequestError"
+        "403":
+          $ref: "#/components/responses/UnauthorizedError"
+        "500":
+          $ref: "#/components/responses/InternalServerError"
+      security:
+        - API-Key: []
+  /integrations/partner/webhooks/endpoints/list:
+    get:
+      summary: List Webhook Endpoints
+      description: |
+        Retrieves details of registered webhook endpoints.
+      operationId: webhooks-endpoints-list
+      tags:
+        - Endpoint
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/EndpointsResponse"
+              examples:
+                Response:
+                  $ref: "#/components/examples/EndpointsResponse"
+        "400":
+          $ref: "#/components/responses/BadRequestError"
+        "403":
+          $ref: "#/components/responses/UnauthorizedError"
+        "500":
+          $ref: "#/components/responses/InternalServerError"
+      security:
+        - API-Key: []
+  /integrations/partner/health:
+    get:
+      summary: Health Check
+      description: |
+        Performs a health check to verify that the API is up and running.
+        Useful for monitoring and automated system checks.
+      operationId: health-check
+      tags:
+        - Health
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthCheckResponse"
+              examples:
+                Response:
+                  $ref: "#/components/examples/HealthCheckResponse"
+        "403":
+          $ref: "#/components/responses/UnauthorizedError"
+        "500":
+          $ref: "#/components/responses/InternalServerError"
+      security:
+        - API-Key: []
+components:
+  securitySchemes:
+    API-Key:
+      type: apiKey
+      in: header
+      name: x-api-key
+      description: |
+        **API Key Authentication**
+
+        All WebScraper Partner API requests require authentication using an API key provided in the `x-api-key` header.
+
+        **How to obtain an API key:**
+        1. Contact our support team at connectivity@dentalxchange.com
+        2. Provide your organization details and intended use case
+        3. Complete the integration agreement and security review
+        4. Receive your unique API key for production or sandbox environments
+
+        **Security Requirements:**
+        - Keep your API key secure and never expose it in client-side code
+        - Use HTTPS for all API requests to ensure key transmission security
+  schemas:
+    ConnectionStatus:
+      type: string
+      description: |
+        Current status of the portal connection indicating the authentication and session state.
+
+        **Status Values:**
+        - `Queued` - Connection request has been queued for processing
+        - `InProgress` - Authentication process is currently in progress
+        - `2faRequired` - Multi-factor authentication code is required to complete connection
+        - `Connected` - Successfully authenticated and ready for data extraction
+        - `Disconnected` - Connection has been terminated or expired
+        - `Invalid` - Authentication failed due to invalid credentials
+        - `Error` - Connection failed due to technical error or portal issues
+      enum:
+        - Queued
+        - InProgress
+        - 2faRequired
+        - Connected
+        - Disconnected
+        - Invalid
+        - Error
+    Payer:
+      type: object
+      title: Payer
+      description: >
+        Represents a dental insurance payer responsible for administering dental benefit plans. 
+        Each payer contains details needed for eligibility verification, claims processing, and member benefits.
+      properties:
+        payerIdCode:
+          type: string
+          description: Unique Payer's Identifier
+        name:
+          type: string
+          description: Insurance payer name
+    AuthenticationType:
+      type: string
+      description: Indicates which type of authentication currently available for the portal
+      enum:
+        - Basic
+        - Authenticator
+        - MFA
+    Portal:
+      type: object
+      description: |
+        Represents a dental insurance portal available for integration. Each portal corresponds 
+        to a specific payer system with unique authentication requirements and data extraction capabilities.
+      properties:
+        name:
+          type: string
+          description: Human-readable name of the insurance portal
+        website:
+          type: string
+          description: Primary website URL for the insurance portal
+        payers:
+          type: array
+          items:
+            $ref: "#/components/schemas/Payer"
+        authenticationType:
+          $ref: "#/components/schemas/AuthenticationType"
+    Connection:
+      type: object
+      description: |
+        Represents a secure connection between a dental provider and an insurance portal. 
+        Connections store encrypted authentication credentials and maintain session state for 
+        accessing portal data on behalf of the provider.
+      properties:
+        connectionId:
+          type: string
+          description: Globally unique identifier for this connection instance
+        status:
+          $ref: "#/components/schemas/ConnectionStatus"
+        createdAt:
+          type: string
+          format: date-time
+          description: ISO 8601 timestamp when the connection was initially created
+        updatedAt:
+          type: string
+          format: date-time
+          description: ISO 8601 timestamp when the connection was last modified or status changed
+        username:
+          type: string
+          description: Portal username associated with this connection (encrypted in storage)
+        additional:
+          type: object
+          title: Additional Portal Information
+          description: |
+            Portal-specific additional information required for authentication or identification.
+            Common fields include provider NPI, location codes, or portal-specific identifiers.
+          additionalProperties:
+            type: string
+        portal:
+          $ref: "#/components/schemas/Portal"
+        payer:
+          type: object
+          title: Payer
+          description: >
+            Represents a dental insurance payer responsible for administering dental benefit plans. 
+            Each payer contains details needed for eligibility verification, claims processing, and member benefits.
+          properties:
+            payerIdCode:
+              type: string
+              description: Unique Payer's Identifier
+            name:
+              type: string
+              description: Insurance payer name
+            address:
+              $ref: "#/components/schemas/Address"
+        error:
+          type: object
+          description: Error details if the connection is in an error state, including error type and diagnostic message
+    ConnectionStatusResponse:
+      type: object
+      properties:
+        transactionId:
+          type: string
+          description: Unique transaction identifier
+        response:
+          allOf:
+            - type: object
+            - title: Response
+            - $ref: "#/components/schemas/Connection"
+    ResponseError:
+      type: object
+      properties:
+        message:
+          type: string
+          description: Error message describing the cause of failure.
+    ValidationError:
+      type: array
+      items:
+        type: object
+        properties:
+          path:
+            description: Path in the request that has the error.
+            type: string
+          message:
+            description: Error description.
+            type: string
+          location:
+            description: Part of the request that has the error. `body`, `path`, `query`
+            type: string
+    Error:
+      type: object
+      title: Error
+      properties:
+        message:
+          type: string
+          description: Error message describing the cause of failure.
+    BadRequestError:
+      type: object
+      title: Error
+      properties:
+        transactionId:
+          type: string
+          description: Unique transaction identifier
+        errorType:
+          type: string
+          enum:
+            - RESPONSE
+            - VALIDATION
+        error:
+          oneOf:
+            - $ref: "#/components/schemas/ResponseError"
+            - $ref: "#/components/schemas/ValidationError"
+    ConnectionUpdateRequest:
+      type: object
+      properties:
+        password:
+          type: string
+          description: Password for the portal
+          minLength: 1
+        mfaSecretKey:
+          type: string
+          nullable: true
+          description: Secret key used for setting up Multi Factor Authentication (MFA).
+        additional:
+          type: object
+          title: Additional
+          description: Additional information
+          nullable: true
+          additionalProperties:
+            type: string
+      required:
+        - password
+    ConnectionResponse:
+      type: object
+      properties:
+        transactionId:
+          type: string
+          description: Unique transaction identifier
+        response:
+          type: object
+          title: Response
+          properties:
+            connectionId:
+              type: string
+              description: Unique connection identifier
+    ConnectionRequest:
+      type: object
+      properties:
+        locationId:
+          type: string
+          description: unique location identifier
+          minLength: 1
+        username:
+          type: string
+          description: Username for the portal
+          minLength: 1
+        password:
+          type: string
+          description: Password for the portal
+          minLength: 1
+        mfaSecretKey:
+          type: string
+          nullable: true
+          description: Secret key used for setting up Multi Factor Authentication (MFA).
+        payer:
+          type: object
+          title: Payer
+          description: Payer's information
+          properties:
+            payerIdCode:
+              type: string
+              description: Unique Payer's Identifier
+              minLength: 1
+            name:
+              type: string
+              description: Payer's name
+              minLength: 1
+            address:
+              type: object
+              description: Payer address
+              nullable: true
+              $ref: "#/components/schemas/Address"
+          required:
+            - payerIdCode
+        additional:
+          type: object
+          title: Additional
+          description: Additional information
+          nullable: true
+          additionalProperties:
+            type: string
+      required:
+        - portalId
+        - locationId
+        - username
+        - password
+        - payer
+    ConnectionsResponse:
+      type: object
+      properties:
+        transactionId:
+          type: string
+          description: Unique transaction identifier
+        response:
+          type: array
+          title: Response
+          items:
+            $ref: "#/components/schemas/Connection"
+    EligibilityStatus:
+      type: string
+      description: |
+        Current processing status of an eligibility verification request indicating progress through the extraction pipeline.
+
+        **Status Values:**
+        - `Queued` - Request has been received and queued for processing
+        - `InProgress` - Portal authentication and data extraction is actively in progress  
+        - `ScrapeCompleted` - Raw data extraction from portal has completed successfully
+        - `Completed` - Data processing and normalization is complete, eligibility data is ready for download
+        - `Error` - Processing failed due to authentication, portal, or data extraction issues
+
+        **Typical Flow:** Queued → InProgress → ScrapeCompleted → Completed
+      enum:
+        - Queued
+        - InProgress
+        - ScrapeCompleted
+        - Completed
+        - Error
+    EligibilityRelationship:
+      type: string
+      title: Patient Relationship to Subscriber
+      description: |
+        Standard X12 relationship codes defining the patient's relationship to the primary insurance subscriber.
+        These codes are used by insurance portals to determine coverage rules and benefit calculations.
+
+        **Relationship Codes:**
+        - `01` - Spouse of the primary subscriber
+        - `18` - Self (patient is the primary subscriber)  
+        - `19` - Child of the primary subscriber
+        - `34` - Other adult dependent (e.g., domestic partner, adult child)
+
+        **Note:** Use code `18` when the patient is also the insurance policy holder.
+      enum:
+        - "01"
+        - "18"
+        - "19"
+        - "34"
+    Address:
+      type: object
+      description: Address information of a payer
+      properties:
+        address1:
+          type: string
+          description: Address line 1
+          nullable: true
+        address2:
+          type: string
+          description: Address line 2
+          nullable: true
+        city:
+          type: string
+          description: City
+          nullable: true
+        state:
+          type: string
+          description: State
+          nullable: true
+        zipCode:
+          type: string
+          description: Zip code
+          nullable: true
+          minLength: 5
+          maxLength: 10
+    Note:
+      type: object
+      properties:
+        type:
+          type: string
+        message:
+          type: string
+    PlanStatus:
+      type: string
+      description: |
+        Plan Status
+      enum:
+        - Active
+        - Inactive
+        - Unknown
+    PlanNetwork:
+      type: object
+      title: Network
+      properties:
+        networkId:
+          type: string
+        networkName:
+          type: string
+        networkType:
+          $ref: "#/components/schemas/NetworkType"
+    MissingTooth:
+      type: object
+      properties:
+        exists:
+          type: boolean
+          description: Indicates if missing tooth clause exists.
+        notes:
+          type: array
+          items:
+            $ref: "#/components/schemas/Note"
+          nullable: true
+    WaitingPeriod:
+      type: object
+      properties:
+        applies:
+          type: boolean
+          description: Indicates if waiting period applies
+        notes:
+          type: array
+          items:
+            $ref: "#/components/schemas/Note"
+          nullable: true
+    Ortho:
+      type: object
+      properties:
+        exists:
+          type: boolean
+          description: Indicates if orthodontics coverage exists.
+        paymentSchedule:
+          type: string
+          nullable: true
+          description: Orthodontics payment schedule.
+        paymentInitial:
+          type: number
+          nullable: true
+          description: Initial orthodontics payment.
+    COB:
+      type: object
+      properties:
+        exists:
+          type: boolean
+          description: Indicates if coordination of benefits applies.
+        notes:
+          type: array
+          items:
+            $ref: "#/components/schemas/Note"
+          nullable: true
+    ServiceCategory:
+      type: string
+      description: Type of service category the limitation applies to.
+      enum:
+        - DentalCare
+        - Orthodontic
+        - Basic
+        - Preventive
+        - Major
+    Network:
+      type: object
+      properties:
+        networkId:
+          type: string
+          description: Unique identifier for the network.
+        networkName:
+          type: string
+          description: Name of the network.
+        networkType:
+          $ref: "#/components/schemas/NetworkType"
+    NetworkType:
+      type: string
+      description: Type of network coverage.
+      enum:
+        - In-Network
+        - Out-Network
+        - All
+        - Not-Applicable-Network
+    AgeLimit:
+      type: object
+      properties:
+        min:
+          type: number
+          description: Minimum age for limitation.
+        max:
+          type: number
+          description: Maximum age for limitation.
+        notes:
+          type: array
+          items:
+            $ref: "#/components/schemas/Note"
+          nullable: true
+    PlanProcedure:
+      type: object
+      title: Procedure
+      properties:
+        code:
+          type: string
+        category:
+          type: string
+        notes:
+          type: array
+          title: ProcedureNote
+          nullable: true
+          items:
+            type: string
+    Plan:
+      type: object
+      title: Dental Insurance Plan
+      description: |
+        Comprehensive dental insurance plan information extracted from the portal, including 
+        coverage details, benefits, limitations, and utilization data. This represents the 
+        complete benefits structure for a patient's dental insurance coverage.
+      properties:
+        planStatus:
+          $ref: "#/components/schemas/PlanStatus"
+        planId:
+          type: string
+          description: Insurance carrier's unique identifier for this specific dental plan
+          nullable: true
+        planName:
+          type: string
+          description: Marketing or display name of the dental plan (e.g., "MetLife PPO Premier", "Delta Dental Plus")
+          nullable: true
+        planGroupId:
+          type: string
+          description: Group policy identifier linking this plan to an employer or organization
+          nullable: true
+        planGroupName:
+          type: string
+          description: Name of the employer or organization providing this dental coverage
+          nullable: true
+        planType:
+          type: string
+          description: Type of dental plan structure (e.g., PPO, HMO, DHMO, Indemnity, Hybrid)
+          nullable: true
+        startDate:
+          type: string
+          format: mm/dd/yyyy
+          description: Start date of the plan
+          nullable: true
+        endDate:
+          type: string
+          format: mm/dd/yyyy
+          description: End date of the plan
+          nullable: true
+        effectiveDate:
+          type: string
+          format: mm/dd/yyyy
+          description: Begining date of the plan (generally older than start date)
+          nullable: true
+        errors:
+          type: array
+          title: PlanError
+          nullable: true
+          items:
+            $ref: "#/components/schemas/ResponseError"
+        notes:
+          type: array
+          title: PlanNote
+          nullable: true
+          items:
+            $ref: "#/components/schemas/Note"
+        networks:
+          type: array
+          title: Network
+          nullable: true
+          items:
+            $ref: "#/components/schemas/PlanNetwork"
+        benefits:
+          type: array
+          title: Benefit
+          nullable: true
+          items:
+            type: object
+            properties:
+              procedure:
+                $ref: "#/components/schemas/PlanProcedure"
+              network:
+                $ref: "#/components/schemas/PlanNetwork"
+              coPay:
+                type: string
+                description: Patient's responsibility ($ fixed amount)
+              coInsurance:
+                type: string
+                description: Patient's responsibility of the service cost (%)
+              frequency:
+                type: object
+                title: Frequency
+                properties:
+                  limit:
+                    type: string
+                  period:
+                    type: string
+                  unit:
+                    type: string
+                  notes:
+                    type: array
+                    title: FrequencyNote
+                    nullable: true
+                    items:
+                      $ref: "#/components/schemas/Note"
+              ageLimit:
+                type: object
+                title: AgeLimit
+                properties:
+                  min:
+                    type: number
+                  max:
+                    type: number
+                  notes:
+                    type: array
+                    title: AgeLimitNote
+                    nullable: true
+                    items:
+                      $ref: "#/components/schemas/Note"
+              waiting:
+                type: object
+                title: Waiting
+                properties:
+                  period:
+                    type: string
+                  unit:
+                    type: string
+                  notes:
+                    type: array
+                    title: WaitingNote
+                    nullable: true
+                    items:
+                      $ref: "#/components/schemas/Note"
+              notes:
+                type: array
+                title: BenefitNote
+                nullable: true
+                items:
+                  $ref: "#/components/schemas/Note"
+        maximums:
+          type: array
+          title: Maximum
+          nullable: true
+          items:
+            type: object
+            properties:
+              amount:
+                type: number
+              used:
+                type: number
+              category:
+                type: string
+              period:
+                type: string
+              coverageLevel:
+                type: string
+              network:
+                $ref: "#/components/schemas/PlanNetwork"
+              notes:
+                type: array
+                title: MaximumNote
+                nullable: true
+                items:
+                  $ref: "#/components/schemas/Note"
+        deductibles:
+          type: array
+          title: Deductible
+          nullable: true
+          items:
+            type: object
+            properties:
+              amount:
+                type: number
+              used:
+                type: number
+              category:
+                type: string
+              period:
+                type: string
+              coverageLevel:
+                type: string
+              network:
+                $ref: "#/components/schemas/PlanNetwork"
+              notes:
+                type: array
+                title: DeductibleNote
+                nullable: true
+                items:
+                  $ref: "#/components/schemas/Note"
+        serviceHistory:
+          type: array
+          title: ServiceHistory
+          nullable: true
+          items:
+            type: object
+            properties:
+              date:
+                type: string
+                format: mm/dd/yyyy
+              procedure:
+                $ref: "#/components/schemas/PlanProcedure"
+              tooth:
+                type: string
+              surface:
+                type: string
+        additional:
+          type: object
+          properties:
+            missingTooth:
+              $ref: "#/components/schemas/MissingTooth"
+            waitingPeriod:
+              $ref: "#/components/schemas/WaitingPeriod"
+            ortho:
+              $ref: "#/components/schemas/Ortho"
+            cob:
+              $ref: "#/components/schemas/COB"
+            filingPeriod:
+              type: string
+              description: Filing period for claims or coordination.
+        limitation:
+          type: object
+          properties:
+            type:
+              type: string
+              description: Limitation type.
+            category:
+              $ref: "#/components/schemas/ServiceCategory"
+            network:
+              $ref: "#/components/schemas/Network"
+            ageLimit:
+              $ref: "#/components/schemas/AgeLimit"
+            endDate:
+              type: string
+              format: date
+              description: The end date of the limitation.
+            notes:
+              type: array
+              items:
+                $ref: "#/components/schemas/Note"
+              nullable: true
+        subscriber:
+          type: object
+          title: Subscriber
+          description: Subscriber information
+          properties:
+            firstName:
+              type: string
+              description: Subscriber's first name
+              nullable: true
+            lastName:
+              type: string
+              description: Subscriber's last name
+              nullable: true
+            dateOfBirth:
+              type: string
+              format: mm/dd/yyyy
+              description: Subscriber's date of birth
+              nullable: true
+            memberId:
+              type: string
+              description: Unique patient identifier
+              nullable: true
+            groupNumber:
+              type: string
+              description: Subscriber's group number
+              nullable: true
+            gender:
+              type: string
+              description: Subscriber's gender
+              nullable: true
+            address:
+              $ref: "#/components/schemas/Address"
+            notes:
+              type: array
+              title: SubscriberNote
+              nullable: true
+              items:
+                $ref: "#/components/schemas/Note"
+        provider:
+          type: object
+          title: Provider
+          description: Provider information
+          properties:
+            firstName:
+              type: string
+              description: Provider's first name
+              nullable: true
+            lastName:
+              type: string
+              description: Provider's last name
+              nullable: true
+            npi:
+              type: string
+              description: Provider's national identification number
+              nullable: true
+            taxId:
+              type: string
+              description: Provider's tax ID
+              nullable: true
+            providerId:
+              type: string
+              description: Unique provider identifier in the payer system
+              nullable: true
+            notes:
+              type: array
+              title: ProviderNote
+              nullable: true
+              items:
+                $ref: "#/components/schemas/Note"
+        payer:
+          type: object
+          title: Payer
+          description: Payer information
+          properties:
+            name:
+              type: string
+              description: Payer's name
+              nullable: true
+            payerId:
+              type: string
+              description: Unique payer identifier in the payer system
+              nullable: true
+            address:
+              $ref: "#/components/schemas/Address"
+            notes:
+              type: array
+              title: PayerNote
+              nullable: true
+              items:
+                $ref: "#/components/schemas/Note"
+        plan:
+          $ref: "#/components/schemas/Plan"
+    EligibilityResponse:
+      type: object
+      properties:
+        transactionId:
+          type: string
+          description: Unique transaction identifier
+        response:
+          type: object
+          title: Response
+          properties:
+            eligibilityId:
+              type: string
+              description: Unique eligibility identifier
+            eligibilityStatus:
+              $ref: "#/components/schemas/EligibilityStatus"
+            eligibilityUrl:
+              type: string
+              description: |
+                URL endpoint that returns the complete normalized eligibility data in JSON format.
+                The response from this URL contains the full Eligibility data structure
+                with all extracted and processed patient information, benefits, limitations, and
+                coverage details from the insurance portal.
+
+                **Response Schema:** [Eligibility](#tag/EligibilityModel)
+            errors:
+              type: array
+              title: Error
+              nullable: true
+              items:
+                $ref: "#/components/schemas/ResponseError"
+            additional:
+              type: object
+              title: Additional
+              description: Additional information
+              nullable: true
+              additionalProperties:
+                type: string
+    EligibilityRequest:
+      type: object
+      description: |
+        Request payload for initiating a patient eligibility verification. Contains all required 
+        information to authenticate with the insurance portal and perform a comprehensive benefits 
+        lookup for the specified patient and procedures.
+      properties:
+        locationId:
+          type: string
+          description: Dental provider's location identifier within their practice management system
+          minLength: 1
+        provider:
+          type: object
+          title: Dental Provider Information
+          description: |
+            Information about the dental provider requesting the eligibility verification.
+            This data is used for portal authentication and to determine network participation.
+          properties:
+            firstName:
+              type: string
+              description: Provider's legal first name as registered with the insurance portal
+              minLength: 1
+            lastName:
+              type: string
+              description: Provider's last name
+              minLength: 1
+            npi:
+              type: string
+              description: Provider's national identification number
+              minLength: 1
+            taxId:
+              type: string
+              description: Provider's tax ID
+          required:
+            - firstName
+            - lastName
+            - npi
+        patient:
+          type: object
+          title: Patient
+          description: Patients's information
+          properties:
+            firstName:
+              type: string
+              description: Patient's first name
+              minLength: 1
+            lastName:
+              type: string
+              description: Patient's last name
+              minLength: 1
+            dateOfBirth:
+              type: string
+              format: mm/dd/yyyy
+              description: Patient's date of birth
+              minLength: 10
+              maxLength: 10
+            memberId:
+              type: string
+              description: Unique patient identifier
+              minLength: 1
+            relationship:
+              $ref: "#/components/schemas/EligibilityRelationship"
+          required:
+            - firstName
+            - lastName
+            - dateOfBirth
+            - memberId
+        subscriber:
+          type: object
+          title: Subscriber
+          description: Subscriber's information
+          properties:
+            firstName:
+              type: string
+              description: Subscriber's first name
+              minLength: 1
+            lastName:
+              type: string
+              description: Subscriber's last name
+              minLength: 1
+            dateOfBirth:
+              type: string
+              format: mm/dd/yyyy
+              description: Subscriber's date of birth
+              minLength: 10
+              maxLength: 10
+            memberId:
+              type: string
+              description: Unique subscriber identifier
+              minLength: 1
+          required:
+            - firstName
+            - lastName
+            - dateOfBirth
+            - memberId
+        procedureCodes:
+          type: array
+          description: Service procedure codes
+          nullable: true
+          items:
+            type: string
+        payer:
+          type: object
+          title: Payer
+          description: Payer's information
+          properties:
+            payerIdCode:
+              type: string
+              description: Unique Payer's Identifier
+              minLength: 1
+            name:
+              type: string
+              description: Payer's name
+              minLength: 1
+            address:
+              type: object
+              $ref: "#/components/schemas/Address"
+          required:
+            - payerIdCode
+        additional:
+          type: object
+          title: Additional
+          description: Additional information
+          nullable: true
+          additionalProperties:
+            type: string
+      required:
+        - portalId
+        - locationId
+        - provider
+        - patient
+        - subscriber
+        - payer
+    PortalResponse:
+      type: object
+      properties:
+        transactionId:
+          type: string
+          description: Unique transaction identifier
+        response:
+          allOf:
+            - type: object
+            - title: Response
+            - type: object
+              description: |
+                Represents a dental insurance portal available for integration. Each portal corresponds 
+                to a specific payer system with unique authentication requirements and data extraction capabilities.
+              properties:
+                name:
+                  type: string
+                  description: Human-readable name of the insurance portal
+                website:
+                  type: string
+                  description: Primary website URL for the insurance portal
+                payer:
+                  $ref: "#/components/schemas/Payer"
+                authenticationType:
+                  $ref: "#/components/schemas/AuthenticationType"
+    PortalsResponse:
+      type: object
+      properties:
+        transactionId:
+          type: string
+          description: Unique transaction identifier
+        response:
+          type: array
+          title: Response
+          items:
+            $ref: "#/components/schemas/Portal"
+    EndpointResponse:
+      type: object
+      properties:
+        transactionId:
+          type: string
+          description: Unique transaction identifier
+        response:
+          type: object
+          title: Response
+          properties:
+            endpointId:
+              type: string
+              description: Unique identifier for endpoint
+            name:
+              type: string
+              description: Name of the endpoint
+            url:
+              type: string
+              description: Webhook endpoint
+            headers:
+              type: object
+              title: Header
+              description: Header sent in webhook message
+              additionalProperties:
+                type: string
+            secret:
+              type: string
+              description: Webhook message secret
+            createdAt:
+              type: string
+              format: date-time
+              description: Date of the endpoint created
+            updatedAt:
+              type: string
+              format: date-time
+              description: Date of the endpoint updated
+    EndpointRequest:
+      type: object
+      properties:
+        name:
+          type: string
+          description: Name of the endpoint
+        url:
+          type: string
+          description: Endpoint URL
+        headers:
+          type: object
+          title: Header
+          description: Add any header you want to receive in webhook message
+          additionalProperties:
+            type: string
+      required:
+        - name
+        - url
+    EndpointsResponse:
+      type: object
+      properties:
+        transactionId:
+          type: string
+          description: Unique transaction identifier
+        response:
+          type: array
+          items:
+            type: object
+            title: Response
+            properties:
+              endpointId:
+                type: string
+                description: Unique identifier for endpoint
+              name:
+                type: string
+                description: Name of the endpoint
+              url:
+                type: string
+                description: Webhook endpoint
+              createdAt:
+                type: string
+                format: date-time
+                description: Date the endpoint was created
+              updatedAt:
+                type: string
+                format: date-time
+                description: Date the endpoint was updated
+    HealthCheckDepedency:
+      type: object
+      properties:
+        healthy:
+          type: boolean
+          description: Health of the dependency.
+        name:
+          type: string
+          description: Sample names `database` `queue`.
+    HealthCheckResponse:
+      type: object
+      properties:
+        transactionId:
+          type: string
+          description: Unique transaction identifier
+        response:
+          type: object
+          title: Response
+          properties:
+            healthy:
+              type: boolean
+              description: healthy, if all the dependencies are healthy.
+            dependencies:
+              type: array
+              description: List of all the dependencies required for the API.
+              items:
+                $ref: "#/components/schemas/HealthCheckDepedency"
+    WebhookEventType:
+      type: string
+      description: |
+        Webhook event types for different system events.
+
+        **Connection Events:**
+        - `connection.connected` - Connection successfully established
+        - `connection.invalid` - Invalid credentials provided
+        - `connection.2fa` - Multi-factor authentication required
+        - `connection.sqa` - Security question authentication required
+        - `connection.error` - Connection error occurred
+        - `connection.disconnected` - Connection terminated
+
+        **Eligibility Events:**
+        - `eligibility.queued` - Eligibility request queued for processing
+        - `eligibility.error` - Error during eligibility processing
+        - `eligibility.verified` - Eligibility verification completed successfully
+      enum:
+        - "connection.connected"
+        - "connection.invalid"
+        - "connection.2fa"
+        - "connection.sqa"
+        - "connection.error"
+        - "connection.disconnected"
+        - "eligibility.queued"
+        - "eligibility.error"
+        - "eligibility.verified"
+    ConnectionWebhookData:
+      type: object
+      description: Data payload for connection-related webhook events
+      properties:
+        connectionId:
+          type: string
+          description: Unique connection identifier
+        securityQuestion:
+          type: string
+          description: Security question text when SQA is required
+          nullable: true
+        selectedMfaContact:
+          type: string
+          description: Selected MFA contact method (email/phone)
+          nullable: true
+      required:
+        - connectionId
+    EligibilityWebhookData:
+      type: object
+      description: Data payload for eligibility scraper webhook events
+      properties:
+        eligibilityId:
+          type: string
+          description: Unique eligibility request identifier
+      required:
+        - eligibilityId
+    Eligibility:
+      type: object
+      title: Normalized Eligibility Data
+      description: |
+        Complete normalized eligibility and benefits data structure returned from the eligibility URL.
+        This represents the fully processed and standardized eligibility information extracted from
+        the insurance portal, including patient details, plan information, benefits, and limitations.
+      properties:
+        patient:
+          type: object
+          title: Patient Information
+          properties:
+            firstName:
+              type: string
+              nullable: true
+              description: Patient's first name
+            middleName:
+              type: string
+              nullable: true
+              description: Patient's middle name
+            lastName:
+              type: string
+              nullable: true
+              description: Patient's last name
+            dateOfBirth:
+              type: string
+              nullable: true
+              description: Patient's date of birth in MM/DD/YYYY format
+            memberId:
+              type: string
+              nullable: true
+              description: Patient's member identifier
+            groupNumber:
+              type: string
+              nullable: true
+              description: Patient's group number
+            gender:
+              type: string
+              nullable: true
+              description: Patient's gender
+            relationship:
+              $ref: "#/components/schemas/EligibilityRelationship"
+            address:
+              $ref: "#/components/schemas/Address"
+            notes:
+              type: array
+              nullable: true
+              items:
+                $ref: "#/components/schemas/Note"
+        subscriber:
+          type: object
+          title: Subscriber Information
+          properties:
+            firstName:
+              type: string
+              nullable: true
+              description: Subscriber's first name
+            middleName:
+              type: string
+              nullable: true
+              description: Subscriber's middle name
+            lastName:
+              type: string
+              nullable: true
+              description: Subscriber's last name
+            dateOfBirth:
+              type: string
+              nullable: true
+              description: Subscriber's date of birth in MM/DD/YYYY format
+            memberId:
+              type: string
+              nullable: true
+              description: Subscriber's member identifier
+            groupNumber:
+              type: string
+              nullable: true
+              description: Subscriber's group number
+            gender:
+              type: string
+              nullable: true
+              description: Subscriber's gender
+            address:
+              $ref: "#/components/schemas/Address"
+            notes:
+              type: array
+              nullable: true
+              items:
+                $ref: "#/components/schemas/Note"
+        provider:
+          type: object
+          title: Provider Information
+          properties:
+            firstName:
+              type: string
+              nullable: true
+              description: Provider's first name
+            lastName:
+              type: string
+              nullable: true
+              description: Provider's last name
+            npi:
+              type: string
+              nullable: true
+              description: Provider's National Provider Identifier
+            taxId:
+              type: string
+              nullable: true
+              description: Provider's tax identification number
+            providerId:
+              type: string
+              nullable: true
+              description: Unique provider identifier in the payer system
+            notes:
+              type: array
+              nullable: true
+              items:
+                $ref: "#/components/schemas/Note"
+        payer:
+          type: object
+          title: Payer Information
+          properties:
+            name:
+              type: string
+              nullable: true
+              description: Insurance payer name
+            payerIdCode:
+              type: string
+              nullable: true
+              description: Unique Payer's Identifier
+            phone:
+              type: string
+              nullable: true
+              description: Payer contact phone number
+            fax:
+              type: string
+              nullable: true
+              description: Payer fax number
+            addresses:
+              type: array
+              items:
+                $ref: "#/components/schemas/Address"
+            notes:
+              type: array
+              nullable: true
+              items:
+                $ref: "#/components/schemas/Note"
+        plan:
+          type: object
+          title: Comprehensive Plan Information
+          properties:
+            planStatus:
+              $ref: "#/components/schemas/PlanStatus"
+            planId:
+              type: string
+              nullable: true
+              description: Insurance carrier's unique plan identifier
+            planName:
+              type: string
+              nullable: true
+              description: Marketing name of the dental plan
+            planGroupId:
+              type: string
+              nullable: true
+              description: Group policy identifier
+            planGroupName:
+              type: string
+              nullable: true
+              description: Name of the employer or organization
+            planType:
+              type: string
+              nullable: true
+              description: Type of dental plan structure (PPO, HMO, etc.)
+            startDate:
+              type: string
+              nullable: true
+              description: Plan start date in MM/DD/YYYY format
+            endDate:
+              type: string
+              nullable: true
+              description: Plan end date in MM/DD/YYYY format
+            effectiveDate:
+              type: string
+              nullable: true
+              description: Plan effective date in MM/DD/YYYY format
+            renewalType:
+              type: string
+              nullable: true
+              description: Plan renewal type
+            errors:
+              type: array
+              nullable: true
+              items:
+                type: object
+                properties:
+                  code:
+                    type: string
+                    description: Error code
+                  message:
+                    type: string
+                    description: Error message
+                required:
+                  - code
+                  - message
+            notes:
+              type: array
+              nullable: true
+              items:
+                $ref: "#/components/schemas/Note"
+            networks:
+              type: array
+              nullable: true
+              items:
+                type: object
+                properties:
+                  networkId:
+                    type: string
+                    nullable: true
+                  networkName:
+                    type: string
+                    nullable: true
+                  networkType:
+                    type: string
+                    nullable: true
+                    description: Network type (In-Network, Out-Network, etc.)
+            benefits:
+              type: array
+              nullable: true
+              items:
+                type: object
+                title: Benefit
+                properties:
+                  procedure:
+                    type: object
+                    properties:
+                      code:
+                        type: string
+                        description: Procedure code
+                      category:
+                        type: string
+                        description: Procedure category
+                      complexity:
+                        type: string
+                        nullable: true
+                        description: Procedure complexity
+                      categoryComplexity:
+                        type: string
+                        nullable: true
+                        description: Category and complexity combined
+                      notes:
+                        type: array
+                        nullable: true
+                        items:
+                          $ref: "#/components/schemas/Note"
+                    required:
+                      - code
+                      - category
+                  network:
+                    type: object
+                    properties:
+                      networkId:
+                        type: string
+                        nullable: true
+                      networkName:
+                        type: string
+                        nullable: true
+                      networkType:
+                        type: string
+                        nullable: true
+                  coPay:
+                    type: number
+                    nullable: true
+                    description: Fixed dollar amount patient pays
+                  coInsurance:
+                    type: number
+                    nullable: true
+                    description: Percentage patient pays
+                  payerCoverage:
+                    type: number
+                    nullable: true
+                    description: Percentage payer covers
+                  feeAllowance:
+                    type: number
+                    nullable: true
+                    description: Maximum allowed fee
+                  frequency:
+                    type: object
+                    nullable: true
+                    properties:
+                      limit:
+                        type: string
+                        nullable: true
+                      period:
+                        type: string
+                        nullable: true
+                      unit:
+                        type: string
+                        nullable: true
+                      notes:
+                        type: array
+                        nullable: true
+                        items:
+                          $ref: "#/components/schemas/Note"
+                  ageLimit:
+                    type: object
+                    nullable: true
+                    properties:
+                      min:
+                        type: number
+                        nullable: true
+                      max:
+                        type: number
+                        nullable: true
+                      notes:
+                        type: array
+                        nullable: true
+                        items:
+                          $ref: "#/components/schemas/Note"
+                  waiting:
+                    type: object
+                    nullable: true
+                    properties:
+                      applies:
+                        type: boolean
+                        nullable: true
+                      period:
+                        type: string
+                        nullable: true
+                      unit:
+                        type: string
+                        nullable: true
+                      notes:
+                        type: array
+                        nullable: true
+                        items:
+                          $ref: "#/components/schemas/Note"
+                  deductible:
+                    type: object
+                    nullable: true
+                    properties:
+                      applies:
+                        type: boolean
+                        description: Whether deductible applies
+                      notes:
+                        type: array
+                        nullable: true
+                        items:
+                          $ref: "#/components/schemas/Note"
+                    required:
+                      - applies
+                  alternate:
+                    type: object
+                    nullable: true
+                    properties:
+                      exists:
+                        type: boolean
+                        description: Whether alternate benefit exists
+                      notes:
+                        type: array
+                        nullable: true
+                        items:
+                          $ref: "#/components/schemas/Note"
+                    required:
+                      - exists
+                  notes:
+                    type: array
+                    nullable: true
+                    items:
+                      $ref: "#/components/schemas/Note"
+                required:
+                  - procedure
+                  - network
+            maximums:
+              type: array
+              nullable: true
+              items:
+                type: object
+                properties:
+                  amount:
+                    type: number
+                    nullable: true
+                    description: Maximum benefit amount
+                  used:
+                    type: number
+                    nullable: true
+                    description: Amount already used
+                  remaining:
+                    type: number
+                    nullable: true
+                    description: Remaining benefit amount
+                  category:
+                    type: string
+                    nullable: true
+                    description: Benefit category
+                  period:
+                    type: string
+                    nullable: true
+                    description: Benefit period
+                  coverageLevel:
+                    type: string
+                    nullable: true
+                    description: Coverage level (Individual, Family, etc.)
+                  network:
+                    type: object
+                    nullable: true
+                    properties:
+                      networkId:
+                        type: string
+                        nullable: true
+                      networkName:
+                        type: string
+                        nullable: true
+                      networkType:
+                        type: string
+                        nullable: true
+                  notes:
+                    type: array
+                    nullable: true
+                    items:
+                      $ref: "#/components/schemas/Note"
+            deductibles:
+              type: array
+              nullable: true
+              items:
+                type: object
+                properties:
+                  amount:
+                    type: number
+                    nullable: true
+                    description: Deductible amount
+                  used:
+                    type: number
+                    nullable: true
+                    description: Amount already used toward deductible
+                  remaining:
+                    type: number
+                    nullable: true
+                    description: Remaining deductible amount
+                  category:
+                    type: string
+                    nullable: true
+                    description: Deductible category
+                  period:
+                    type: string
+                    nullable: true
+                    description: Deductible period
+                  coverageLevel:
+                    type: string
+                    nullable: true
+                    description: Coverage level
+                  network:
+                    type: object
+                    nullable: true
+                    properties:
+                      networkId:
+                        type: string
+                        nullable: true
+                      networkName:
+                        type: string
+                        nullable: true
+                      networkType:
+                        type: string
+                        nullable: true
+                  notes:
+                    type: array
+                    nullable: true
+                    items:
+                      $ref: "#/components/schemas/Note"
+            serviceHistory:
+              type: array
+              nullable: true
+              items:
+                type: object
+                properties:
+                  date:
+                    oneOf:
+                      - type: string
+                      - type: array
+                        items:
+                          type: string
+                    description: Service date(s) in MM/DD/YYYY format
+                  procedure:
+                    type: object
+                    properties:
+                      code:
+                        type: string
+                      category:
+                        type: string
+                      complexity:
+                        type: string
+                        nullable: true
+                      categoryComplexity:
+                        type: string
+                        nullable: true
+                      notes:
+                        type: array
+                        nullable: true
+                        items:
+                          $ref: "#/components/schemas/Note"
+                    required:
+                      - code
+                      - category
+                  tooth:
+                    type: string
+                    nullable: true
+                    description: Tooth number or identifier
+                  surface:
+                    type: string
+                    nullable: true
+                    description: Tooth surface
+                required:
+                  - date
+                  - procedure
+            limitations:
+              type: array
+              nullable: true
+              items:
+                type: object
+                properties:
+                  type:
+                    type: string
+                    nullable: true
+                    description: Limitation type
+                  category:
+                    $ref: "#/components/schemas/ServiceCategory"
+                  network:
+                    type: object
+                    nullable: true
+                    properties:
+                      networkId:
+                        type: string
+                        nullable: true
+                      networkName:
+                        type: string
+                        nullable: true
+                      networkType:
+                        type: string
+                        nullable: true
+                  ageLimit:
+                    type: object
+                    nullable: true
+                    properties:
+                      min:
+                        type: number
+                        nullable: true
+                      max:
+                        type: number
+                        nullable: true
+                      notes:
+                        type: array
+                        nullable: true
+                        items:
+                          $ref: "#/components/schemas/Note"
+                  endDate:
+                    type: string
+                    nullable: true
+                    description: Limitation end date
+                  notes:
+                    type: array
+                    nullable: true
+                    items:
+                      $ref: "#/components/schemas/Note"
+            additional:
+              type: object
+              nullable: true
+              properties:
+                missingTooth:
+                  type: object
+                  nullable: true
+                  properties:
+                    exists:
+                      type: boolean
+                      description: Whether missing tooth clause exists
+                    notes:
+                      type: array
+                      nullable: true
+                      items:
+                        $ref: "#/components/schemas/Note"
+                  required:
+                    - exists
+                waitingPeriod:
+                  type: object
+                  nullable: true
+                  properties:
+                    applies:
+                      type: boolean
+                      description: Whether waiting period applies
+                    notes:
+                      type: array
+                      nullable: true
+                      items:
+                        $ref: "#/components/schemas/Note"
+                  required:
+                    - applies
+                ortho:
+                  type: object
+                  nullable: true
+                  properties:
+                    exists:
+                      type: boolean
+                      description: Whether orthodontic coverage exists
+                    paymentSchedule:
+                      type: string
+                      nullable: true
+                      description: Orthodontic payment schedule
+                    paymentInitial:
+                      type: number
+                      nullable: true
+                      description: Initial orthodontic payment amount
+                  required:
+                    - exists
+                cob:
+                  type: object
+                  nullable: true
+                  properties:
+                    exists:
+                      type: boolean
+                      description: Whether coordination of benefits applies
+                    notes:
+                      type: array
+                      nullable: true
+                      items:
+                        $ref: "#/components/schemas/Note"
+                  required:
+                    - exists
+                filingPeriod:
+                  type: string
+                  nullable: true
+                  description: Filing period for claims or coordination
+      examples:
+        AetnaEligibility:
+          $ref: "#/components/examples/AetnaEligibility"
+        AetnaEligibilityBasic:
+          $ref: "#/components/examples/AetnaEligibilityBasic"
+    WebhookEvent:
+      type: object
+      description: |
+        Complete webhook event payload sent to registered endpoints.
+        The structure varies based on the event type - connection events include connection data,
+        while eligibility events include scraper data.
+      properties:
+        event:
+          $ref: "#/components/schemas/WebhookEventType"
+        data:
+          oneOf:
+            - $ref: "#/components/schemas/ConnectionWebhookData"
+            - $ref: "#/components/schemas/EligibilityWebhookData"
+          description: Event-specific data payload
+      required:
+        - event
+        - data
+  examples:
+    ConnectionStatusResponse:
+      value:
+        transactionId: 23335e12-8e8d-11ee-b9d1-0242ac120002
+        response:
+          connectionId: ea45db7e-ba43-49fc-a1a0-29d49a66cb8f
+          status: Connected
+          createdAt: "2024-11-15T01:45:13.512349Z"
+          updatedAt: "2024-11-15T01:45:13.512349Z"
+          username: dr.smith@dentalpractice.com
+          additional:
+            providerNpi: "1234567890"
+            locationCode: "LOC001"
+            practiceId: "PRAC-12345"
+          portal:
+            portalId: METLIFE
+            name: MetLife
+            website: metdental.com
+            isActive: true
+          payer:
+            payerIdCode: "12345"
+            name: METLIFE
+            address:
+              address1: "P.O. Box 82520"
+              address2: "Alpharetta, GA"
+              city: "Lincoln"
+              state: "NE"
+              zipCode: "68501-2520"
+          error: {}
+    BadRequestError:
+      value:
+        transactionId: "8974e434-7f65-4216-a04d-734e3fad254c"
+        errorType: "VALIDATION"
+        error:
+          - location: "query"
+            message: "locationId is required"
+            path: "locationId"
+          - location: "body"
+            message: "Invalid date format, expected MM/DD/YYYY"
+            path: "patient.dateOfBirth"
+    UnauthorizedError:
+      value:
+        message: "x-api-key header not provided"
+    InternalServerError:
+      value:
+        transactionId: "5f8a9b2c-3d4e-1f2a-9b8c-7d6e5f4a3b2c"
+        errorType: "RESPONSE"
+        error:
+          message: "Internal Server Error - Portal temporarily unavailable"
+    ConnectionUpdateRequest:
+      value:
+        password: "NewSecurePassword123!"
+        mfaSecretKey: "JBSWY3DPEHPK3PXP"
+        additional:
+          providerNpi: "1234567890"
+          locationCode: "LOC001"
+          practiceId: "PRAC-12345"
+    ConnectionResponse:
+      value:
+        transactionId: 23335e12-8e8d-11ee-b9d1-0242ac120002
+        response:
+          connectionId: ea45db7e-ba43-49fc-a1a0-29d49a66cb8f
+    ConnectionRequest:
+      value:
+        locationId: "PRAC-12345-LOC001"
+        username: "dr.smith@dentalpractice.com"
+        password: "SecurePassword123!"
+        mfaSecretKey: "JBSWY3DPEHPK3PXP"
+        additional:
+          providerNpi: "1234567890"
+          locationCode: "LOC001"
+          practiceId: "PRAC-12345"
+        payer:
+          payerIdCode: "12345"
+          name: METLIFE
+          address:
+            address1: "P.O. Box 82520"
+            address2: "Alpharetta, GA"
+            city: "Lincoln"
+            state: "NE"
+            zipCode: "68501-2520"
+    ConnectionsResponse:
+      value:
+        transactionId: 23335e12-8e8d-11ee-b9d1-0242ac120002
+        response:
+          - connectionId: 44704186-d9a0-4be0-bdb3-882d029c254b
+            status: Connected
+            createdAt: "2024-11-15T01:45:13.512349Z"
+            updatedAt: "2024-11-15T01:45:13.512349Z"
+            username: "dr.smith@dentalpractice.com"
+            additional:
+              providerNpi: "1234567890"
+              locationCode: "LOC001"
+              practiceId: "PRAC-12345"
+            portal:
+              portalId: METLIFE
+              name: MetLife
+              website: metdental.com
+              isActive: true
+            payer:
+              payerIdCode: "12345"
+              name: METLIFE
+              address:
+                address1: "P.O. Box 82520"
+                address2: "Alpharetta, GA"
+                city: "Lincoln"
+                state: "NE"
+                zipCode: "68501-2520"
+            error: {}
+          - connectionId: 163f5087-9f36-467f-895b-785bc2084b80
+            status: Disconnected
+            createdAt: "2024-12-15T01:45:13.512349Z"
+            updatedAt: "2024-12-15T01:45:13.512349Z"
+            username: "dr.jones@familydental.com"
+            additional:
+              providerNpi: "9876543210"
+              locationCode: "LOC002"
+              practiceId: "PRAC-67890"
+            portal:
+              portalId: UHC
+              name: United HealthCare
+              website: uhc.com
+              isActive: true
+            payer:
+              payerIdCode: "83920"
+              name: UHC
+              address:
+                address1: "P.O. Box 82520"
+                address2: ""
+                city: "Denver"
+                state: "CO"
+                zipCode: "80217"
+            error:
+              type: UserInterventionRequired
+              message: Please disable passkey authentication as it is not currently supported.
+    EligibilityResponse:
+      value:
+        transactionId: 23335e12-8e8d-11ee-b9d1-0242ac120002
+        response:
+          eligibilityId: "01K0A8SZM0SQAADZ2J0MMDZBPE"
+          eligibilityStatus: "Completed"
+          eligibilityUrl: "https://staging-eligibility-webscraper.dentalxchange.com/eligibility/01K0A8SZM0SQAADZ2J0MMDZBPE/data.json"
+          errors: []
+          additional:
+            processingTime: "45 seconds"
+            portalSessionId: "sess_abc123def456"
+            dataExtractionTimestamp: "2024-11-15T02:30:45.123Z"
+    EligibilityRequest:
+      value:
+        locationId: "PRAC-12345-LOC001"
+        provider:
+          firstName: "John"
+          lastName: "Smith"
+          npi: "1234567890"
+          taxId: "123456789"
+        patient:
+          firstName: "Sarah"
+          lastName: "Johnson"
+          dateOfBirth: "07/25/1985"
+          memberId: "MTL123456789"
+          relationship: "18"
+        subscriber:
+          firstName: "Sarah"
+          lastName: "Johnson"
+          dateOfBirth: "07/25/1985"
+          memberId: "MTL123456789"
+        procedureCodes:
+          - "D0120"
+          - "D1110"
+          - "D2140"
+        additional:
+          providerId: "PROV-12345"
+          groupNumber: "GRP001"
+          planId: "PLN789"
+        payer:
+          payerIdCode: "12345"
+          name: Ameritas
+          address:
+            address1: "Ameritas Life Insurance Corp"
+            address2: "P.O. Box 82520"
+            city: "Lincoln"
+            state: "NE"
+            zipCode: "68501-2520"
+    PortalResponse:
+      value:
+        transactionId: 23335e12-8e8d-11ee-b9d1-0242ac120002
+        response:
+          name: MetDental
+          website: metdental.com
+          payer:
+            name: MetLife
+            payerIdCode: "65978"
+          authenticationType: MFA
+    PortalsResponse:
+      value:
+        transactionId: 23335e12-8e8d-11ee-b9d1-0242ac120002
+        response:
+          - name: Delta Dental Ins
+            website: deltadentalins.com
+            payers:
+              - name: Delta Dental Ins. Co. - Alabama
+                payerIdCode: DDAL1
+              - name: Delta Dental of California
+                payerIdCode: "77777"
+              - name: Delta Dental of Washington DC
+                payerIdCode: "52147"
+              - name: Delta Dental of Delaware
+                payerIdCode: "51022"
+              - name: Delta Dental Ins. Co. - Florida
+                payerIdCode: DDFL1
+            authenticationType: Basic
+          - name: United Concordia
+            website: unitedconcordia.com
+            payers:
+              - name: Federal Employees Program
+                payerIdCode: "54771"
+              - name: United Concordia Companies, Inc.
+                payerIdCode: "89070"
+              - name: United Concordia - Dental Plus - PA Blue Shield
+                payerIdCode: UCCDP
+              - name: United Concordia - Tricare Dental Plan
+                payerIdCode: UCCTR
+            authenticationType: Basic
+          - name: MetDental
+            website: metdental.com
+            payers:
+              - name: MetLife
+                payerIdCode: "65978"
+            authenticationType: MFA
+          - name: DentaQuest
+            website: dentaquest.com
+            payers:
+              - name: Dental Care Plus (Dentaquest)
+                payerIdCode: "04356"
+              - name: DentaQuest - Government
+                payerIdCode: CX014
+            authenticationType: MFA
+    EndpointResponse:
+      value:
+        transactionId: 23335e12-8e8d-11ee-b9d1-0242ac120002
+        response:
+          endpointId: "ep_2Y98DItWD2uZHF7K5bToy9OtskX"
+          name: "Production Eligibility Webhook"
+          url: "https://api.dentalpractice.com/webhooks/eligibility"
+          headers:
+            Authorization: "Bearer dental_api_token_xyz"
+            X-Practice-ID: "PRAC-12345"
+          secret: "whsec_OM6+1tNC6e66ZjokJu8TZmq2/4F5RiMs"
+          createdAt: "2024-11-14T01:45:13.512349Z"
+          updatedAt: "2024-11-14T01:45:13.512349Z"
+    EndpointRequest:
+      value:
+        name: "Production Eligibility Webhook"
+        url: "https://api.dentalpractice.com/webhooks/eligibility"
+        headers:
+          Authorization: "Bearer dental_api_token_xyz"
+          X-Practice-ID: "PRAC-12345"
+    EndpointsResponse:
+      value:
+        transactionId: 23335e12-8e8d-11ee-b9d1-0242ac120002
+        response:
+          - endpointId: "ep_2Y98DItWD2uZHF7K5bToy9OtskX"
+            name: "Production Eligibility Webhook"
+            url: "https://api.dentalpractice.com/webhooks/eligibility"
+            createdAt: "2024-11-14T01:45:13.512349Z"
+            updatedAt: "2024-11-14T01:45:13.512349Z"
+          - endpointId: "ep_Toy9Ots2Y98DItWD2uZHF7X"
+            name: "Connection Status Webhook"
+            url: "https://api.dentalpractice.com/webhooks/connection-status"
+            createdAt: "2024-11-14T03:45:13.512349Z"
+            updatedAt: "2024-11-14T03:45:13.512349Z"
+    HealthCheckResponse:
+      value:
+        transactionId: 23335e12-8e8d-11ee-b9d1-0242ac120002
+        response:
+          healthy: true
+          dependencies:
+            - name: database
+              healthy: true
+            - name: queue
+              healthy: true
+    # Webhook Event Examples
+    WebhookEventConnected:
+      value:
+        event: "connection.connected"
+        data:
+          connectionId: "ea45db7e-ba43-49fc-a1a0-29d49a66cb8f"
+    WebhookEventInvalid:
+      value:
+        event: "connection.invalid"
+        data:
+          connectionId: "ea45db7e-ba43-49fc-a1a0-29d49a66cb8f"
+    WebhookEventConnection2FA:
+      value:
+        event: "connection.2fa"
+        data:
+          connectionId: "ea45db7e-ba43-49fc-a1a0-29d49a66cb8f"
+          selectedMfaContact: "email:dr.smith@example.com"
+    WebhookEventConnectionSQA:
+      value:
+        event: "connection.sqa"
+        data:
+          connectionId: "ea45db7e-ba43-49fc-a1a0-29d49a66cb8f"
+          securityQuestion: "What is your mother's maiden name?"
+    WebhookEventConnectionError:
+      value:
+        event: "connection.error"
+        data:
+          connectionId: "ea45db7e-ba43-49fc-a1a0-29d49a66cb8f"
+    WebhookEventDisconnected:
+      value:
+        event: "connection.disconnected"
+        data:
+          connectionId: "ea45db7e-ba43-49fc-a1a0-29d49a66cb8f"
+    WebhookEventEligibilityQueued:
+      value:
+        event: "eligibility.queued"
+        data:
+          eligibilityId: "01K0A8SZM0SQAADZ2J0MMDZBPE"
+    WebhookEventEligibilityError:
+      value:
+        event: "eligibility.error"
+        data:
+          eligibilityId: "01K0A8SZM0SQAADZ2J0MMDZBPE"
+    WebhookEventEligibilityVerified:
+      value:
+        event: "eligibility.verified"
+        data:
+          eligibilityId: "01K0A8SZM0SQAADZ2J0MMDZBPE"
+    # Eligibility Data Examples (Normalized Eligibility Data from eligibilityUrl)
+    AetnaEligibility:
+      value:
+        patient:
+          firstName: "Christine"
+          middleName: null
+          lastName: "Linke"
+          dateOfBirth: "05/27/1950"
+          memberId: "101332956400"
+          groupNumber: "000003-NC"
+          gender: null
+          relationship: "18"
+          address:
+            address1: "1600 WINDSOR RUN LN"
+            address2: "APT V16"
+            city: "Matthews"
+            state: "NC"
+            zipCode: "28105"
+          notes: null
+        subscriber:
+          firstName: "Christine"
+          middleName: null
+          lastName: "Linke"
+          dateOfBirth: "05/27/1950"
+          memberId: "101332956400"
+          groupNumber: "000003-NC"
+          gender: null
+          address:
+            address1: "1600 WINDSOR RUN LN"
+            address2: "APT V16"
+            city: "Matthews"
+            state: "NC"
+            zipCode: "28105"
+          notes: null
+        provider:
+          firstName: null
+          lastName: null
+          npi: null
+          taxId: null
+          providerId: null
+          notes: null
+        payer:
+          name: "Aetna Dental Plans"
+          payerIdCode: "60054"
+          phone: null
+          fax: null
+          addresses:
+            - address1: "PO Box 14079"
+              address2: ""
+              city: "Lexington"
+              state: "KY"
+              zipCode: "40512"
+          notes: null
+        plan:
+          planStatus: "Active"
+          planId: null
+          planName: "MA Individual - North Carolina"
+          planGroupId: "000003-NC"
+          planGroupName: null
+          planType: null
+          startDate: "01/01/2022"
+          endDate: null
+          effectiveDate: "01/01/2022"
+          renewalType: null
+          errors: null
+          notes:
+            - message: "Not Covered: D6010"
+              type: "plan_note"
+            - message: "Not Covered: D6057"
+              type: "plan_note"
+            - message: "Not Covered: D6058"
+              type: "plan_note"
+            - message: "Not Covered: D8070"
+              type: "plan_note"
+            - message: "Not Covered: D8080"
+              type: "plan_note"
+            - message: "Not Covered: D8090"
+              type: "plan_note"
+            - message: "1376992448"
+              type: "Transaction ID"
+          networks:
+            - networkId: "IN_NETWORK"
+              networkName: "In-Network"
+              networkType: "In-Network"
+            - networkId: "OUT_NETWORK"
+              networkName: "Out-of-Network"
+              networkType: "Out-of-Network"
+          benefits:
+            - procedure:
+                code: "D1110"
+                category: "Preventive"
+                complexity: null
+                categoryComplexity: null
+                notes:
+                  - message: "Procedure: Prophylaxis - adult"
+                    type: "procedure_description"
+              network:
+                networkId: "IN_NETWORK"
+                networkName: "In-Network"
+                networkType: "In-Network"
+              coPay: null
+              coInsurance: null
+              payerCoverage: 100
+              feeAllowance: null
+              frequency:
+                limit: "2"
+                period: "Calendar Year"
+                unit: "visits"
+                notes: null
+              waitingPeriod: null
+              ageLimit: null
+              notes: null
+            - procedure:
+                code: "D1120"
+                category: "Preventive"
+                complexity: null
+                categoryComplexity: null
+                notes:
+                  - message: "Procedure: Prophylaxis - child"
+                    type: "procedure_description"
+              network:
+                networkId: "IN_NETWORK"
+                networkName: "In-Network"
+                networkType: "In-Network"
+              coPay: null
+              coInsurance: null
+              payerCoverage: 100
+              feeAllowance: null
+              frequency:
+                limit: "2"
+                period: "Calendar Year"
+                unit: "visits"
+                notes: null
+              waitingPeriod: null
+              ageLimit:
+                maxAge: 14
+                notes: null
+              notes: null
+            - procedure:
+                code: "D2140"
+                category: "Restorative"
+                complexity: "Basic"
+                categoryComplexity: "Basic Restorative"
+                notes:
+                  - message: "Procedure: Resin-based composite - one surface, posterior"
+                    type: "procedure_description"
+              network:
+                networkId: "IN_NETWORK"
+                networkName: "In-Network"
+                networkType: "In-Network"
+              coPay: null
+              coInsurance: 20
+              payerCoverage: 80
+              feeAllowance: null
+              frequency: null
+              waitingPeriod: null
+              ageLimit: null
+              notes: null
+          maximums:
+            - network:
+                networkId: "IN_NETWORK"
+                networkName: "In-Network"
+                networkType: "In-Network"
+              amount: 1000
+              period: "Calendar Year"
+              family: false
+              remaining: 850
+              used: 150
+              notes: null
+          deductibles:
+            - network:
+                networkId: "IN_NETWORK"
+                networkName: "In-Network"
+                networkType: "In-Network"
+              amount: 50
+              period: "Calendar Year"
+              family: false
+              remaining: 25
+              met: 25
+              notes: null
+          ortho: null
+          cob: null
+          missingTooth: null
+    AetnaEligibilityBasic:
+      value:
+        patient:
+          firstName: "CORINNE"
+          lastName: "SMITH"
+          dateOfBirth: "12/11/1981"
+          memberId: "W288357375"
+          groupNumber: "077104101800001"
+          address:
+            address1: "501 NORTHEAST 5TH TERRACE"
+            address2: "APT 219"
+            city: "FORT LAUDERDALE"
+            state: "FL"
+            zipCode: "33301"
+        plan:
+          planName: "OBAGI COSMECEUTICALS, LLC"
+          planStatus: "Active"
+          startDate: "08/14/2024"
+          effectiveDate: "08/05/2024"
+          renewalType: "Calendar Year"
+          benefits:
+            - procedure:
+                code: "D1110"
+                category: "Preventive"
+              network:
+                networkType: "In-Network"
+              payerCoverage: 100
+            - procedure:
+                code: "D2140"
+                category: "Restorative"
+              network:
+                networkType: "In-Network"
+              coInsurance: 20
+              payerCoverage: 80
+        payer:
+          name: "Aetna Dental Plans"
+          payerIdCode: "60054"
+  responses:
+    BadRequestError:
+      description: |
+        **Bad Request** - The request was invalid or malformed. This typically occurs when:
+        - Required fields are missing from the request body
+        - Field values don't meet validation requirements (e.g., minimum length, format)
+        - Invalid parameter values are provided
+        - Request structure doesn't match the expected schema
+
+        Check the error details for specific field validation failures.
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/BadRequestError"
+          examples:
+            BadRequest:
+              $ref: "#/components/examples/BadRequestError"
+    UnauthorizedError:
+      description: |
+        **Unauthorized Access** - Authentication failed. This occurs when:
+        - The `x-api-key` header is missing from the request
+        - The provided API key is invalid or expired
+        - The API key doesn't have permission for the requested resource
+
+        Ensure you're using a valid API key in the `x-api-key` header.
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Error"
+          examples:
+            UnauthorizedError:
+              $ref: "#/components/examples/UnauthorizedError"
+    InternalServerError:
+      description: Internal Server Error
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/BadRequestError"
+          examples:
+            InternalServerError:
+              $ref: "#/components/examples/InternalServerError"
+x-tagGroups:
+  - name: Transactions
+    tags:
+      - Connection
+      - Eligibility
+      - Portal
+      - Health
+  - name: Webhooks
+    tags:
+      - Endpoint
+      - WebhookEvent
+  - name: Models
+    tags:
+      - ConnectionModel
+      - EligibilityModel
+      - PortalModel
+      - PlanModel
+  - name: Code / Status
+    tags:
+      - ConnectionStatus
+      - EligibilityStatus
+      - ErrorCode
+      - PlanStatus

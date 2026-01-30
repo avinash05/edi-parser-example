@@ -1,0 +1,2284 @@
+{
+  "patient": {
+    "dob": "05/27/1950",
+    "city": "Matthews",
+    "state": "NC",
+    "zipCode": "28105",
+    "address1": "1600 WINDSOR RUN LN",
+    "address2": "APT V16",
+    "lastName": "Linke",
+    "firstName": "Christine"
+  },
+  "benefits": [
+    {
+      "benefits": {
+        "inNetwork": [
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D1110",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Prophylaxis - adult"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D1120",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Prophylaxis - child"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D1206",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Topical fluoride varnish"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D1208",
+            "visitPeriodUnit": null,
+            "procedureDescription": "topical application of fluoride"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D1330",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Oral hygiene instruction"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D1351",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Sealant - per tooth"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D1510",
+            "visitPeriodUnit": null,
+            "procedureDescription": "space maintainer - fixed - unilateral"
+          }
+        ],
+        "outOfNetwork": [
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D1110",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Prophylaxis - adult"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D1120",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Prophylaxis - child"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D1206",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Topical fluoride varnish"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D1208",
+            "visitPeriodUnit": null,
+            "procedureDescription": "topical application of fluoride"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D1330",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Oral hygiene instruction"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D1351",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Sealant - per tooth"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D1510",
+            "visitPeriodUnit": null,
+            "procedureDescription": "space maintainer - fixed - unilateral"
+          }
+        ],
+        "networkNotApplicable": []
+      },
+      "category": "Preventive"
+    },
+    {
+      "benefits": {
+        "inNetwork": [
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D4260",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Osseous surgery (including flap entry and closure) - four or more contiguous teeth or tooth bounded spaces per quadrant"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D4341",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Periodontal scaling and root planing, four or more contiguous teeth or bounded teeth spaces per quadrant"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D4346",
+            "visitPeriodUnit": null,
+            "procedureDescription": "scaling in presence of generalized moderate or severe gingival inflammation – full mouth, after oral evaluation"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D4355",
+            "visitPeriodUnit": null,
+            "procedureDescription": "full mouth debridement to enable a comprehensive periodontal evaluation and diagnosis on a subsequent visit"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D4381",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Localized delivery of chemotherapeutic agents via a controlled release vehicle"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D4910",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Periodontal maintenance "
+          }
+        ],
+        "outOfNetwork": [
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D4260",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Osseous surgery (including flap entry and closure) - four or more contiguous teeth or tooth bounded spaces per quadrant"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D4341",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Periodontal scaling and root planing, four or more contiguous teeth or bounded teeth spaces per quadrant"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D4346",
+            "visitPeriodUnit": null,
+            "procedureDescription": "scaling in presence of generalized moderate or severe gingival inflammation – full mouth, after oral evaluation"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D4355",
+            "visitPeriodUnit": null,
+            "procedureDescription": "full mouth debridement to enable a comprehensive periodontal evaluation and diagnosis on a subsequent visit"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D4381",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Localized delivery of chemotherapeutic agents via a controlled release vehicle"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D4910",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Periodontal maintenance "
+          }
+        ],
+        "networkNotApplicable": []
+      },
+      "category": "Periodontics"
+    },
+    {
+      "benefits": {
+        "inNetwork": [
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D2391",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Resin-based composite - one surface, posterior"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D2392",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Resin-based composite - two surfaces, posterior"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D2393",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Resin-based composite - three surfaces, posterior"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D2740",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Crown - porcelain/ceramic"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D2750",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Crown-porcelain fused to high noble metal"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D2930",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Prefabricated stainless steel crown - primary tooth"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D2950",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Core buildup, including any pins when required"
+          }
+        ],
+        "outOfNetwork": [
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D2391",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Resin-based composite - one surface, posterior"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D2392",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Resin-based composite - two surfaces, posterior"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D2393",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Resin-based composite - three surfaces, posterior"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D2740",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Crown - porcelain/ceramic"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D2750",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Crown-porcelain fused to high noble metal"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D2930",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Prefabricated stainless steel crown - primary tooth"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D2950",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Core buildup, including any pins when required"
+          }
+        ],
+        "networkNotApplicable": []
+      },
+      "category": "Restorative"
+    },
+    {
+      "benefits": {
+        "inNetwork": [
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D0120",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Periodic oral evaluation - established patient"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D0140",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Limited oral evaluation - problem focused"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D0150",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Comprehensive oral evaluation - new or established patient"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D0210",
+            "visitPeriodUnit": null,
+            "procedureDescription": "intraoral - comprehensive series of radiographic images"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D0220",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Intraoral - periapical first radiographic image"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D0272",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Bitewing - two radiographic images"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D0274",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Bitewing - four radiographic images"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D0330",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Panoramic radiographic image"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D0431",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Pre-diagnosis Mucosal "
+          }
+        ],
+        "outOfNetwork": [
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D0120",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Periodic oral evaluation - established patient"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D0140",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Limited oral evaluation - problem focused"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D0150",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Comprehensive oral evaluation - new or established patient"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D0210",
+            "visitPeriodUnit": null,
+            "procedureDescription": "intraoral - comprehensive series of radiographic images"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D0220",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Intraoral - periapical first radiographic image"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D0272",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Bitewing - two radiographic images"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D0274",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Bitewing - four radiographic images"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D0330",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Panoramic radiographic image"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D0431",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Pre-diagnosis Mucosal "
+          }
+        ],
+        "networkNotApplicable": []
+      },
+      "category": "Diagnostic"
+    },
+    {
+      "benefits": {
+        "inNetwork": [
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D6240",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Pontic - porcelain fused to high noble metal"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D6750",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Crown - porcelain fused to high noble metal"
+          }
+        ],
+        "outOfNetwork": [
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D6240",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Pontic - porcelain fused to high noble metal"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D6750",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Crown - porcelain fused to high noble metal"
+          }
+        ],
+        "networkNotApplicable": []
+      },
+      "category": "Prosthodontics, fixed"
+    },
+    {
+      "benefits": {
+        "inNetwork": [
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": [
+                {
+                  "message": "per Tooth (1 Unit Lifetime)"
+                },
+                {
+                  "message": "1 Unit Remaining"
+                }
+              ]
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D7140",
+            "visitPeriodUnit": null,
+            "procedureDescription": "extraction, erupted tooth or exposed root (elevation and/or forceps removal)"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": [
+                {
+                  "message": "per Tooth (1 Unit Lifetime)"
+                },
+                {
+                  "message": "1 Unit Remaining"
+                }
+              ]
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D7210",
+            "visitPeriodUnit": null,
+            "procedureDescription": "extraction, erupted tooth requiring removal of bone and/or sectioning of tooth, and including elevation of mucoperiosteal flap if indicated"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": [
+                {
+                  "message": "per Tooth (1 Unit Lifetime)"
+                },
+                {
+                  "message": "1 Unit Remaining"
+                }
+              ]
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D7220",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Removal of impacted tooth - soft tissue"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": [
+                {
+                  "message": "per Tooth (1 Unit Lifetime)"
+                },
+                {
+                  "message": "1 Unit Remaining"
+                }
+              ]
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D7230",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Removal of impacted tooth - partially bony"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": [
+                {
+                  "message": "per Tooth (1 Unit Lifetime)"
+                },
+                {
+                  "message": "1 Unit Remaining"
+                }
+              ]
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D7240",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Removal of impacted tooth - completely bony"
+          }
+        ],
+        "outOfNetwork": [
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": [
+                {
+                  "message": "per Tooth (1 Unit Lifetime)"
+                },
+                {
+                  "message": "1 Unit Remaining"
+                }
+              ]
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D7140",
+            "visitPeriodUnit": null,
+            "procedureDescription": "extraction, erupted tooth or exposed root (elevation and/or forceps removal)"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": [
+                {
+                  "message": "per Tooth (1 Unit Lifetime)"
+                },
+                {
+                  "message": "1 Unit Remaining"
+                }
+              ]
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D7210",
+            "visitPeriodUnit": null,
+            "procedureDescription": "extraction, erupted tooth requiring removal of bone and/or sectioning of tooth, and including elevation of mucoperiosteal flap if indicated"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": [
+                {
+                  "message": "per Tooth (1 Unit Lifetime)"
+                },
+                {
+                  "message": "1 Unit Remaining"
+                }
+              ]
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D7220",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Removal of impacted tooth - soft tissue"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": [
+                {
+                  "message": "per Tooth (1 Unit Lifetime)"
+                },
+                {
+                  "message": "1 Unit Remaining"
+                }
+              ]
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D7230",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Removal of impacted tooth - partially bony"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": [
+                {
+                  "message": "per Tooth (1 Unit Lifetime)"
+                },
+                {
+                  "message": "1 Unit Remaining"
+                }
+              ]
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D7240",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Removal of impacted tooth - completely bony"
+          }
+        ],
+        "networkNotApplicable": []
+      },
+      "category": "Oral and Maxillofacial Surgery"
+    },
+    {
+      "benefits": {
+        "inNetwork": [
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": null,
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": null,
+            "procedureCode": "D8070",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Comprehensive orthodontic treatment of the transitional dentition"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": null,
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": null,
+            "procedureCode": "D8080",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Comprehensive orthodontic treatment of the adolescent dentition"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": null,
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": null,
+            "procedureCode": "D8090",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Comprehensive orthodontic treatment of the adult dentition"
+          }
+        ],
+        "outOfNetwork": [
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": null,
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": null,
+            "procedureCode": "D8070",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Comprehensive orthodontic treatment of the transitional dentition"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": null,
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": null,
+            "procedureCode": "D8080",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Comprehensive orthodontic treatment of the adolescent dentition"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": null,
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": null,
+            "procedureCode": "D8090",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Comprehensive orthodontic treatment of the adult dentition"
+          }
+        ],
+        "networkNotApplicable": []
+      },
+      "category": "Orthodontics"
+    },
+    {
+      "benefits": {
+        "inNetwork": [
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D5110",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Complete denture - maxillary"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D5120",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Complete denture - mandibular"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D5213",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Maxillary partial denture - cast metal framework with resin denture base (including any conventional clasps, rests, and teeth)"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D5214",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Mandibular partial denture - cast metal framework with resin denture base (including any conventional clasps, rests, and teeth)"
+          }
+        ],
+        "outOfNetwork": [
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D5110",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Complete denture - maxillary"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D5120",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Complete denture - mandibular"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D5213",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Maxillary partial denture - cast metal framework with resin denture base (including any conventional clasps, rests, and teeth)"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D5214",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Mandibular partial denture - cast metal framework with resin denture base (including any conventional clasps, rests, and teeth)"
+          }
+        ],
+        "networkNotApplicable": []
+      },
+      "category": "Prosthodontics, removable"
+    },
+    {
+      "benefits": {
+        "inNetwork": [
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D9110",
+            "visitPeriodUnit": null,
+            "procedureDescription": "palliative treatment of dental pain - per visit"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D9222",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Deep sedation/general anesthesia – first 15 minutes"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D9230",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Analgesia"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D9310",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Consultation (diagnostic service provided by dentist or physician other than practitioner providing treatment)"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D9944",
+            "visitPeriodUnit": null,
+            "procedureDescription": "occlusal guard – hard appliance, full arch "
+          }
+        ],
+        "outOfNetwork": [
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D9110",
+            "visitPeriodUnit": null,
+            "procedureDescription": "palliative treatment of dental pain - per visit"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D9222",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Deep sedation/general anesthesia – first 15 minutes"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D9230",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Analgesia"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D9310",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Consultation (diagnostic service provided by dentist or physician other than practitioner providing treatment)"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D9944",
+            "visitPeriodUnit": null,
+            "procedureDescription": "occlusal guard – hard appliance, full arch "
+          }
+        ],
+        "networkNotApplicable": []
+      },
+      "category": "Adjunctive General Services"
+    },
+    {
+      "benefits": {
+        "inNetwork": [
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D3220",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Therapeutic pulpotomy (excluding final restoration)"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D3310",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Root canal therapy - anterior (excluding final restoration)"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D3320",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Endodontic therapy, premolar tooth (excluding final restoration)"
+          },
+          {
+            "coPay": "0.0",
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0",
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "1",
+            "procedureCode": "D3330",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Endodontic therapy, molar tooth (excluding final restoration)"
+          }
+        ],
+        "outOfNetwork": [
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D3220",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Therapeutic pulpotomy (excluding final restoration)"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D3310",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Root canal therapy - anterior (excluding final restoration)"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D3320",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Endodontic therapy, premolar tooth (excluding final restoration)"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": "0.5",
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": "0.5",
+            "procedureCode": "D3330",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Endodontic therapy, molar tooth (excluding final restoration)"
+          }
+        ],
+        "networkNotApplicable": []
+      },
+      "category": "Endodontics"
+    },
+    {
+      "benefits": {
+        "inNetwork": [
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": null,
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": null,
+            "procedureCode": "D6010",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Surgical placement of implant body: endosteal implant"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": null,
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": null,
+            "procedureCode": "D6057",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Custom fabricated abutment - includes placement"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": null,
+            "networkName": "In Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": null,
+            "procedureCode": "D6058",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Abutment Supported Porcelain/Ceramic Crown"
+          }
+        ],
+        "outOfNetwork": [
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": null,
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": null,
+            "procedureCode": "D6010",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Surgical placement of implant body: endosteal implant"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": null,
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": null,
+            "procedureCode": "D6057",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Custom fabricated abutment - includes placement"
+          },
+          {
+            "coPay": null,
+            "source": "EDI",
+            "lastVisit": null,
+            "ageMaximum": null,
+            "ageMinimum": null,
+            "visitLimit": null,
+            "coInsurance": null,
+            "networkName": "Out of Network",
+            "visitPeriod": null,
+            "benefitNotes": {
+              "benefitNotes": []
+            },
+            "payerCoverage": null,
+            "procedureCode": "D6058",
+            "visitPeriodUnit": null,
+            "procedureDescription": "Abutment Supported Porcelain/Ceramic Crown"
+          }
+        ],
+        "networkNotApplicable": []
+      },
+      "category": "Implant Services"
+    }
+  ],
+  "insurance": {
+    "payerId": "60054",
+    "maximums": {
+      "inNetwork": {
+        "family": [],
+        "individual": [
+          {
+            "amount": "1600",
+            "source": "EDI",
+            "category": "Annual Maximum",
+            "remaining": "1063.19",
+            "periodUnit": "Calendar Year",
+            "networkName": "In Network"
+          }
+        ]
+      },
+      "outOfNetwork": {
+        "family": [],
+        "individual": [
+          {
+            "amount": "1600",
+            "source": "EDI",
+            "category": "Annual Maximum",
+            "remaining": "1063.19",
+            "periodUnit": "Calendar Year",
+            "networkName": "Out of Network"
+          }
+        ]
+      },
+      "networkNotApplicable": {
+        "family": [],
+        "individual": []
+      }
+    },
+    "planName": "MA Individual - North Carolina",
+    "payerName": "Aetna Dental Plans",
+    "planNotes": [
+      {
+        "message": "Not Covered: D6010"
+      },
+      {
+        "message": "Not Covered: D6057"
+      },
+      {
+        "message": "Not Covered: D6058"
+      },
+      {
+        "message": "Not Covered: D8070"
+      },
+      {
+        "message": "Not Covered: D8080"
+      },
+      {
+        "message": "Not Covered: D8090"
+      },
+      {
+        "type": "Transaction ID",
+        "message": "1376992448"
+      }
+    ],
+    "startDate": "01/01/2022",
+    "planStatus": "Active",
+    "deductibles": {
+      "inNetwork": {
+        "family": [],
+        "individual": []
+      },
+      "outOfNetwork": {
+        "family": [],
+        "individual": []
+      },
+      "networkNotApplicable": {
+        "family": [],
+        "individual": []
+      }
+    },
+    "renewalType": "Calender Year",
+    "payerAddress": {
+      "city": "Lexington",
+      "state": "KY",
+      "zipCode": "40512",
+      "address1": "PO Box 14079",
+      "address2": ""
+    },
+    "effectiveDate": "01/01/2022",
+    "planGroupName": "",
+    "patientCoveage": {
+      "memberId": "101332956400",
+      "groupNumber": "000003-NC"
+    },
+    "subscriberCoveage": {
+      "memberId": "101332956400",
+      "groupNumber": "000003-NC"
+    }
+  },
+  "subscriber": {
+    "id": 59202431,
+    "dob": "05/27/1950",
+    "city": "Matthews",
+    "state": "NC",
+    "groupId": "-193483",
+    "zipCode": "28105",
+    "address1": "1600 WINDSOR RUN LN",
+    "address2": "APT V16",
+    "lastName": "Linke",
+    "createdAt": "2025-09-03T16:11:11.697Z",
+    "firstName": "Christine",
+    "updatedAt": "2025-09-03T16:11:11.707Z"
+  },
+  "serviceHistory": []
+}

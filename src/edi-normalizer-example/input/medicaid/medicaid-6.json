@@ -1,0 +1,7799 @@
+{
+  "sourceFile": "medicaid\\medicaid-6.edi",
+  "timestamp": "2026-01-13T18:49:54.067Z",
+  "rawEDI": "ISA*00*          *00*          *ZZ*271510177      *ZZ*300003466      *251219*2253*^*00501*000000001*0*P*:~GS*HB*271510177*300003466*20251219*225338*1*X*005010X279A1~ST*271*0001*005010X279A1~BHT*0022*11*387645142WEB*20251219*2153~HL*1**20*1~NM1*PR*2*GAINWELL TECHNOLOGIES LLC-ALABAMA-MEDICAID*****PI*271510177~HL*2*1*21*1~NM1*1P*1*ANGLIN*MICHAEL****XX*1922189554~REF*TJ*810985986~N3*3825 LORNA RD STE 206~N4*HOOVER*AL*35244~PRV*PE*PXC*1223P0221X~HL*3*2*22*0~TRN*2*095009362*1330989922~TRN*1*253530QDV1*9-GW_ALXIX*ELIGIBILITY AUTHORIZATION~NM1*IL*1*CHATMON*NEVAEH****MI*5300002019383~N3*302 STONECROFT CIRCLE~N4*HELENA*AL*350800000~DMG*D8*20081119*F~DTP*472*RD8*20251219-20251219~DTP*102*D8*20170804~EB*1*IND*35*MC*TXIX-CO=59 AID=52 Full Medicaid Coverage~DTP*307*RD8*20250101-20251231~MSG*FAMILIES, CHILDREN, PREGNANCY OR FAMILY PLANNING-AWARDED-20250708-PLEASE NOTE THAT AWARDED STATUS DOES NOT MEAN EVERY MEMBER IN THE HOUSEHOLD HAS AL MEDICAID COVERAGE~MSG*Effective 10/01/2022, adults 21 and older covered for Dental Care while pregnant and 2 months after end of pregnancy for service type(s);35~EB*A*IND*35**TXIX-CO=59 AID=52 Full Medicaid Coverage*23**0~EB*C*IND*35**TXIX-CO=59 AID=52 Full Medicaid Coverage*23*0~EB*B*IND*35**TXIX-CO=59 AID=52 Full Medicaid Coverage*25*0~EB*MC***MC*ACHND-AL Coordinated Health Network~DTP*307*RD8*20250701-22991231~LS*2120~NM1*P5*2*ALABAMA CARE NETWORK MID-STATE~PER*IC**TE*8332965245*WP*8332965245~LE*2120~EB*D**41**Last Dental Screening~DTP*304*D8*20240926~LS*2120~NM1*1P*1*ANGLIN*MICHAEL~PER*IC**WP*2059889800~LE*2120~EB*D**71**Last Hearing Screening~DTP*304*D8*20230727~LS*2120~NM1*1P*1*DYE*CANDICE~PER*IC**WP*2056389096~LE*2120~EB*D**9**Last Medical Screening~DTP*304*D8*20230727~LS*2120~NM1*1P*1*DYE*CANDICE~PER*IC**WP*2056389096~LE*2120~EB*D**AL**Last Vision Screening~DTP*304*D8*20230727~LS*2120~NM1*1P*1*DYE*CANDICE~PER*IC**WP*2056389096~LE*2120~EB*F*IND*48*MC*Paid INPT Days~HSD*DY*0~DTP*636*D8*20251219~EB*F*IND*50*MC*Paid Outpat Days~HSD*DY*0~DTP*636*D8*20251219~EB*F*IND*98*MC*Paid Physician Office Visits~HSD*VS*0~DTP*636*D8*20251219~EB*F*IND*98*MC*Paid BMI Visits~HSD*VS*0~DTP*636*D8*20251219~EB*F*IND*44*MC*Paid Home Health Visits~HSD*VS*0~DTP*636*D8*20251219~EB*F*IND*13*MC*Paid Ambulatory Surgery~HSD*FL*0~DTP*636*D8*20251219~EB*F*IND*76*MC*Paid Dialysis Services~HSD*FL*0~DTP*636*D8*20251219~EB*F*IND*AM*MC*Paid Eye Frames~HSD*FL*0~DTP*636*D8*20251219~EB*F*IND*AO*MC*Paid Eye Lens~HSD*FL*0~DTP*636*D8*20251219~EB*F*IND*AL*MC*Paid Eye Exam~HSD*VS*0~DTP*636*D8*20251219~EB*F*IND*AM*MC*Paid Eye Fitting~HSD*VS*0~DTP*636*D8*20251219~EB*F*IND*AM*MC*Paid Eye Frames-Child~HSD*FL*1~DTP*636*D8*20251219~EB*F*IND*AO*MC*Paid Eye Lens-Child~HSD*FL*2~DTP*636*D8*20251219~EB*F*IND*AL*MC*Paid Eye Exam-Child~HSD*VS*1~DTP*636*D8*20251219~EB*F*IND*AM*MC*Paid Eye Fitting-Child~HSD*VS*1~DTP*636*D8*20251219~EB*F*IND*48*MC*Pend INPT Days~HSD*DY*0~DTP*636*D8*20251219~EB*F*IND*50*MC*Pend Outpat Days~HSD*DY*0~DTP*636*D8*20251219~EB*F*IND*98*MC*Pend Physician Office Visits~HSD*VS*0~DTP*636*D8*20251219~EB*F*IND*98*MC*Pend BMI Visits~HSD*VS*0~DTP*636*D8*20251219~EB*F*IND*44*MC*Pend Home Health Visits~HSD*VS*0~DTP*636*D8*20251219~EB*F*IND*13*MC*Pend Ambulatory Surgery~HSD*FL*0~DTP*636*D8*20251219~EB*F*IND*76*MC*Pend Dialysis Services~HSD*FL*0~DTP*636*D8*20251219~EB*F*IND*AM*MC*Pend Eye Frames~HSD*FL*0~DTP*636*D8*20251219~EB*F*IND*AO*MC*Pend Eye Lens~HSD*FL*0~DTP*636*D8*20251219~EB*F*IND*AL*MC*Pend Eye Exam~HSD*VS*0~DTP*636*D8*20251219~EB*F*IND*AM*MC*Pend Eye Fitting~HSD*VS*0~DTP*636*D8*20251219~EB*F*IND*AM*MC*Pend Eye Frames-Child~HSD*FL*0~DTP*636*D8*20251219~EB*F*IND*AO*MC*Pend Eye Lens-Child~HSD*FL*0~DTP*636*D8*20251219~EB*F*IND*AL*MC*Pend Eye Exam-Child~HSD*VS*0~DTP*636*D8*20251219~EB*F*IND*AM*MC*Pend Eye Fitting-Child~HSD*VS*0~DTP*636*D8*20251219~EB*D*IND*35*MC*Paid Dental Fluoride~DTP*304*D8*20240926~LS*2120~NM1*1P*1*ANGLIN*MICHAEL~LE*2120~EB*D*IND*35*MC*Paid Dental Fluoride~DTP*307*D8*20190614~LS*2120~NM1*1P*1*ZHANG*XUEMING~LE*2120~EB*D*IND*35*MC*Paid Dental Prophylaxis~DTP*304*D8*20240926~LS*2120~NM1*1P*1*ANGLIN*MICHAEL~LE*2120~EB*D*IND*35*MC*Paid Dental Prophylaxis~DTP*307*D8*20190614~LS*2120~NM1*1P*1*ZHANG*XUEMING~LE*2120~EB*D*IND*35*MC*Paid Dental Full or Panoramic Xray~DTP*304*D8*20240926~LS*2120~NM1*1P*1*ANGLIN*MICHAEL~LE*2120~EB*D*IND*35*MC*Paid Dental Full or Panoramic Xray~DTP*307*D8*20180529~LS*2120~NM1*1P*1*MEEKS*OLANREWAJU~LE*2120~EB*D*IND*35*MC*Paid Dental Oral Exam~DTP*304*D8*20240926~LS*2120~NM1*1P*1*ANGLIN*MICHAEL~LE*2120~EB*D*IND*35*MC*Paid Dental Oral Exam~DTP*307*D8*20190614~LS*2120~NM1*1P*1*ZHANG*XUEMING~LE*2120~EB*D*IND*35*MC*Paid Dental Bitewing Xray~DTP*304*D8*20240926~LS*2120~NM1*1P*1*ANGLIN*MICHAEL~LE*2120~EB*D*IND*35*MC*Paid Dental Bitewing Xray~DTP*307*D8*20190614~LS*2120~NM1*1P*1*ZHANG*XUEMING~LE*2120~SE*197*0001~GE*1*1~IEA*1*000000001~",
+  "transaction": {
+    "transactionType": "271",
+    "controlNumber": "0001",
+    "version": "005010X279A1",
+    "interchangeHeader": {
+      "tag": "ISA",
+      "elements": [
+        {
+          "value": "00",
+          "position": 1
+        },
+        {
+          "value": "",
+          "position": 2
+        },
+        {
+          "value": "00",
+          "position": 3
+        },
+        {
+          "value": "",
+          "position": 4
+        },
+        {
+          "value": "ZZ",
+          "position": 5
+        },
+        {
+          "value": "271510177",
+          "position": 6
+        },
+        {
+          "value": "ZZ",
+          "position": 7
+        },
+        {
+          "value": "300003466",
+          "position": 8
+        },
+        {
+          "value": "251219",
+          "position": 9
+        },
+        {
+          "value": "2253",
+          "position": 10
+        },
+        {
+          "value": "^",
+          "position": 11
+        },
+        {
+          "value": "00501",
+          "position": 12
+        },
+        {
+          "value": "000000001",
+          "position": 13
+        },
+        {
+          "value": "0",
+          "position": 14
+        },
+        {
+          "value": "P",
+          "position": 15
+        },
+        {
+          "value": ":",
+          "position": 16
+        }
+      ],
+      "position": 0
+    },
+    "functionalGroup": {
+      "tag": "GS",
+      "elements": [
+        {
+          "value": "HB",
+          "position": 1
+        },
+        {
+          "value": "271510177",
+          "position": 2
+        },
+        {
+          "value": "300003466",
+          "position": 3
+        },
+        {
+          "value": "20251219",
+          "position": 4
+        },
+        {
+          "value": "225338",
+          "position": 5
+        },
+        {
+          "value": "1",
+          "position": 6
+        },
+        {
+          "value": "X",
+          "position": 7
+        },
+        {
+          "value": "005010X279A1",
+          "position": 8
+        }
+      ],
+      "position": 1
+    },
+    "transactionHeader": {
+      "tag": "ST",
+      "elements": [
+        {
+          "value": "271",
+          "position": 1
+        },
+        {
+          "value": "0001",
+          "position": 2
+        },
+        {
+          "value": "005010X279A1",
+          "position": 3
+        }
+      ],
+      "position": 2
+    },
+    "segments": [
+      {
+        "tag": "ISA",
+        "elements": [
+          {
+            "value": "00",
+            "position": 1
+          },
+          {
+            "value": "",
+            "position": 2
+          },
+          {
+            "value": "00",
+            "position": 3
+          },
+          {
+            "value": "",
+            "position": 4
+          },
+          {
+            "value": "ZZ",
+            "position": 5
+          },
+          {
+            "value": "271510177",
+            "position": 6
+          },
+          {
+            "value": "ZZ",
+            "position": 7
+          },
+          {
+            "value": "300003466",
+            "position": 8
+          },
+          {
+            "value": "251219",
+            "position": 9
+          },
+          {
+            "value": "2253",
+            "position": 10
+          },
+          {
+            "value": "^",
+            "position": 11
+          },
+          {
+            "value": "00501",
+            "position": 12
+          },
+          {
+            "value": "000000001",
+            "position": 13
+          },
+          {
+            "value": "0",
+            "position": 14
+          },
+          {
+            "value": "P",
+            "position": 15
+          },
+          {
+            "value": ":",
+            "position": 16
+          }
+        ],
+        "position": 0
+      },
+      {
+        "tag": "GS",
+        "elements": [
+          {
+            "value": "HB",
+            "position": 1
+          },
+          {
+            "value": "271510177",
+            "position": 2
+          },
+          {
+            "value": "300003466",
+            "position": 3
+          },
+          {
+            "value": "20251219",
+            "position": 4
+          },
+          {
+            "value": "225338",
+            "position": 5
+          },
+          {
+            "value": "1",
+            "position": 6
+          },
+          {
+            "value": "X",
+            "position": 7
+          },
+          {
+            "value": "005010X279A1",
+            "position": 8
+          }
+        ],
+        "position": 1
+      },
+      {
+        "tag": "ST",
+        "elements": [
+          {
+            "value": "271",
+            "position": 1
+          },
+          {
+            "value": "0001",
+            "position": 2
+          },
+          {
+            "value": "005010X279A1",
+            "position": 3
+          }
+        ],
+        "position": 2
+      },
+      {
+        "tag": "BHT",
+        "elements": [
+          {
+            "value": "0022",
+            "position": 1
+          },
+          {
+            "value": "11",
+            "position": 2
+          },
+          {
+            "value": "387645142WEB",
+            "position": 3
+          },
+          {
+            "value": "20251219",
+            "position": 4
+          },
+          {
+            "value": "2153",
+            "position": 5
+          }
+        ],
+        "position": 3
+      },
+      {
+        "tag": "HL",
+        "elements": [
+          {
+            "value": "1",
+            "position": 1
+          },
+          {
+            "value": "",
+            "position": 2
+          },
+          {
+            "value": "20",
+            "position": 3
+          },
+          {
+            "value": "1",
+            "position": 4
+          }
+        ],
+        "position": 4
+      },
+      {
+        "tag": "NM1",
+        "elements": [
+          {
+            "value": "PR",
+            "position": 1
+          },
+          {
+            "value": "2",
+            "position": 2
+          },
+          {
+            "value": "GAINWELL TECHNOLOGIES LLC-ALABAMA-MEDICAID",
+            "position": 3
+          },
+          {
+            "value": "",
+            "position": 4
+          },
+          {
+            "value": "",
+            "position": 5
+          },
+          {
+            "value": "",
+            "position": 6
+          },
+          {
+            "value": "",
+            "position": 7
+          },
+          {
+            "value": "PI",
+            "position": 8
+          },
+          {
+            "value": "271510177",
+            "position": 9
+          }
+        ],
+        "position": 5
+      },
+      {
+        "tag": "HL",
+        "elements": [
+          {
+            "value": "2",
+            "position": 1
+          },
+          {
+            "value": "1",
+            "position": 2
+          },
+          {
+            "value": "21",
+            "position": 3
+          },
+          {
+            "value": "1",
+            "position": 4
+          }
+        ],
+        "position": 6
+      },
+      {
+        "tag": "NM1",
+        "elements": [
+          {
+            "value": "1P",
+            "position": 1
+          },
+          {
+            "value": "1",
+            "position": 2
+          },
+          {
+            "value": "ANGLIN",
+            "position": 3
+          },
+          {
+            "value": "MICHAEL",
+            "position": 4
+          },
+          {
+            "value": "",
+            "position": 5
+          },
+          {
+            "value": "",
+            "position": 6
+          },
+          {
+            "value": "",
+            "position": 7
+          },
+          {
+            "value": "XX",
+            "position": 8
+          },
+          {
+            "value": "1922189554",
+            "position": 9
+          }
+        ],
+        "position": 7
+      },
+      {
+        "tag": "REF",
+        "elements": [
+          {
+            "value": "TJ",
+            "position": 1
+          },
+          {
+            "value": "810985986",
+            "position": 2
+          }
+        ],
+        "position": 8
+      },
+      {
+        "tag": "N3",
+        "elements": [
+          {
+            "value": "3825 LORNA RD STE 206",
+            "position": 1
+          }
+        ],
+        "position": 9
+      },
+      {
+        "tag": "N4",
+        "elements": [
+          {
+            "value": "HOOVER",
+            "position": 1
+          },
+          {
+            "value": "AL",
+            "position": 2
+          },
+          {
+            "value": "35244",
+            "position": 3
+          }
+        ],
+        "position": 10
+      },
+      {
+        "tag": "PRV",
+        "elements": [
+          {
+            "value": "PE",
+            "position": 1
+          },
+          {
+            "value": "PXC",
+            "position": 2
+          },
+          {
+            "value": "1223P0221X",
+            "position": 3
+          }
+        ],
+        "position": 11
+      },
+      {
+        "tag": "HL",
+        "elements": [
+          {
+            "value": "3",
+            "position": 1
+          },
+          {
+            "value": "2",
+            "position": 2
+          },
+          {
+            "value": "22",
+            "position": 3
+          },
+          {
+            "value": "0",
+            "position": 4
+          }
+        ],
+        "position": 12
+      },
+      {
+        "tag": "TRN",
+        "elements": [
+          {
+            "value": "2",
+            "position": 1
+          },
+          {
+            "value": "095009362",
+            "position": 2
+          },
+          {
+            "value": "1330989922",
+            "position": 3
+          }
+        ],
+        "position": 13
+      },
+      {
+        "tag": "TRN",
+        "elements": [
+          {
+            "value": "1",
+            "position": 1
+          },
+          {
+            "value": "253530QDV1",
+            "position": 2
+          },
+          {
+            "value": "9-GW_ALXIX",
+            "position": 3
+          },
+          {
+            "value": "ELIGIBILITY AUTHORIZATION",
+            "position": 4
+          }
+        ],
+        "position": 14
+      },
+      {
+        "tag": "NM1",
+        "elements": [
+          {
+            "value": "IL",
+            "position": 1
+          },
+          {
+            "value": "1",
+            "position": 2
+          },
+          {
+            "value": "CHATMON",
+            "position": 3
+          },
+          {
+            "value": "NEVAEH",
+            "position": 4
+          },
+          {
+            "value": "",
+            "position": 5
+          },
+          {
+            "value": "",
+            "position": 6
+          },
+          {
+            "value": "",
+            "position": 7
+          },
+          {
+            "value": "MI",
+            "position": 8
+          },
+          {
+            "value": "5300002019383",
+            "position": 9
+          }
+        ],
+        "position": 15
+      },
+      {
+        "tag": "N3",
+        "elements": [
+          {
+            "value": "302 STONECROFT CIRCLE",
+            "position": 1
+          }
+        ],
+        "position": 16
+      },
+      {
+        "tag": "N4",
+        "elements": [
+          {
+            "value": "HELENA",
+            "position": 1
+          },
+          {
+            "value": "AL",
+            "position": 2
+          },
+          {
+            "value": "350800000",
+            "position": 3
+          }
+        ],
+        "position": 17
+      },
+      {
+        "tag": "DMG",
+        "elements": [
+          {
+            "value": "D8",
+            "position": 1
+          },
+          {
+            "value": "20081119",
+            "position": 2
+          },
+          {
+            "value": "F",
+            "position": 3
+          }
+        ],
+        "position": 18
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "472",
+            "position": 1
+          },
+          {
+            "value": "RD8",
+            "position": 2
+          },
+          {
+            "value": "20251219-20251219",
+            "position": 3
+          }
+        ],
+        "position": 19
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "102",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20170804",
+            "position": 3
+          }
+        ],
+        "position": 20
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "1",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "35",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "TXIX-CO=59 AID=52 Full Medicaid Coverage",
+            "position": 5
+          }
+        ],
+        "position": 21
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "307",
+            "position": 1
+          },
+          {
+            "value": "RD8",
+            "position": 2
+          },
+          {
+            "value": "20250101-20251231",
+            "position": 3
+          }
+        ],
+        "position": 22
+      },
+      {
+        "tag": "MSG",
+        "elements": [
+          {
+            "value": "FAMILIES, CHILDREN, PREGNANCY OR FAMILY PLANNING-AWARDED-20250708-PLEASE NOTE THAT AWARDED STATUS DOES NOT MEAN EVERY MEMBER IN THE HOUSEHOLD HAS AL MEDICAID COVERAGE",
+            "position": 1
+          }
+        ],
+        "position": 23
+      },
+      {
+        "tag": "MSG",
+        "elements": [
+          {
+            "value": "Effective 10/01/2022, adults 21 and older covered for Dental Care while pregnant and 2 months after end of pregnancy for service type(s);35",
+            "position": 1
+          }
+        ],
+        "position": 24
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "A",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "35",
+            "position": 3
+          },
+          {
+            "value": "",
+            "position": 4
+          },
+          {
+            "value": "TXIX-CO=59 AID=52 Full Medicaid Coverage",
+            "position": 5
+          },
+          {
+            "value": "23",
+            "position": 6
+          },
+          {
+            "value": "",
+            "position": 7
+          },
+          {
+            "value": "0",
+            "position": 8
+          }
+        ],
+        "position": 25
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "C",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "35",
+            "position": 3
+          },
+          {
+            "value": "",
+            "position": 4
+          },
+          {
+            "value": "TXIX-CO=59 AID=52 Full Medicaid Coverage",
+            "position": 5
+          },
+          {
+            "value": "23",
+            "position": 6
+          },
+          {
+            "value": "0",
+            "position": 7
+          }
+        ],
+        "position": 26
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "B",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "35",
+            "position": 3
+          },
+          {
+            "value": "",
+            "position": 4
+          },
+          {
+            "value": "TXIX-CO=59 AID=52 Full Medicaid Coverage",
+            "position": 5
+          },
+          {
+            "value": "25",
+            "position": 6
+          },
+          {
+            "value": "0",
+            "position": 7
+          }
+        ],
+        "position": 27
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "MC",
+            "position": 1
+          },
+          {
+            "value": "",
+            "position": 2
+          },
+          {
+            "value": "",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "ACHND-AL Coordinated Health Network",
+            "position": 5
+          }
+        ],
+        "position": 28
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "307",
+            "position": 1
+          },
+          {
+            "value": "RD8",
+            "position": 2
+          },
+          {
+            "value": "20250701-22991231",
+            "position": 3
+          }
+        ],
+        "position": 29
+      },
+      {
+        "tag": "LS",
+        "elements": [
+          {
+            "value": "2120",
+            "position": 1
+          }
+        ],
+        "position": 30
+      },
+      {
+        "tag": "NM1",
+        "elements": [
+          {
+            "value": "P5",
+            "position": 1
+          },
+          {
+            "value": "2",
+            "position": 2
+          },
+          {
+            "value": "ALABAMA CARE NETWORK MID-STATE",
+            "position": 3
+          }
+        ],
+        "position": 31
+      },
+      {
+        "tag": "PER",
+        "elements": [
+          {
+            "value": "IC",
+            "position": 1
+          },
+          {
+            "value": "",
+            "position": 2
+          },
+          {
+            "value": "TE",
+            "position": 3
+          },
+          {
+            "value": "8332965245",
+            "position": 4
+          },
+          {
+            "value": "WP",
+            "position": 5
+          },
+          {
+            "value": "8332965245",
+            "position": 6
+          }
+        ],
+        "position": 32
+      },
+      {
+        "tag": "LE",
+        "elements": [
+          {
+            "value": "2120",
+            "position": 1
+          }
+        ],
+        "position": 33
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "D",
+            "position": 1
+          },
+          {
+            "value": "",
+            "position": 2
+          },
+          {
+            "value": "41",
+            "position": 3
+          },
+          {
+            "value": "",
+            "position": 4
+          },
+          {
+            "value": "Last Dental Screening",
+            "position": 5
+          }
+        ],
+        "position": 34
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "304",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20240926",
+            "position": 3
+          }
+        ],
+        "position": 35
+      },
+      {
+        "tag": "LS",
+        "elements": [
+          {
+            "value": "2120",
+            "position": 1
+          }
+        ],
+        "position": 36
+      },
+      {
+        "tag": "NM1",
+        "elements": [
+          {
+            "value": "1P",
+            "position": 1
+          },
+          {
+            "value": "1",
+            "position": 2
+          },
+          {
+            "value": "ANGLIN",
+            "position": 3
+          },
+          {
+            "value": "MICHAEL",
+            "position": 4
+          }
+        ],
+        "position": 37
+      },
+      {
+        "tag": "PER",
+        "elements": [
+          {
+            "value": "IC",
+            "position": 1
+          },
+          {
+            "value": "",
+            "position": 2
+          },
+          {
+            "value": "WP",
+            "position": 3
+          },
+          {
+            "value": "2059889800",
+            "position": 4
+          }
+        ],
+        "position": 38
+      },
+      {
+        "tag": "LE",
+        "elements": [
+          {
+            "value": "2120",
+            "position": 1
+          }
+        ],
+        "position": 39
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "D",
+            "position": 1
+          },
+          {
+            "value": "",
+            "position": 2
+          },
+          {
+            "value": "71",
+            "position": 3
+          },
+          {
+            "value": "",
+            "position": 4
+          },
+          {
+            "value": "Last Hearing Screening",
+            "position": 5
+          }
+        ],
+        "position": 40
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "304",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20230727",
+            "position": 3
+          }
+        ],
+        "position": 41
+      },
+      {
+        "tag": "LS",
+        "elements": [
+          {
+            "value": "2120",
+            "position": 1
+          }
+        ],
+        "position": 42
+      },
+      {
+        "tag": "NM1",
+        "elements": [
+          {
+            "value": "1P",
+            "position": 1
+          },
+          {
+            "value": "1",
+            "position": 2
+          },
+          {
+            "value": "DYE",
+            "position": 3
+          },
+          {
+            "value": "CANDICE",
+            "position": 4
+          }
+        ],
+        "position": 43
+      },
+      {
+        "tag": "PER",
+        "elements": [
+          {
+            "value": "IC",
+            "position": 1
+          },
+          {
+            "value": "",
+            "position": 2
+          },
+          {
+            "value": "WP",
+            "position": 3
+          },
+          {
+            "value": "2056389096",
+            "position": 4
+          }
+        ],
+        "position": 44
+      },
+      {
+        "tag": "LE",
+        "elements": [
+          {
+            "value": "2120",
+            "position": 1
+          }
+        ],
+        "position": 45
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "D",
+            "position": 1
+          },
+          {
+            "value": "",
+            "position": 2
+          },
+          {
+            "value": "9",
+            "position": 3
+          },
+          {
+            "value": "",
+            "position": 4
+          },
+          {
+            "value": "Last Medical Screening",
+            "position": 5
+          }
+        ],
+        "position": 46
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "304",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20230727",
+            "position": 3
+          }
+        ],
+        "position": 47
+      },
+      {
+        "tag": "LS",
+        "elements": [
+          {
+            "value": "2120",
+            "position": 1
+          }
+        ],
+        "position": 48
+      },
+      {
+        "tag": "NM1",
+        "elements": [
+          {
+            "value": "1P",
+            "position": 1
+          },
+          {
+            "value": "1",
+            "position": 2
+          },
+          {
+            "value": "DYE",
+            "position": 3
+          },
+          {
+            "value": "CANDICE",
+            "position": 4
+          }
+        ],
+        "position": 49
+      },
+      {
+        "tag": "PER",
+        "elements": [
+          {
+            "value": "IC",
+            "position": 1
+          },
+          {
+            "value": "",
+            "position": 2
+          },
+          {
+            "value": "WP",
+            "position": 3
+          },
+          {
+            "value": "2056389096",
+            "position": 4
+          }
+        ],
+        "position": 50
+      },
+      {
+        "tag": "LE",
+        "elements": [
+          {
+            "value": "2120",
+            "position": 1
+          }
+        ],
+        "position": 51
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "D",
+            "position": 1
+          },
+          {
+            "value": "",
+            "position": 2
+          },
+          {
+            "value": "AL",
+            "position": 3
+          },
+          {
+            "value": "",
+            "position": 4
+          },
+          {
+            "value": "Last Vision Screening",
+            "position": 5
+          }
+        ],
+        "position": 52
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "304",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20230727",
+            "position": 3
+          }
+        ],
+        "position": 53
+      },
+      {
+        "tag": "LS",
+        "elements": [
+          {
+            "value": "2120",
+            "position": 1
+          }
+        ],
+        "position": 54
+      },
+      {
+        "tag": "NM1",
+        "elements": [
+          {
+            "value": "1P",
+            "position": 1
+          },
+          {
+            "value": "1",
+            "position": 2
+          },
+          {
+            "value": "DYE",
+            "position": 3
+          },
+          {
+            "value": "CANDICE",
+            "position": 4
+          }
+        ],
+        "position": 55
+      },
+      {
+        "tag": "PER",
+        "elements": [
+          {
+            "value": "IC",
+            "position": 1
+          },
+          {
+            "value": "",
+            "position": 2
+          },
+          {
+            "value": "WP",
+            "position": 3
+          },
+          {
+            "value": "2056389096",
+            "position": 4
+          }
+        ],
+        "position": 56
+      },
+      {
+        "tag": "LE",
+        "elements": [
+          {
+            "value": "2120",
+            "position": 1
+          }
+        ],
+        "position": 57
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "F",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "48",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Paid INPT Days",
+            "position": 5
+          }
+        ],
+        "position": 58
+      },
+      {
+        "tag": "HSD",
+        "elements": [
+          {
+            "value": "DY",
+            "position": 1
+          },
+          {
+            "value": "0",
+            "position": 2
+          }
+        ],
+        "position": 59
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "636",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20251219",
+            "position": 3
+          }
+        ],
+        "position": 60
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "F",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "50",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Paid Outpat Days",
+            "position": 5
+          }
+        ],
+        "position": 61
+      },
+      {
+        "tag": "HSD",
+        "elements": [
+          {
+            "value": "DY",
+            "position": 1
+          },
+          {
+            "value": "0",
+            "position": 2
+          }
+        ],
+        "position": 62
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "636",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20251219",
+            "position": 3
+          }
+        ],
+        "position": 63
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "F",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "98",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Paid Physician Office Visits",
+            "position": 5
+          }
+        ],
+        "position": 64
+      },
+      {
+        "tag": "HSD",
+        "elements": [
+          {
+            "value": "VS",
+            "position": 1
+          },
+          {
+            "value": "0",
+            "position": 2
+          }
+        ],
+        "position": 65
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "636",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20251219",
+            "position": 3
+          }
+        ],
+        "position": 66
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "F",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "98",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Paid BMI Visits",
+            "position": 5
+          }
+        ],
+        "position": 67
+      },
+      {
+        "tag": "HSD",
+        "elements": [
+          {
+            "value": "VS",
+            "position": 1
+          },
+          {
+            "value": "0",
+            "position": 2
+          }
+        ],
+        "position": 68
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "636",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20251219",
+            "position": 3
+          }
+        ],
+        "position": 69
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "F",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "44",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Paid Home Health Visits",
+            "position": 5
+          }
+        ],
+        "position": 70
+      },
+      {
+        "tag": "HSD",
+        "elements": [
+          {
+            "value": "VS",
+            "position": 1
+          },
+          {
+            "value": "0",
+            "position": 2
+          }
+        ],
+        "position": 71
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "636",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20251219",
+            "position": 3
+          }
+        ],
+        "position": 72
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "F",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "13",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Paid Ambulatory Surgery",
+            "position": 5
+          }
+        ],
+        "position": 73
+      },
+      {
+        "tag": "HSD",
+        "elements": [
+          {
+            "value": "FL",
+            "position": 1
+          },
+          {
+            "value": "0",
+            "position": 2
+          }
+        ],
+        "position": 74
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "636",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20251219",
+            "position": 3
+          }
+        ],
+        "position": 75
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "F",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "76",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Paid Dialysis Services",
+            "position": 5
+          }
+        ],
+        "position": 76
+      },
+      {
+        "tag": "HSD",
+        "elements": [
+          {
+            "value": "FL",
+            "position": 1
+          },
+          {
+            "value": "0",
+            "position": 2
+          }
+        ],
+        "position": 77
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "636",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20251219",
+            "position": 3
+          }
+        ],
+        "position": 78
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "F",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "AM",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Paid Eye Frames",
+            "position": 5
+          }
+        ],
+        "position": 79
+      },
+      {
+        "tag": "HSD",
+        "elements": [
+          {
+            "value": "FL",
+            "position": 1
+          },
+          {
+            "value": "0",
+            "position": 2
+          }
+        ],
+        "position": 80
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "636",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20251219",
+            "position": 3
+          }
+        ],
+        "position": 81
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "F",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "AO",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Paid Eye Lens",
+            "position": 5
+          }
+        ],
+        "position": 82
+      },
+      {
+        "tag": "HSD",
+        "elements": [
+          {
+            "value": "FL",
+            "position": 1
+          },
+          {
+            "value": "0",
+            "position": 2
+          }
+        ],
+        "position": 83
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "636",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20251219",
+            "position": 3
+          }
+        ],
+        "position": 84
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "F",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "AL",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Paid Eye Exam",
+            "position": 5
+          }
+        ],
+        "position": 85
+      },
+      {
+        "tag": "HSD",
+        "elements": [
+          {
+            "value": "VS",
+            "position": 1
+          },
+          {
+            "value": "0",
+            "position": 2
+          }
+        ],
+        "position": 86
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "636",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20251219",
+            "position": 3
+          }
+        ],
+        "position": 87
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "F",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "AM",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Paid Eye Fitting",
+            "position": 5
+          }
+        ],
+        "position": 88
+      },
+      {
+        "tag": "HSD",
+        "elements": [
+          {
+            "value": "VS",
+            "position": 1
+          },
+          {
+            "value": "0",
+            "position": 2
+          }
+        ],
+        "position": 89
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "636",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20251219",
+            "position": 3
+          }
+        ],
+        "position": 90
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "F",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "AM",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Paid Eye Frames-Child",
+            "position": 5
+          }
+        ],
+        "position": 91
+      },
+      {
+        "tag": "HSD",
+        "elements": [
+          {
+            "value": "FL",
+            "position": 1
+          },
+          {
+            "value": "1",
+            "position": 2
+          }
+        ],
+        "position": 92
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "636",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20251219",
+            "position": 3
+          }
+        ],
+        "position": 93
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "F",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "AO",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Paid Eye Lens-Child",
+            "position": 5
+          }
+        ],
+        "position": 94
+      },
+      {
+        "tag": "HSD",
+        "elements": [
+          {
+            "value": "FL",
+            "position": 1
+          },
+          {
+            "value": "2",
+            "position": 2
+          }
+        ],
+        "position": 95
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "636",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20251219",
+            "position": 3
+          }
+        ],
+        "position": 96
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "F",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "AL",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Paid Eye Exam-Child",
+            "position": 5
+          }
+        ],
+        "position": 97
+      },
+      {
+        "tag": "HSD",
+        "elements": [
+          {
+            "value": "VS",
+            "position": 1
+          },
+          {
+            "value": "1",
+            "position": 2
+          }
+        ],
+        "position": 98
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "636",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20251219",
+            "position": 3
+          }
+        ],
+        "position": 99
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "F",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "AM",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Paid Eye Fitting-Child",
+            "position": 5
+          }
+        ],
+        "position": 100
+      },
+      {
+        "tag": "HSD",
+        "elements": [
+          {
+            "value": "VS",
+            "position": 1
+          },
+          {
+            "value": "1",
+            "position": 2
+          }
+        ],
+        "position": 101
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "636",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20251219",
+            "position": 3
+          }
+        ],
+        "position": 102
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "F",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "48",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Pend INPT Days",
+            "position": 5
+          }
+        ],
+        "position": 103
+      },
+      {
+        "tag": "HSD",
+        "elements": [
+          {
+            "value": "DY",
+            "position": 1
+          },
+          {
+            "value": "0",
+            "position": 2
+          }
+        ],
+        "position": 104
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "636",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20251219",
+            "position": 3
+          }
+        ],
+        "position": 105
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "F",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "50",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Pend Outpat Days",
+            "position": 5
+          }
+        ],
+        "position": 106
+      },
+      {
+        "tag": "HSD",
+        "elements": [
+          {
+            "value": "DY",
+            "position": 1
+          },
+          {
+            "value": "0",
+            "position": 2
+          }
+        ],
+        "position": 107
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "636",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20251219",
+            "position": 3
+          }
+        ],
+        "position": 108
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "F",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "98",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Pend Physician Office Visits",
+            "position": 5
+          }
+        ],
+        "position": 109
+      },
+      {
+        "tag": "HSD",
+        "elements": [
+          {
+            "value": "VS",
+            "position": 1
+          },
+          {
+            "value": "0",
+            "position": 2
+          }
+        ],
+        "position": 110
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "636",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20251219",
+            "position": 3
+          }
+        ],
+        "position": 111
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "F",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "98",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Pend BMI Visits",
+            "position": 5
+          }
+        ],
+        "position": 112
+      },
+      {
+        "tag": "HSD",
+        "elements": [
+          {
+            "value": "VS",
+            "position": 1
+          },
+          {
+            "value": "0",
+            "position": 2
+          }
+        ],
+        "position": 113
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "636",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20251219",
+            "position": 3
+          }
+        ],
+        "position": 114
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "F",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "44",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Pend Home Health Visits",
+            "position": 5
+          }
+        ],
+        "position": 115
+      },
+      {
+        "tag": "HSD",
+        "elements": [
+          {
+            "value": "VS",
+            "position": 1
+          },
+          {
+            "value": "0",
+            "position": 2
+          }
+        ],
+        "position": 116
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "636",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20251219",
+            "position": 3
+          }
+        ],
+        "position": 117
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "F",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "13",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Pend Ambulatory Surgery",
+            "position": 5
+          }
+        ],
+        "position": 118
+      },
+      {
+        "tag": "HSD",
+        "elements": [
+          {
+            "value": "FL",
+            "position": 1
+          },
+          {
+            "value": "0",
+            "position": 2
+          }
+        ],
+        "position": 119
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "636",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20251219",
+            "position": 3
+          }
+        ],
+        "position": 120
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "F",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "76",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Pend Dialysis Services",
+            "position": 5
+          }
+        ],
+        "position": 121
+      },
+      {
+        "tag": "HSD",
+        "elements": [
+          {
+            "value": "FL",
+            "position": 1
+          },
+          {
+            "value": "0",
+            "position": 2
+          }
+        ],
+        "position": 122
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "636",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20251219",
+            "position": 3
+          }
+        ],
+        "position": 123
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "F",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "AM",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Pend Eye Frames",
+            "position": 5
+          }
+        ],
+        "position": 124
+      },
+      {
+        "tag": "HSD",
+        "elements": [
+          {
+            "value": "FL",
+            "position": 1
+          },
+          {
+            "value": "0",
+            "position": 2
+          }
+        ],
+        "position": 125
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "636",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20251219",
+            "position": 3
+          }
+        ],
+        "position": 126
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "F",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "AO",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Pend Eye Lens",
+            "position": 5
+          }
+        ],
+        "position": 127
+      },
+      {
+        "tag": "HSD",
+        "elements": [
+          {
+            "value": "FL",
+            "position": 1
+          },
+          {
+            "value": "0",
+            "position": 2
+          }
+        ],
+        "position": 128
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "636",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20251219",
+            "position": 3
+          }
+        ],
+        "position": 129
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "F",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "AL",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Pend Eye Exam",
+            "position": 5
+          }
+        ],
+        "position": 130
+      },
+      {
+        "tag": "HSD",
+        "elements": [
+          {
+            "value": "VS",
+            "position": 1
+          },
+          {
+            "value": "0",
+            "position": 2
+          }
+        ],
+        "position": 131
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "636",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20251219",
+            "position": 3
+          }
+        ],
+        "position": 132
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "F",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "AM",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Pend Eye Fitting",
+            "position": 5
+          }
+        ],
+        "position": 133
+      },
+      {
+        "tag": "HSD",
+        "elements": [
+          {
+            "value": "VS",
+            "position": 1
+          },
+          {
+            "value": "0",
+            "position": 2
+          }
+        ],
+        "position": 134
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "636",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20251219",
+            "position": 3
+          }
+        ],
+        "position": 135
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "F",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "AM",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Pend Eye Frames-Child",
+            "position": 5
+          }
+        ],
+        "position": 136
+      },
+      {
+        "tag": "HSD",
+        "elements": [
+          {
+            "value": "FL",
+            "position": 1
+          },
+          {
+            "value": "0",
+            "position": 2
+          }
+        ],
+        "position": 137
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "636",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20251219",
+            "position": 3
+          }
+        ],
+        "position": 138
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "F",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "AO",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Pend Eye Lens-Child",
+            "position": 5
+          }
+        ],
+        "position": 139
+      },
+      {
+        "tag": "HSD",
+        "elements": [
+          {
+            "value": "FL",
+            "position": 1
+          },
+          {
+            "value": "0",
+            "position": 2
+          }
+        ],
+        "position": 140
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "636",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20251219",
+            "position": 3
+          }
+        ],
+        "position": 141
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "F",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "AL",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Pend Eye Exam-Child",
+            "position": 5
+          }
+        ],
+        "position": 142
+      },
+      {
+        "tag": "HSD",
+        "elements": [
+          {
+            "value": "VS",
+            "position": 1
+          },
+          {
+            "value": "0",
+            "position": 2
+          }
+        ],
+        "position": 143
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "636",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20251219",
+            "position": 3
+          }
+        ],
+        "position": 144
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "F",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "AM",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Pend Eye Fitting-Child",
+            "position": 5
+          }
+        ],
+        "position": 145
+      },
+      {
+        "tag": "HSD",
+        "elements": [
+          {
+            "value": "VS",
+            "position": 1
+          },
+          {
+            "value": "0",
+            "position": 2
+          }
+        ],
+        "position": 146
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "636",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20251219",
+            "position": 3
+          }
+        ],
+        "position": 147
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "D",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "35",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Paid Dental Fluoride",
+            "position": 5
+          }
+        ],
+        "position": 148
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "304",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20240926",
+            "position": 3
+          }
+        ],
+        "position": 149
+      },
+      {
+        "tag": "LS",
+        "elements": [
+          {
+            "value": "2120",
+            "position": 1
+          }
+        ],
+        "position": 150
+      },
+      {
+        "tag": "NM1",
+        "elements": [
+          {
+            "value": "1P",
+            "position": 1
+          },
+          {
+            "value": "1",
+            "position": 2
+          },
+          {
+            "value": "ANGLIN",
+            "position": 3
+          },
+          {
+            "value": "MICHAEL",
+            "position": 4
+          }
+        ],
+        "position": 151
+      },
+      {
+        "tag": "LE",
+        "elements": [
+          {
+            "value": "2120",
+            "position": 1
+          }
+        ],
+        "position": 152
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "D",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "35",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Paid Dental Fluoride",
+            "position": 5
+          }
+        ],
+        "position": 153
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "307",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20190614",
+            "position": 3
+          }
+        ],
+        "position": 154
+      },
+      {
+        "tag": "LS",
+        "elements": [
+          {
+            "value": "2120",
+            "position": 1
+          }
+        ],
+        "position": 155
+      },
+      {
+        "tag": "NM1",
+        "elements": [
+          {
+            "value": "1P",
+            "position": 1
+          },
+          {
+            "value": "1",
+            "position": 2
+          },
+          {
+            "value": "ZHANG",
+            "position": 3
+          },
+          {
+            "value": "XUEMING",
+            "position": 4
+          }
+        ],
+        "position": 156
+      },
+      {
+        "tag": "LE",
+        "elements": [
+          {
+            "value": "2120",
+            "position": 1
+          }
+        ],
+        "position": 157
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "D",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "35",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Paid Dental Prophylaxis",
+            "position": 5
+          }
+        ],
+        "position": 158
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "304",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20240926",
+            "position": 3
+          }
+        ],
+        "position": 159
+      },
+      {
+        "tag": "LS",
+        "elements": [
+          {
+            "value": "2120",
+            "position": 1
+          }
+        ],
+        "position": 160
+      },
+      {
+        "tag": "NM1",
+        "elements": [
+          {
+            "value": "1P",
+            "position": 1
+          },
+          {
+            "value": "1",
+            "position": 2
+          },
+          {
+            "value": "ANGLIN",
+            "position": 3
+          },
+          {
+            "value": "MICHAEL",
+            "position": 4
+          }
+        ],
+        "position": 161
+      },
+      {
+        "tag": "LE",
+        "elements": [
+          {
+            "value": "2120",
+            "position": 1
+          }
+        ],
+        "position": 162
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "D",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "35",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Paid Dental Prophylaxis",
+            "position": 5
+          }
+        ],
+        "position": 163
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "307",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20190614",
+            "position": 3
+          }
+        ],
+        "position": 164
+      },
+      {
+        "tag": "LS",
+        "elements": [
+          {
+            "value": "2120",
+            "position": 1
+          }
+        ],
+        "position": 165
+      },
+      {
+        "tag": "NM1",
+        "elements": [
+          {
+            "value": "1P",
+            "position": 1
+          },
+          {
+            "value": "1",
+            "position": 2
+          },
+          {
+            "value": "ZHANG",
+            "position": 3
+          },
+          {
+            "value": "XUEMING",
+            "position": 4
+          }
+        ],
+        "position": 166
+      },
+      {
+        "tag": "LE",
+        "elements": [
+          {
+            "value": "2120",
+            "position": 1
+          }
+        ],
+        "position": 167
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "D",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "35",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Paid Dental Full or Panoramic Xray",
+            "position": 5
+          }
+        ],
+        "position": 168
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "304",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20240926",
+            "position": 3
+          }
+        ],
+        "position": 169
+      },
+      {
+        "tag": "LS",
+        "elements": [
+          {
+            "value": "2120",
+            "position": 1
+          }
+        ],
+        "position": 170
+      },
+      {
+        "tag": "NM1",
+        "elements": [
+          {
+            "value": "1P",
+            "position": 1
+          },
+          {
+            "value": "1",
+            "position": 2
+          },
+          {
+            "value": "ANGLIN",
+            "position": 3
+          },
+          {
+            "value": "MICHAEL",
+            "position": 4
+          }
+        ],
+        "position": 171
+      },
+      {
+        "tag": "LE",
+        "elements": [
+          {
+            "value": "2120",
+            "position": 1
+          }
+        ],
+        "position": 172
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "D",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "35",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Paid Dental Full or Panoramic Xray",
+            "position": 5
+          }
+        ],
+        "position": 173
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "307",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20180529",
+            "position": 3
+          }
+        ],
+        "position": 174
+      },
+      {
+        "tag": "LS",
+        "elements": [
+          {
+            "value": "2120",
+            "position": 1
+          }
+        ],
+        "position": 175
+      },
+      {
+        "tag": "NM1",
+        "elements": [
+          {
+            "value": "1P",
+            "position": 1
+          },
+          {
+            "value": "1",
+            "position": 2
+          },
+          {
+            "value": "MEEKS",
+            "position": 3
+          },
+          {
+            "value": "OLANREWAJU",
+            "position": 4
+          }
+        ],
+        "position": 176
+      },
+      {
+        "tag": "LE",
+        "elements": [
+          {
+            "value": "2120",
+            "position": 1
+          }
+        ],
+        "position": 177
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "D",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "35",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Paid Dental Oral Exam",
+            "position": 5
+          }
+        ],
+        "position": 178
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "304",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20240926",
+            "position": 3
+          }
+        ],
+        "position": 179
+      },
+      {
+        "tag": "LS",
+        "elements": [
+          {
+            "value": "2120",
+            "position": 1
+          }
+        ],
+        "position": 180
+      },
+      {
+        "tag": "NM1",
+        "elements": [
+          {
+            "value": "1P",
+            "position": 1
+          },
+          {
+            "value": "1",
+            "position": 2
+          },
+          {
+            "value": "ANGLIN",
+            "position": 3
+          },
+          {
+            "value": "MICHAEL",
+            "position": 4
+          }
+        ],
+        "position": 181
+      },
+      {
+        "tag": "LE",
+        "elements": [
+          {
+            "value": "2120",
+            "position": 1
+          }
+        ],
+        "position": 182
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "D",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "35",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Paid Dental Oral Exam",
+            "position": 5
+          }
+        ],
+        "position": 183
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "307",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20190614",
+            "position": 3
+          }
+        ],
+        "position": 184
+      },
+      {
+        "tag": "LS",
+        "elements": [
+          {
+            "value": "2120",
+            "position": 1
+          }
+        ],
+        "position": 185
+      },
+      {
+        "tag": "NM1",
+        "elements": [
+          {
+            "value": "1P",
+            "position": 1
+          },
+          {
+            "value": "1",
+            "position": 2
+          },
+          {
+            "value": "ZHANG",
+            "position": 3
+          },
+          {
+            "value": "XUEMING",
+            "position": 4
+          }
+        ],
+        "position": 186
+      },
+      {
+        "tag": "LE",
+        "elements": [
+          {
+            "value": "2120",
+            "position": 1
+          }
+        ],
+        "position": 187
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "D",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "35",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Paid Dental Bitewing Xray",
+            "position": 5
+          }
+        ],
+        "position": 188
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "304",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20240926",
+            "position": 3
+          }
+        ],
+        "position": 189
+      },
+      {
+        "tag": "LS",
+        "elements": [
+          {
+            "value": "2120",
+            "position": 1
+          }
+        ],
+        "position": 190
+      },
+      {
+        "tag": "NM1",
+        "elements": [
+          {
+            "value": "1P",
+            "position": 1
+          },
+          {
+            "value": "1",
+            "position": 2
+          },
+          {
+            "value": "ANGLIN",
+            "position": 3
+          },
+          {
+            "value": "MICHAEL",
+            "position": 4
+          }
+        ],
+        "position": 191
+      },
+      {
+        "tag": "LE",
+        "elements": [
+          {
+            "value": "2120",
+            "position": 1
+          }
+        ],
+        "position": 192
+      },
+      {
+        "tag": "EB",
+        "elements": [
+          {
+            "value": "D",
+            "position": 1
+          },
+          {
+            "value": "IND",
+            "position": 2
+          },
+          {
+            "value": "35",
+            "position": 3
+          },
+          {
+            "value": "MC",
+            "position": 4
+          },
+          {
+            "value": "Paid Dental Bitewing Xray",
+            "position": 5
+          }
+        ],
+        "position": 193
+      },
+      {
+        "tag": "DTP",
+        "elements": [
+          {
+            "value": "307",
+            "position": 1
+          },
+          {
+            "value": "D8",
+            "position": 2
+          },
+          {
+            "value": "20190614",
+            "position": 3
+          }
+        ],
+        "position": 194
+      },
+      {
+        "tag": "LS",
+        "elements": [
+          {
+            "value": "2120",
+            "position": 1
+          }
+        ],
+        "position": 195
+      },
+      {
+        "tag": "NM1",
+        "elements": [
+          {
+            "value": "1P",
+            "position": 1
+          },
+          {
+            "value": "1",
+            "position": 2
+          },
+          {
+            "value": "ZHANG",
+            "position": 3
+          },
+          {
+            "value": "XUEMING",
+            "position": 4
+          }
+        ],
+        "position": 196
+      },
+      {
+        "tag": "LE",
+        "elements": [
+          {
+            "value": "2120",
+            "position": 1
+          }
+        ],
+        "position": 197
+      },
+      {
+        "tag": "SE",
+        "elements": [
+          {
+            "value": "197",
+            "position": 1
+          },
+          {
+            "value": "0001",
+            "position": 2
+          }
+        ],
+        "position": 198
+      },
+      {
+        "tag": "GE",
+        "elements": [
+          {
+            "value": "1",
+            "position": 1
+          },
+          {
+            "value": "1",
+            "position": 2
+          }
+        ],
+        "position": 199
+      },
+      {
+        "tag": "IEA",
+        "elements": [
+          {
+            "value": "1",
+            "position": 1
+          },
+          {
+            "value": "000000001",
+            "position": 2
+          }
+        ],
+        "position": 200
+      }
+    ],
+    "loops": [
+      {
+        "id": "2120C",
+        "name": "Subscriber Benefit Related Entity Name (Loop)",
+        "segments": [
+          {
+            "tag": "LS",
+            "elements": [
+              {
+                "value": "2120",
+                "position": 1
+              }
+            ],
+            "position": 30
+          },
+          {
+            "tag": "LE",
+            "elements": [
+              {
+                "value": "2120",
+                "position": 1
+              }
+            ],
+            "position": 33
+          },
+          {
+            "tag": "LS",
+            "elements": [
+              {
+                "value": "2120",
+                "position": 1
+              }
+            ],
+            "position": 36
+          },
+          {
+            "tag": "LE",
+            "elements": [
+              {
+                "value": "2120",
+                "position": 1
+              }
+            ],
+            "position": 39
+          },
+          {
+            "tag": "LS",
+            "elements": [
+              {
+                "value": "2120",
+                "position": 1
+              }
+            ],
+            "position": 42
+          },
+          {
+            "tag": "LE",
+            "elements": [
+              {
+                "value": "2120",
+                "position": 1
+              }
+            ],
+            "position": 45
+          },
+          {
+            "tag": "LS",
+            "elements": [
+              {
+                "value": "2120",
+                "position": 1
+              }
+            ],
+            "position": 48
+          },
+          {
+            "tag": "LE",
+            "elements": [
+              {
+                "value": "2120",
+                "position": 1
+              }
+            ],
+            "position": 51
+          },
+          {
+            "tag": "LS",
+            "elements": [
+              {
+                "value": "2120",
+                "position": 1
+              }
+            ],
+            "position": 54
+          },
+          {
+            "tag": "LE",
+            "elements": [
+              {
+                "value": "2120",
+                "position": 1
+              }
+            ],
+            "position": 57
+          },
+          {
+            "tag": "LS",
+            "elements": [
+              {
+                "value": "2120",
+                "position": 1
+              }
+            ],
+            "position": 150
+          },
+          {
+            "tag": "LE",
+            "elements": [
+              {
+                "value": "2120",
+                "position": 1
+              }
+            ],
+            "position": 152
+          },
+          {
+            "tag": "LS",
+            "elements": [
+              {
+                "value": "2120",
+                "position": 1
+              }
+            ],
+            "position": 155
+          },
+          {
+            "tag": "LE",
+            "elements": [
+              {
+                "value": "2120",
+                "position": 1
+              }
+            ],
+            "position": 157
+          },
+          {
+            "tag": "LS",
+            "elements": [
+              {
+                "value": "2120",
+                "position": 1
+              }
+            ],
+            "position": 160
+          },
+          {
+            "tag": "LE",
+            "elements": [
+              {
+                "value": "2120",
+                "position": 1
+              }
+            ],
+            "position": 162
+          },
+          {
+            "tag": "LS",
+            "elements": [
+              {
+                "value": "2120",
+                "position": 1
+              }
+            ],
+            "position": 165
+          },
+          {
+            "tag": "LE",
+            "elements": [
+              {
+                "value": "2120",
+                "position": 1
+              }
+            ],
+            "position": 167
+          },
+          {
+            "tag": "LS",
+            "elements": [
+              {
+                "value": "2120",
+                "position": 1
+              }
+            ],
+            "position": 170
+          },
+          {
+            "tag": "LE",
+            "elements": [
+              {
+                "value": "2120",
+                "position": 1
+              }
+            ],
+            "position": 172
+          },
+          {
+            "tag": "LS",
+            "elements": [
+              {
+                "value": "2120",
+                "position": 1
+              }
+            ],
+            "position": 175
+          },
+          {
+            "tag": "LE",
+            "elements": [
+              {
+                "value": "2120",
+                "position": 1
+              }
+            ],
+            "position": 177
+          },
+          {
+            "tag": "LS",
+            "elements": [
+              {
+                "value": "2120",
+                "position": 1
+              }
+            ],
+            "position": 180
+          },
+          {
+            "tag": "LE",
+            "elements": [
+              {
+                "value": "2120",
+                "position": 1
+              }
+            ],
+            "position": 182
+          },
+          {
+            "tag": "LS",
+            "elements": [
+              {
+                "value": "2120",
+                "position": 1
+              }
+            ],
+            "position": 185
+          },
+          {
+            "tag": "LE",
+            "elements": [
+              {
+                "value": "2120",
+                "position": 1
+              }
+            ],
+            "position": 187
+          },
+          {
+            "tag": "LS",
+            "elements": [
+              {
+                "value": "2120",
+                "position": 1
+              }
+            ],
+            "position": 190
+          },
+          {
+            "tag": "LE",
+            "elements": [
+              {
+                "value": "2120",
+                "position": 1
+              }
+            ],
+            "position": 192
+          },
+          {
+            "tag": "LS",
+            "elements": [
+              {
+                "value": "2120",
+                "position": 1
+              }
+            ],
+            "position": 195
+          },
+          {
+            "tag": "LE",
+            "elements": [
+              {
+                "value": "2120",
+                "position": 1
+              }
+            ],
+            "position": 197
+          }
+        ],
+        "childLoops": []
+      },
+      {
+        "id": "2110C",
+        "name": "Subscriber Eligibility or Benefit Information",
+        "segments": [
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "1",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "35",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "TXIX-CO=59 AID=52 Full Medicaid Coverage",
+                "position": 5
+              }
+            ],
+            "position": 21
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "307",
+                "position": 1
+              },
+              {
+                "value": "RD8",
+                "position": 2
+              },
+              {
+                "value": "20250101-20251231",
+                "position": 3
+              }
+            ],
+            "position": 22
+          },
+          {
+            "tag": "MSG",
+            "elements": [
+              {
+                "value": "FAMILIES, CHILDREN, PREGNANCY OR FAMILY PLANNING-AWARDED-20250708-PLEASE NOTE THAT AWARDED STATUS DOES NOT MEAN EVERY MEMBER IN THE HOUSEHOLD HAS AL MEDICAID COVERAGE",
+                "position": 1
+              }
+            ],
+            "position": 23
+          },
+          {
+            "tag": "MSG",
+            "elements": [
+              {
+                "value": "Effective 10/01/2022, adults 21 and older covered for Dental Care while pregnant and 2 months after end of pregnancy for service type(s);35",
+                "position": 1
+              }
+            ],
+            "position": 24
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "A",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "35",
+                "position": 3
+              },
+              {
+                "value": "",
+                "position": 4
+              },
+              {
+                "value": "TXIX-CO=59 AID=52 Full Medicaid Coverage",
+                "position": 5
+              },
+              {
+                "value": "23",
+                "position": 6
+              },
+              {
+                "value": "",
+                "position": 7
+              },
+              {
+                "value": "0",
+                "position": 8
+              }
+            ],
+            "position": 25
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "C",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "35",
+                "position": 3
+              },
+              {
+                "value": "",
+                "position": 4
+              },
+              {
+                "value": "TXIX-CO=59 AID=52 Full Medicaid Coverage",
+                "position": 5
+              },
+              {
+                "value": "23",
+                "position": 6
+              },
+              {
+                "value": "0",
+                "position": 7
+              }
+            ],
+            "position": 26
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "B",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "35",
+                "position": 3
+              },
+              {
+                "value": "",
+                "position": 4
+              },
+              {
+                "value": "TXIX-CO=59 AID=52 Full Medicaid Coverage",
+                "position": 5
+              },
+              {
+                "value": "25",
+                "position": 6
+              },
+              {
+                "value": "0",
+                "position": 7
+              }
+            ],
+            "position": 27
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "MC",
+                "position": 1
+              },
+              {
+                "value": "",
+                "position": 2
+              },
+              {
+                "value": "",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "ACHND-AL Coordinated Health Network",
+                "position": 5
+              }
+            ],
+            "position": 28
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "307",
+                "position": 1
+              },
+              {
+                "value": "RD8",
+                "position": 2
+              },
+              {
+                "value": "20250701-22991231",
+                "position": 3
+              }
+            ],
+            "position": 29
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "D",
+                "position": 1
+              },
+              {
+                "value": "",
+                "position": 2
+              },
+              {
+                "value": "41",
+                "position": 3
+              },
+              {
+                "value": "",
+                "position": 4
+              },
+              {
+                "value": "Last Dental Screening",
+                "position": 5
+              }
+            ],
+            "position": 34
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "304",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20240926",
+                "position": 3
+              }
+            ],
+            "position": 35
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "D",
+                "position": 1
+              },
+              {
+                "value": "",
+                "position": 2
+              },
+              {
+                "value": "71",
+                "position": 3
+              },
+              {
+                "value": "",
+                "position": 4
+              },
+              {
+                "value": "Last Hearing Screening",
+                "position": 5
+              }
+            ],
+            "position": 40
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "304",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20230727",
+                "position": 3
+              }
+            ],
+            "position": 41
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "D",
+                "position": 1
+              },
+              {
+                "value": "",
+                "position": 2
+              },
+              {
+                "value": "9",
+                "position": 3
+              },
+              {
+                "value": "",
+                "position": 4
+              },
+              {
+                "value": "Last Medical Screening",
+                "position": 5
+              }
+            ],
+            "position": 46
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "304",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20230727",
+                "position": 3
+              }
+            ],
+            "position": 47
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "D",
+                "position": 1
+              },
+              {
+                "value": "",
+                "position": 2
+              },
+              {
+                "value": "AL",
+                "position": 3
+              },
+              {
+                "value": "",
+                "position": 4
+              },
+              {
+                "value": "Last Vision Screening",
+                "position": 5
+              }
+            ],
+            "position": 52
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "304",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20230727",
+                "position": 3
+              }
+            ],
+            "position": 53
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "F",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "48",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Paid INPT Days",
+                "position": 5
+              }
+            ],
+            "position": 58
+          },
+          {
+            "tag": "HSD",
+            "elements": [
+              {
+                "value": "DY",
+                "position": 1
+              },
+              {
+                "value": "0",
+                "position": 2
+              }
+            ],
+            "position": 59
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "636",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20251219",
+                "position": 3
+              }
+            ],
+            "position": 60
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "F",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "50",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Paid Outpat Days",
+                "position": 5
+              }
+            ],
+            "position": 61
+          },
+          {
+            "tag": "HSD",
+            "elements": [
+              {
+                "value": "DY",
+                "position": 1
+              },
+              {
+                "value": "0",
+                "position": 2
+              }
+            ],
+            "position": 62
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "636",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20251219",
+                "position": 3
+              }
+            ],
+            "position": 63
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "F",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "98",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Paid Physician Office Visits",
+                "position": 5
+              }
+            ],
+            "position": 64
+          },
+          {
+            "tag": "HSD",
+            "elements": [
+              {
+                "value": "VS",
+                "position": 1
+              },
+              {
+                "value": "0",
+                "position": 2
+              }
+            ],
+            "position": 65
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "636",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20251219",
+                "position": 3
+              }
+            ],
+            "position": 66
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "F",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "98",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Paid BMI Visits",
+                "position": 5
+              }
+            ],
+            "position": 67
+          },
+          {
+            "tag": "HSD",
+            "elements": [
+              {
+                "value": "VS",
+                "position": 1
+              },
+              {
+                "value": "0",
+                "position": 2
+              }
+            ],
+            "position": 68
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "636",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20251219",
+                "position": 3
+              }
+            ],
+            "position": 69
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "F",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "44",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Paid Home Health Visits",
+                "position": 5
+              }
+            ],
+            "position": 70
+          },
+          {
+            "tag": "HSD",
+            "elements": [
+              {
+                "value": "VS",
+                "position": 1
+              },
+              {
+                "value": "0",
+                "position": 2
+              }
+            ],
+            "position": 71
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "636",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20251219",
+                "position": 3
+              }
+            ],
+            "position": 72
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "F",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "13",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Paid Ambulatory Surgery",
+                "position": 5
+              }
+            ],
+            "position": 73
+          },
+          {
+            "tag": "HSD",
+            "elements": [
+              {
+                "value": "FL",
+                "position": 1
+              },
+              {
+                "value": "0",
+                "position": 2
+              }
+            ],
+            "position": 74
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "636",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20251219",
+                "position": 3
+              }
+            ],
+            "position": 75
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "F",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "76",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Paid Dialysis Services",
+                "position": 5
+              }
+            ],
+            "position": 76
+          },
+          {
+            "tag": "HSD",
+            "elements": [
+              {
+                "value": "FL",
+                "position": 1
+              },
+              {
+                "value": "0",
+                "position": 2
+              }
+            ],
+            "position": 77
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "636",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20251219",
+                "position": 3
+              }
+            ],
+            "position": 78
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "F",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "AM",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Paid Eye Frames",
+                "position": 5
+              }
+            ],
+            "position": 79
+          },
+          {
+            "tag": "HSD",
+            "elements": [
+              {
+                "value": "FL",
+                "position": 1
+              },
+              {
+                "value": "0",
+                "position": 2
+              }
+            ],
+            "position": 80
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "636",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20251219",
+                "position": 3
+              }
+            ],
+            "position": 81
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "F",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "AO",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Paid Eye Lens",
+                "position": 5
+              }
+            ],
+            "position": 82
+          },
+          {
+            "tag": "HSD",
+            "elements": [
+              {
+                "value": "FL",
+                "position": 1
+              },
+              {
+                "value": "0",
+                "position": 2
+              }
+            ],
+            "position": 83
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "636",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20251219",
+                "position": 3
+              }
+            ],
+            "position": 84
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "F",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "AL",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Paid Eye Exam",
+                "position": 5
+              }
+            ],
+            "position": 85
+          },
+          {
+            "tag": "HSD",
+            "elements": [
+              {
+                "value": "VS",
+                "position": 1
+              },
+              {
+                "value": "0",
+                "position": 2
+              }
+            ],
+            "position": 86
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "636",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20251219",
+                "position": 3
+              }
+            ],
+            "position": 87
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "F",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "AM",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Paid Eye Fitting",
+                "position": 5
+              }
+            ],
+            "position": 88
+          },
+          {
+            "tag": "HSD",
+            "elements": [
+              {
+                "value": "VS",
+                "position": 1
+              },
+              {
+                "value": "0",
+                "position": 2
+              }
+            ],
+            "position": 89
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "636",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20251219",
+                "position": 3
+              }
+            ],
+            "position": 90
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "F",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "AM",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Paid Eye Frames-Child",
+                "position": 5
+              }
+            ],
+            "position": 91
+          },
+          {
+            "tag": "HSD",
+            "elements": [
+              {
+                "value": "FL",
+                "position": 1
+              },
+              {
+                "value": "1",
+                "position": 2
+              }
+            ],
+            "position": 92
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "636",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20251219",
+                "position": 3
+              }
+            ],
+            "position": 93
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "F",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "AO",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Paid Eye Lens-Child",
+                "position": 5
+              }
+            ],
+            "position": 94
+          },
+          {
+            "tag": "HSD",
+            "elements": [
+              {
+                "value": "FL",
+                "position": 1
+              },
+              {
+                "value": "2",
+                "position": 2
+              }
+            ],
+            "position": 95
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "636",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20251219",
+                "position": 3
+              }
+            ],
+            "position": 96
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "F",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "AL",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Paid Eye Exam-Child",
+                "position": 5
+              }
+            ],
+            "position": 97
+          },
+          {
+            "tag": "HSD",
+            "elements": [
+              {
+                "value": "VS",
+                "position": 1
+              },
+              {
+                "value": "1",
+                "position": 2
+              }
+            ],
+            "position": 98
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "636",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20251219",
+                "position": 3
+              }
+            ],
+            "position": 99
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "F",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "AM",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Paid Eye Fitting-Child",
+                "position": 5
+              }
+            ],
+            "position": 100
+          },
+          {
+            "tag": "HSD",
+            "elements": [
+              {
+                "value": "VS",
+                "position": 1
+              },
+              {
+                "value": "1",
+                "position": 2
+              }
+            ],
+            "position": 101
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "636",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20251219",
+                "position": 3
+              }
+            ],
+            "position": 102
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "F",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "48",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Pend INPT Days",
+                "position": 5
+              }
+            ],
+            "position": 103
+          },
+          {
+            "tag": "HSD",
+            "elements": [
+              {
+                "value": "DY",
+                "position": 1
+              },
+              {
+                "value": "0",
+                "position": 2
+              }
+            ],
+            "position": 104
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "636",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20251219",
+                "position": 3
+              }
+            ],
+            "position": 105
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "F",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "50",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Pend Outpat Days",
+                "position": 5
+              }
+            ],
+            "position": 106
+          },
+          {
+            "tag": "HSD",
+            "elements": [
+              {
+                "value": "DY",
+                "position": 1
+              },
+              {
+                "value": "0",
+                "position": 2
+              }
+            ],
+            "position": 107
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "636",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20251219",
+                "position": 3
+              }
+            ],
+            "position": 108
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "F",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "98",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Pend Physician Office Visits",
+                "position": 5
+              }
+            ],
+            "position": 109
+          },
+          {
+            "tag": "HSD",
+            "elements": [
+              {
+                "value": "VS",
+                "position": 1
+              },
+              {
+                "value": "0",
+                "position": 2
+              }
+            ],
+            "position": 110
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "636",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20251219",
+                "position": 3
+              }
+            ],
+            "position": 111
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "F",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "98",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Pend BMI Visits",
+                "position": 5
+              }
+            ],
+            "position": 112
+          },
+          {
+            "tag": "HSD",
+            "elements": [
+              {
+                "value": "VS",
+                "position": 1
+              },
+              {
+                "value": "0",
+                "position": 2
+              }
+            ],
+            "position": 113
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "636",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20251219",
+                "position": 3
+              }
+            ],
+            "position": 114
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "F",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "44",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Pend Home Health Visits",
+                "position": 5
+              }
+            ],
+            "position": 115
+          },
+          {
+            "tag": "HSD",
+            "elements": [
+              {
+                "value": "VS",
+                "position": 1
+              },
+              {
+                "value": "0",
+                "position": 2
+              }
+            ],
+            "position": 116
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "636",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20251219",
+                "position": 3
+              }
+            ],
+            "position": 117
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "F",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "13",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Pend Ambulatory Surgery",
+                "position": 5
+              }
+            ],
+            "position": 118
+          },
+          {
+            "tag": "HSD",
+            "elements": [
+              {
+                "value": "FL",
+                "position": 1
+              },
+              {
+                "value": "0",
+                "position": 2
+              }
+            ],
+            "position": 119
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "636",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20251219",
+                "position": 3
+              }
+            ],
+            "position": 120
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "F",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "76",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Pend Dialysis Services",
+                "position": 5
+              }
+            ],
+            "position": 121
+          },
+          {
+            "tag": "HSD",
+            "elements": [
+              {
+                "value": "FL",
+                "position": 1
+              },
+              {
+                "value": "0",
+                "position": 2
+              }
+            ],
+            "position": 122
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "636",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20251219",
+                "position": 3
+              }
+            ],
+            "position": 123
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "F",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "AM",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Pend Eye Frames",
+                "position": 5
+              }
+            ],
+            "position": 124
+          },
+          {
+            "tag": "HSD",
+            "elements": [
+              {
+                "value": "FL",
+                "position": 1
+              },
+              {
+                "value": "0",
+                "position": 2
+              }
+            ],
+            "position": 125
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "636",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20251219",
+                "position": 3
+              }
+            ],
+            "position": 126
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "F",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "AO",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Pend Eye Lens",
+                "position": 5
+              }
+            ],
+            "position": 127
+          },
+          {
+            "tag": "HSD",
+            "elements": [
+              {
+                "value": "FL",
+                "position": 1
+              },
+              {
+                "value": "0",
+                "position": 2
+              }
+            ],
+            "position": 128
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "636",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20251219",
+                "position": 3
+              }
+            ],
+            "position": 129
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "F",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "AL",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Pend Eye Exam",
+                "position": 5
+              }
+            ],
+            "position": 130
+          },
+          {
+            "tag": "HSD",
+            "elements": [
+              {
+                "value": "VS",
+                "position": 1
+              },
+              {
+                "value": "0",
+                "position": 2
+              }
+            ],
+            "position": 131
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "636",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20251219",
+                "position": 3
+              }
+            ],
+            "position": 132
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "F",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "AM",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Pend Eye Fitting",
+                "position": 5
+              }
+            ],
+            "position": 133
+          },
+          {
+            "tag": "HSD",
+            "elements": [
+              {
+                "value": "VS",
+                "position": 1
+              },
+              {
+                "value": "0",
+                "position": 2
+              }
+            ],
+            "position": 134
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "636",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20251219",
+                "position": 3
+              }
+            ],
+            "position": 135
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "F",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "AM",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Pend Eye Frames-Child",
+                "position": 5
+              }
+            ],
+            "position": 136
+          },
+          {
+            "tag": "HSD",
+            "elements": [
+              {
+                "value": "FL",
+                "position": 1
+              },
+              {
+                "value": "0",
+                "position": 2
+              }
+            ],
+            "position": 137
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "636",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20251219",
+                "position": 3
+              }
+            ],
+            "position": 138
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "F",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "AO",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Pend Eye Lens-Child",
+                "position": 5
+              }
+            ],
+            "position": 139
+          },
+          {
+            "tag": "HSD",
+            "elements": [
+              {
+                "value": "FL",
+                "position": 1
+              },
+              {
+                "value": "0",
+                "position": 2
+              }
+            ],
+            "position": 140
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "636",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20251219",
+                "position": 3
+              }
+            ],
+            "position": 141
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "F",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "AL",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Pend Eye Exam-Child",
+                "position": 5
+              }
+            ],
+            "position": 142
+          },
+          {
+            "tag": "HSD",
+            "elements": [
+              {
+                "value": "VS",
+                "position": 1
+              },
+              {
+                "value": "0",
+                "position": 2
+              }
+            ],
+            "position": 143
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "636",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20251219",
+                "position": 3
+              }
+            ],
+            "position": 144
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "F",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "AM",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Pend Eye Fitting-Child",
+                "position": 5
+              }
+            ],
+            "position": 145
+          },
+          {
+            "tag": "HSD",
+            "elements": [
+              {
+                "value": "VS",
+                "position": 1
+              },
+              {
+                "value": "0",
+                "position": 2
+              }
+            ],
+            "position": 146
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "636",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20251219",
+                "position": 3
+              }
+            ],
+            "position": 147
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "D",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "35",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Paid Dental Fluoride",
+                "position": 5
+              }
+            ],
+            "position": 148
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "304",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20240926",
+                "position": 3
+              }
+            ],
+            "position": 149
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "D",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "35",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Paid Dental Fluoride",
+                "position": 5
+              }
+            ],
+            "position": 153
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "307",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20190614",
+                "position": 3
+              }
+            ],
+            "position": 154
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "D",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "35",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Paid Dental Prophylaxis",
+                "position": 5
+              }
+            ],
+            "position": 158
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "304",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20240926",
+                "position": 3
+              }
+            ],
+            "position": 159
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "D",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "35",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Paid Dental Prophylaxis",
+                "position": 5
+              }
+            ],
+            "position": 163
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "307",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20190614",
+                "position": 3
+              }
+            ],
+            "position": 164
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "D",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "35",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Paid Dental Full or Panoramic Xray",
+                "position": 5
+              }
+            ],
+            "position": 168
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "304",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20240926",
+                "position": 3
+              }
+            ],
+            "position": 169
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "D",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "35",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Paid Dental Full or Panoramic Xray",
+                "position": 5
+              }
+            ],
+            "position": 173
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "307",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20180529",
+                "position": 3
+              }
+            ],
+            "position": 174
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "D",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "35",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Paid Dental Oral Exam",
+                "position": 5
+              }
+            ],
+            "position": 178
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "304",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20240926",
+                "position": 3
+              }
+            ],
+            "position": 179
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "D",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "35",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Paid Dental Oral Exam",
+                "position": 5
+              }
+            ],
+            "position": 183
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "307",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20190614",
+                "position": 3
+              }
+            ],
+            "position": 184
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "D",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "35",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Paid Dental Bitewing Xray",
+                "position": 5
+              }
+            ],
+            "position": 188
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "304",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20240926",
+                "position": 3
+              }
+            ],
+            "position": 189
+          },
+          {
+            "tag": "EB",
+            "elements": [
+              {
+                "value": "D",
+                "position": 1
+              },
+              {
+                "value": "IND",
+                "position": 2
+              },
+              {
+                "value": "35",
+                "position": 3
+              },
+              {
+                "value": "MC",
+                "position": 4
+              },
+              {
+                "value": "Paid Dental Bitewing Xray",
+                "position": 5
+              }
+            ],
+            "position": 193
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "307",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20190614",
+                "position": 3
+              }
+            ],
+            "position": 194
+          }
+        ],
+        "childLoops": []
+      },
+      {
+        "id": "2100C",
+        "name": "Subscriber Name",
+        "segments": [
+          {
+            "tag": "NM1",
+            "elements": [
+              {
+                "value": "IL",
+                "position": 1
+              },
+              {
+                "value": "1",
+                "position": 2
+              },
+              {
+                "value": "CHATMON",
+                "position": 3
+              },
+              {
+                "value": "NEVAEH",
+                "position": 4
+              },
+              {
+                "value": "",
+                "position": 5
+              },
+              {
+                "value": "",
+                "position": 6
+              },
+              {
+                "value": "",
+                "position": 7
+              },
+              {
+                "value": "MI",
+                "position": 8
+              },
+              {
+                "value": "5300002019383",
+                "position": 9
+              }
+            ],
+            "position": 15
+          },
+          {
+            "tag": "N3",
+            "elements": [
+              {
+                "value": "302 STONECROFT CIRCLE",
+                "position": 1
+              }
+            ],
+            "position": 16
+          },
+          {
+            "tag": "N4",
+            "elements": [
+              {
+                "value": "HELENA",
+                "position": 1
+              },
+              {
+                "value": "AL",
+                "position": 2
+              },
+              {
+                "value": "350800000",
+                "position": 3
+              }
+            ],
+            "position": 17
+          },
+          {
+            "tag": "DMG",
+            "elements": [
+              {
+                "value": "D8",
+                "position": 1
+              },
+              {
+                "value": "20081119",
+                "position": 2
+              },
+              {
+                "value": "F",
+                "position": 3
+              }
+            ],
+            "position": 18
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "472",
+                "position": 1
+              },
+              {
+                "value": "RD8",
+                "position": 2
+              },
+              {
+                "value": "20251219-20251219",
+                "position": 3
+              }
+            ],
+            "position": 19
+          },
+          {
+            "tag": "DTP",
+            "elements": [
+              {
+                "value": "102",
+                "position": 1
+              },
+              {
+                "value": "D8",
+                "position": 2
+              },
+              {
+                "value": "20170804",
+                "position": 3
+              }
+            ],
+            "position": 20
+          },
+          {
+            "tag": "NM1",
+            "elements": [
+              {
+                "value": "P5",
+                "position": 1
+              },
+              {
+                "value": "2",
+                "position": 2
+              },
+              {
+                "value": "ALABAMA CARE NETWORK MID-STATE",
+                "position": 3
+              }
+            ],
+            "position": 31
+          },
+          {
+            "tag": "PER",
+            "elements": [
+              {
+                "value": "IC",
+                "position": 1
+              },
+              {
+                "value": "",
+                "position": 2
+              },
+              {
+                "value": "TE",
+                "position": 3
+              },
+              {
+                "value": "8332965245",
+                "position": 4
+              },
+              {
+                "value": "WP",
+                "position": 5
+              },
+              {
+                "value": "8332965245",
+                "position": 6
+              }
+            ],
+            "position": 32
+          },
+          {
+            "tag": "NM1",
+            "elements": [
+              {
+                "value": "1P",
+                "position": 1
+              },
+              {
+                "value": "1",
+                "position": 2
+              },
+              {
+                "value": "ANGLIN",
+                "position": 3
+              },
+              {
+                "value": "MICHAEL",
+                "position": 4
+              }
+            ],
+            "position": 37
+          },
+          {
+            "tag": "PER",
+            "elements": [
+              {
+                "value": "IC",
+                "position": 1
+              },
+              {
+                "value": "",
+                "position": 2
+              },
+              {
+                "value": "WP",
+                "position": 3
+              },
+              {
+                "value": "2059889800",
+                "position": 4
+              }
+            ],
+            "position": 38
+          },
+          {
+            "tag": "NM1",
+            "elements": [
+              {
+                "value": "1P",
+                "position": 1
+              },
+              {
+                "value": "1",
+                "position": 2
+              },
+              {
+                "value": "DYE",
+                "position": 3
+              },
+              {
+                "value": "CANDICE",
+                "position": 4
+              }
+            ],
+            "position": 43
+          },
+          {
+            "tag": "PER",
+            "elements": [
+              {
+                "value": "IC",
+                "position": 1
+              },
+              {
+                "value": "",
+                "position": 2
+              },
+              {
+                "value": "WP",
+                "position": 3
+              },
+              {
+                "value": "2056389096",
+                "position": 4
+              }
+            ],
+            "position": 44
+          },
+          {
+            "tag": "NM1",
+            "elements": [
+              {
+                "value": "1P",
+                "position": 1
+              },
+              {
+                "value": "1",
+                "position": 2
+              },
+              {
+                "value": "DYE",
+                "position": 3
+              },
+              {
+                "value": "CANDICE",
+                "position": 4
+              }
+            ],
+            "position": 49
+          },
+          {
+            "tag": "PER",
+            "elements": [
+              {
+                "value": "IC",
+                "position": 1
+              },
+              {
+                "value": "",
+                "position": 2
+              },
+              {
+                "value": "WP",
+                "position": 3
+              },
+              {
+                "value": "2056389096",
+                "position": 4
+              }
+            ],
+            "position": 50
+          },
+          {
+            "tag": "NM1",
+            "elements": [
+              {
+                "value": "1P",
+                "position": 1
+              },
+              {
+                "value": "1",
+                "position": 2
+              },
+              {
+                "value": "DYE",
+                "position": 3
+              },
+              {
+                "value": "CANDICE",
+                "position": 4
+              }
+            ],
+            "position": 55
+          },
+          {
+            "tag": "PER",
+            "elements": [
+              {
+                "value": "IC",
+                "position": 1
+              },
+              {
+                "value": "",
+                "position": 2
+              },
+              {
+                "value": "WP",
+                "position": 3
+              },
+              {
+                "value": "2056389096",
+                "position": 4
+              }
+            ],
+            "position": 56
+          },
+          {
+            "tag": "NM1",
+            "elements": [
+              {
+                "value": "1P",
+                "position": 1
+              },
+              {
+                "value": "1",
+                "position": 2
+              },
+              {
+                "value": "ANGLIN",
+                "position": 3
+              },
+              {
+                "value": "MICHAEL",
+                "position": 4
+              }
+            ],
+            "position": 151
+          },
+          {
+            "tag": "NM1",
+            "elements": [
+              {
+                "value": "1P",
+                "position": 1
+              },
+              {
+                "value": "1",
+                "position": 2
+              },
+              {
+                "value": "ZHANG",
+                "position": 3
+              },
+              {
+                "value": "XUEMING",
+                "position": 4
+              }
+            ],
+            "position": 156
+          },
+          {
+            "tag": "NM1",
+            "elements": [
+              {
+                "value": "1P",
+                "position": 1
+              },
+              {
+                "value": "1",
+                "position": 2
+              },
+              {
+                "value": "ANGLIN",
+                "position": 3
+              },
+              {
+                "value": "MICHAEL",
+                "position": 4
+              }
+            ],
+            "position": 161
+          },
+          {
+            "tag": "NM1",
+            "elements": [
+              {
+                "value": "1P",
+                "position": 1
+              },
+              {
+                "value": "1",
+                "position": 2
+              },
+              {
+                "value": "ZHANG",
+                "position": 3
+              },
+              {
+                "value": "XUEMING",
+                "position": 4
+              }
+            ],
+            "position": 166
+          },
+          {
+            "tag": "NM1",
+            "elements": [
+              {
+                "value": "1P",
+                "position": 1
+              },
+              {
+                "value": "1",
+                "position": 2
+              },
+              {
+                "value": "ANGLIN",
+                "position": 3
+              },
+              {
+                "value": "MICHAEL",
+                "position": 4
+              }
+            ],
+            "position": 171
+          },
+          {
+            "tag": "NM1",
+            "elements": [
+              {
+                "value": "1P",
+                "position": 1
+              },
+              {
+                "value": "1",
+                "position": 2
+              },
+              {
+                "value": "MEEKS",
+                "position": 3
+              },
+              {
+                "value": "OLANREWAJU",
+                "position": 4
+              }
+            ],
+            "position": 176
+          },
+          {
+            "tag": "NM1",
+            "elements": [
+              {
+                "value": "1P",
+                "position": 1
+              },
+              {
+                "value": "1",
+                "position": 2
+              },
+              {
+                "value": "ANGLIN",
+                "position": 3
+              },
+              {
+                "value": "MICHAEL",
+                "position": 4
+              }
+            ],
+            "position": 181
+          },
+          {
+            "tag": "NM1",
+            "elements": [
+              {
+                "value": "1P",
+                "position": 1
+              },
+              {
+                "value": "1",
+                "position": 2
+              },
+              {
+                "value": "ZHANG",
+                "position": 3
+              },
+              {
+                "value": "XUEMING",
+                "position": 4
+              }
+            ],
+            "position": 186
+          },
+          {
+            "tag": "NM1",
+            "elements": [
+              {
+                "value": "1P",
+                "position": 1
+              },
+              {
+                "value": "1",
+                "position": 2
+              },
+              {
+                "value": "ANGLIN",
+                "position": 3
+              },
+              {
+                "value": "MICHAEL",
+                "position": 4
+              }
+            ],
+            "position": 191
+          },
+          {
+            "tag": "NM1",
+            "elements": [
+              {
+                "value": "1P",
+                "position": 1
+              },
+              {
+                "value": "1",
+                "position": 2
+              },
+              {
+                "value": "ZHANG",
+                "position": 3
+              },
+              {
+                "value": "XUEMING",
+                "position": 4
+              }
+            ],
+            "position": 196
+          }
+        ],
+        "childLoops": []
+      },
+      {
+        "id": "2000C",
+        "name": "Subscriber Level",
+        "segments": [
+          {
+            "tag": "HL",
+            "elements": [
+              {
+                "value": "3",
+                "position": 1
+              },
+              {
+                "value": "2",
+                "position": 2
+              },
+              {
+                "value": "22",
+                "position": 3
+              },
+              {
+                "value": "0",
+                "position": 4
+              }
+            ],
+            "position": 12
+          },
+          {
+            "tag": "TRN",
+            "elements": [
+              {
+                "value": "2",
+                "position": 1
+              },
+              {
+                "value": "095009362",
+                "position": 2
+              },
+              {
+                "value": "1330989922",
+                "position": 3
+              }
+            ],
+            "position": 13
+          },
+          {
+            "tag": "TRN",
+            "elements": [
+              {
+                "value": "1",
+                "position": 1
+              },
+              {
+                "value": "253530QDV1",
+                "position": 2
+              },
+              {
+                "value": "9-GW_ALXIX",
+                "position": 3
+              },
+              {
+                "value": "ELIGIBILITY AUTHORIZATION",
+                "position": 4
+              }
+            ],
+            "position": 14
+          }
+        ],
+        "hierarchy": 22,
+        "childLoops": []
+      },
+      {
+        "id": "2100B",
+        "name": "Information Receiver Name",
+        "segments": [
+          {
+            "tag": "NM1",
+            "elements": [
+              {
+                "value": "1P",
+                "position": 1
+              },
+              {
+                "value": "1",
+                "position": 2
+              },
+              {
+                "value": "ANGLIN",
+                "position": 3
+              },
+              {
+                "value": "MICHAEL",
+                "position": 4
+              },
+              {
+                "value": "",
+                "position": 5
+              },
+              {
+                "value": "",
+                "position": 6
+              },
+              {
+                "value": "",
+                "position": 7
+              },
+              {
+                "value": "XX",
+                "position": 8
+              },
+              {
+                "value": "1922189554",
+                "position": 9
+              }
+            ],
+            "position": 7
+          },
+          {
+            "tag": "REF",
+            "elements": [
+              {
+                "value": "TJ",
+                "position": 1
+              },
+              {
+                "value": "810985986",
+                "position": 2
+              }
+            ],
+            "position": 8
+          },
+          {
+            "tag": "N3",
+            "elements": [
+              {
+                "value": "3825 LORNA RD STE 206",
+                "position": 1
+              }
+            ],
+            "position": 9
+          },
+          {
+            "tag": "N4",
+            "elements": [
+              {
+                "value": "HOOVER",
+                "position": 1
+              },
+              {
+                "value": "AL",
+                "position": 2
+              },
+              {
+                "value": "35244",
+                "position": 3
+              }
+            ],
+            "position": 10
+          },
+          {
+            "tag": "PRV",
+            "elements": [
+              {
+                "value": "PE",
+                "position": 1
+              },
+              {
+                "value": "PXC",
+                "position": 2
+              },
+              {
+                "value": "1223P0221X",
+                "position": 3
+              }
+            ],
+            "position": 11
+          }
+        ],
+        "childLoops": []
+      },
+      {
+        "id": "2000B",
+        "name": "Information Receiver Level",
+        "segments": [
+          {
+            "tag": "HL",
+            "elements": [
+              {
+                "value": "2",
+                "position": 1
+              },
+              {
+                "value": "1",
+                "position": 2
+              },
+              {
+                "value": "21",
+                "position": 3
+              },
+              {
+                "value": "1",
+                "position": 4
+              }
+            ],
+            "position": 6
+          }
+        ],
+        "hierarchy": 21,
+        "childLoops": []
+      },
+      {
+        "id": "2100A",
+        "name": "Information Source Name",
+        "segments": [
+          {
+            "tag": "NM1",
+            "elements": [
+              {
+                "value": "PR",
+                "position": 1
+              },
+              {
+                "value": "2",
+                "position": 2
+              },
+              {
+                "value": "GAINWELL TECHNOLOGIES LLC-ALABAMA-MEDICAID",
+                "position": 3
+              },
+              {
+                "value": "",
+                "position": 4
+              },
+              {
+                "value": "",
+                "position": 5
+              },
+              {
+                "value": "",
+                "position": 6
+              },
+              {
+                "value": "",
+                "position": 7
+              },
+              {
+                "value": "PI",
+                "position": 8
+              },
+              {
+                "value": "271510177",
+                "position": 9
+              }
+            ],
+            "position": 5
+          }
+        ],
+        "childLoops": []
+      },
+      {
+        "id": "2000A",
+        "name": "Information Source Level",
+        "segments": [
+          {
+            "tag": "HL",
+            "elements": [
+              {
+                "value": "1",
+                "position": 1
+              },
+              {
+                "value": "",
+                "position": 2
+              },
+              {
+                "value": "20",
+                "position": 3
+              },
+              {
+                "value": "1",
+                "position": 4
+              }
+            ],
+            "position": 4
+          }
+        ],
+        "hierarchy": 20,
+        "childLoops": []
+      }
+    ],
+    "metadata": {
+      "sourceFile": "medicaid\\medicaid-6.edi",
+      "outputGeneratedAt": "2026-01-13T18:49:54.067Z"
+    }
+  },
+  "parseStatistics": {
+    "filename": "medicaid\\medicaid-6.edi",
+    "parseTime": 4.115600000000995,
+    "validationTime": 3.747300000002724,
+    "fileSize": 4841,
+    "segmentCount": 201,
+    "loopCount": 8,
+    "isValid": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "errors": [],
+    "warnings": [],
+    "infos": [],
+    "totalSegments": 201,
+    "totalElements": 669,
+    "matchedElements": 669,
+    "segmentCoverage": 100,
+    "elementCoverage": 100,
+    "parsingAccuracy": 100,
+    "dataIntegrity": 100,
+    "missingElements": [],
+    "transformationIssues": [],
+    "ruleViolations": [],
+    "validationStrategy": "comprehensive"
+  }
+}
